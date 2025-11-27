@@ -1,0 +1,104 @@
+{
+  "timestamp": "2025-11-25T19:45:07.237525",
+  "target_score": 95,
+  "max_iterations": 10,
+  "results": {
+    "BitPhoenix": {
+      "status": "completed",
+      "iterations": 1,
+      "scores": [],
+      "final_score": null,
+      "v1_ready": null
+    },
+    "Dell-Server-Roadmap": {
+      "status": "completed",
+      "iterations": 1,
+      "scores": [
+        78
+      ],
+      "final_score": 78,
+      "v1_ready": false
+    },
+    "Dino-Cloud": {
+      "status": "completed",
+      "iterations": 1,
+      "scores": [
+        57
+      ],
+      "final_score": 57,
+      "v1_ready": false
+    },
+    "DinoCloud": {
+      "status": "completed",
+      "iterations": 1,
+      "scores": [
+        34
+      ],
+      "final_score": 34,
+      "v1_ready": false
+    },
+    "FamilyFork": {
+      "status": "completed",
+      "iterations": 1,
+      "scores": [
+        42
+      ],
+      "final_score": 42,
+      "v1_ready": null
+    },
+    "GSMG.IO": {
+      "status": "completed",
+      "iterations": 1,
+      "scores": [
+        null
+      ],
+      "final_score": null,
+      "v1_ready": false
+    },
+    "Goku.AI": {
+      "status": "completed",
+      "iterations": 1,
+      "scores": [
+        59
+      ],
+      "final_score": 59,
+      "v1_ready": false
+    },
+    "Keyhound": {
+      "status": "completed",
+      "iterations": 1,
+      "scores": [
+        77
+      ],
+      "final_score": 77,
+      "v1_ready": false
+    },
+    "Scalpstorm": {
+      "status": "completed",
+      "iterations": 1,
+      "scores": [
+        62
+      ],
+      "final_score": 62,
+      "v1_ready": false
+    },
+    "Server-Roadmap": {
+      "status": "completed",
+      "iterations": 1,
+      "scores": [
+        5
+      ],
+      "final_score": 5,
+      "v1_ready": false
+    },
+    "StreamForge": {
+      "status": "completed",
+      "iterations": 1,
+      "scores": [
+        2
+      ],
+      "final_score": 2,
+      "v1_ready": null
+    }
+  }
+}

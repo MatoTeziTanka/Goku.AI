@@ -1,0 +1,22 @@
+{
+  "directories": [
+    {
+      "name": "Goku.AI",
+      "full_path": "C:\\Users\\sethp\\Documents\\Github\\Goku.AI",
+      "relative_path": "Goku.AI",
+      "parent": "."
+    }
+  ],
+  "files": [
+    {
+      "name": "find_all_goku_files.py",
+      "full_path": "C:\\Users\\sethp\\Documents\\Github\\find_all_goku_files.py",
+      "relative_path": "find_all_goku_files.py",
+      "parent": ".",
+      "size_bytes": 6832
+    }
+  ],
+  "goku_ai_repo": "C:\\Users\\sethp\\Documents\\Github\\Goku.AI",
+  "timestamp": "2025-11-25T02:38:33.751831",
+  "base_directory": "C:\\Users\\sethp\\Documents\\Github"
+}

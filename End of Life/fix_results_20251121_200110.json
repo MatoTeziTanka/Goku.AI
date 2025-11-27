@@ -1,0 +1,374 @@
+{
+  "timestamp": "2025-11-21T20:01:10.862990",
+  "total_files": 73,
+  "fixed": 63,
+  "failed": 0,
+  "skipped": 10,
+  "results": [
+    {
+      "file": "BitPhoenix\\analyze_blockers.py",
+      "status": "skipped",
+      "reason": "already_fixed"
+    },
+    {
+      "file": "BitPhoenix\\enterprise_scanner.py",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:46:39.625788"
+    },
+    {
+      "file": "BitPhoenix\\backend\\check_deps.py",
+      "status": "skipped",
+      "reason": "already_fixed"
+    },
+    {
+      "file": "BitPhoenix\\backend\\test_api.py",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:46:54.107879"
+    },
+    {
+      "file": "BitPhoenix\\backend\\test_import.py",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:47:01.449732"
+    },
+    {
+      "file": "BitPhoenix\\backend\\shenron\\shenron-v4-api-server.py",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:47:24.815168"
+    },
+    {
+      "file": "BitPhoenix\\backend\\shenron\\shenron_v4_orchestrator.py",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:47:48.205108"
+    },
+    {
+      "file": "BitPhoenix\\backend\\src\\auth.py",
+      "status": "skipped",
+      "reason": "already_fixed"
+    },
+    {
+      "file": "BitPhoenix\\backend\\src\\config.py",
+      "status": "skipped",
+      "reason": "already_fixed"
+    },
+    {
+      "file": "BitPhoenix\\backend\\src\\crypto_recovery.py",
+      "status": "skipped",
+      "reason": "already_fixed"
+    },
+    {
+      "file": "BitPhoenix\\backend\\src\\debugger.py",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:48:11.018066"
+    },
+    {
+      "file": "BitPhoenix\\backend\\src\\exceptions.py",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:48:28.253607"
+    },
+    {
+      "file": "BitPhoenix\\backend\\src\\file_carving.py",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:48:49.325427"
+    },
+    {
+      "file": "BitPhoenix\\backend\\src\\file_format_database.py",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:49:12.233349"
+    },
+    {
+      "file": "BitPhoenix\\backend\\src\\file_preview.py",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:49:22.400906"
+    },
+    {
+      "file": "BitPhoenix\\backend\\src\\gpu_acceleration.py",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:49:32.583363"
+    },
+    {
+      "file": "BitPhoenix\\backend\\src\\main.py",
+      "status": "skipped",
+      "reason": "already_fixed"
+    },
+    {
+      "file": "BitPhoenix\\backend\\src\\models.py",
+      "status": "skipped",
+      "reason": "already_fixed"
+    },
+    {
+      "file": "BitPhoenix\\backend\\src\\recovery_engine.py",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:49:53.237322"
+    },
+    {
+      "file": "BitPhoenix\\backend\\src\\retry_logic.py",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:50:13.654322"
+    },
+    {
+      "file": "BitPhoenix\\backend\\src\\scanner.py",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:50:36.235025"
+    },
+    {
+      "file": "BitPhoenix\\backend\\src\\secrets_manager.py",
+      "status": "skipped",
+      "reason": "already_fixed"
+    },
+    {
+      "file": "BitPhoenix\\backend\\src\\secure_exec.py",
+      "status": "skipped",
+      "reason": "already_fixed"
+    },
+    {
+      "file": "BitPhoenix\\backend\\src\\signature_library.py",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:50:58.776037"
+    },
+    {
+      "file": "BitPhoenix\\backend\\src\\validators.py",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:51:18.868717"
+    },
+    {
+      "file": "BitPhoenix\\backend\\src\\__init__.py",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:51:29.372512"
+    },
+    {
+      "file": "BitPhoenix\\backend\\tests\\conftest.py",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:51:37.165097"
+    },
+    {
+      "file": "BitPhoenix\\backend\\tests\\test_auth.py",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:51:54.010602"
+    },
+    {
+      "file": "BitPhoenix\\backend\\tests\\test_exceptions.py",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:52:05.880969"
+    },
+    {
+      "file": "BitPhoenix\\backend\\tests\\test_secure_exec.py",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:52:16.895610"
+    },
+    {
+      "file": "BitPhoenix\\backend\\tests\\test_validators.py",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:52:29.791131"
+    },
+    {
+      "file": "BitPhoenix\\backend\\tests\\integration\\test_device_manager.py",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:52:40.043837"
+    },
+    {
+      "file": "BitPhoenix\\backend\\tests\\load\\locustfile.py",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:52:52.158481"
+    },
+    {
+      "file": "BitPhoenix\\cursor-extension\\src\\client.ts",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:53:01.113999"
+    },
+    {
+      "file": "BitPhoenix\\cursor-extension\\src\\extension.ts",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:53:14.630466"
+    },
+    {
+      "file": "BitPhoenix\\cursor-extension\\src\\panel.ts",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:53:28.309147"
+    },
+    {
+      "file": "BitPhoenix\\Doesnt Belong\\shenron-ultra-instinct\\phase1\\mcp_tools.py",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:53:49.768080"
+    },
+    {
+      "file": "BitPhoenix\\Doesnt Belong\\shenron-ultra-instinct\\phase1\\shenron_api_v5_mcp.py",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:54:12.658265"
+    },
+    {
+      "file": "BitPhoenix\\EOL\\cleanup_utils.py",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:54:19.480825"
+    },
+    {
+      "file": "BitPhoenix\\EOL\\organize_repo.py",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:54:31.729331"
+    },
+    {
+      "file": "BitPhoenix\\frontend\\src\\App.js",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:54:48.487360"
+    },
+    {
+      "file": "BitPhoenix\\frontend\\src\\components\\Footer.js",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:55:08.502280"
+    },
+    {
+      "file": "BitPhoenix\\frontend\\src\\components\\Header.js",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:55:27.208551"
+    },
+    {
+      "file": "BitPhoenix\\frontend\\src\\config\\api.js",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:55:37.465776"
+    },
+    {
+      "file": "BitPhoenix\\frontend\\src\\contexts\\ThemeContext.js",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:55:50.307874"
+    },
+    {
+      "file": "BitPhoenix\\frontend\\src\\modes\\EverydayMode.js",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:56:14.200656"
+    },
+    {
+      "file": "BitPhoenix\\frontend\\src\\modes\\ModeSelection.js",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:56:35.890392"
+    },
+    {
+      "file": "BitPhoenix\\frontend\\src\\styles\\index.js",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:56:56.617506"
+    },
+    {
+      "file": "BitPhoenix\\scripts\\windows\\test.py",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:57:00.590738"
+    },
+    {
+      "file": "BitPhoenix\\final_move.py",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:57:05.953548"
+    },
+    {
+      "file": "BitPhoenix\\run_scanner.py",
+      "status": "skipped",
+      "reason": "already_fixed"
+    },
+    {
+      "file": "BitPhoenix\\backend\\src\\device_manager.py",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:57:27.706334"
+    },
+    {
+      "file": "BitPhoenix\\backend\\tests\\test_api_endpoints.py",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:57:38.136184"
+    },
+    {
+      "file": "BitPhoenix\\EOL\\finalize_org.py",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:57:44.106374"
+    },
+    {
+      "file": "BitPhoenix\\frontend\\src\\components\\Badge.js",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:57:53.194749"
+    },
+    {
+      "file": "BitPhoenix\\frontend\\src\\components\\Button.js",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:57:59.888709"
+    },
+    {
+      "file": "BitPhoenix\\frontend\\src\\components\\Input.js",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:58:10.658469"
+    },
+    {
+      "file": "BitPhoenix\\frontend\\src\\components\\Layout.js",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:58:20.330182"
+    },
+    {
+      "file": "BitPhoenix\\frontend\\src\\contexts\\AppContext.js",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:58:32.113740"
+    },
+    {
+      "file": "BitPhoenix\\frontend\\src\\contexts\\NotificationContext.js",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:58:43.832548"
+    },
+    {
+      "file": "BitPhoenix\\frontend\\src\\modes\\ExpertMode.js",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:59:07.456407"
+    },
+    {
+      "file": "BitPhoenix\\frontend\\src\\__tests__\\App.test.js",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:59:16.031332"
+    },
+    {
+      "file": "BitPhoenix\\backend\\tests\\test_retry_logic.py",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:59:30.735826"
+    },
+    {
+      "file": "BitPhoenix\\backend\\tests\\integration\\test_endpoints.py",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:59:43.386947"
+    },
+    {
+      "file": "BitPhoenix\\cursor-extension\\src\\treeProvider.ts",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:59:51.359527"
+    },
+    {
+      "file": "BitPhoenix\\frontend\\src\\index.js",
+      "status": "fixed",
+      "timestamp": "2025-11-21T19:59:55.944242"
+    },
+    {
+      "file": "BitPhoenix\\frontend\\src\\components\\Card.js",
+      "status": "fixed",
+      "timestamp": "2025-11-21T20:00:05.007598"
+    },
+    {
+      "file": "BitPhoenix\\frontend\\src\\components\\ErrorBoundary.js",
+      "status": "fixed",
+      "timestamp": "2025-11-21T20:00:22.441157"
+    },
+    {
+      "file": "BitPhoenix\\frontend\\src\\components\\LoadingSpinner.js",
+      "status": "fixed",
+      "timestamp": "2025-11-21T20:00:44.342788"
+    },
+    {
+      "file": "BitPhoenix\\scripts\\debug_demo.py",
+      "status": "fixed",
+      "timestamp": "2025-11-21T20:00:58.414501"
+    },
+    {
+      "file": "BitPhoenix\\backend\\tests\\__init__.py",
+      "status": "fixed",
+      "timestamp": "2025-11-21T20:01:02.505449"
+    },
+    {
+      "file": "BitPhoenix\\backend\\tests\\integration\\__init__.py",
+      "status": "fixed",
+      "timestamp": "2025-11-21T20:01:06.722303"
+    },
+    {
+      "file": "BitPhoenix\\backend\\tests\\load\\__init__.py",
+      "status": "fixed",
+      "timestamp": "2025-11-21T20:01:10.861452"
+    }
+  ]
+}

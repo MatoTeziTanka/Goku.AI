@@ -1,0 +1,3505 @@
+<!--
+NOTE: This file has been sanitized for public GitHub.
+Real values are stored in credentials.json (gitignored).
+For local use, restore from credentials.json or use the original file.
+-->
+[
+  {
+    "path": "azure_100_percent_qc_improvement.py",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "azure_100_percent_qc_improvement_FIXED.py",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "azure_100_percent_qc_improvement_FIXED_CONSENSUS.py",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "AZURE_APPLY_ZENCODER_IMPROVEMENTS_20251126_044959.md",
+    "keywords": [
+      "lm studio"
+    ]
+  },
+  {
+    "path": "AZURE_CRITICAL_FIXES_20251126_054443.md",
+    "keywords": [
+      "lm studio"
+    ]
+  },
+  {
+    "path": "AZURE_FIX_MASTER_PROMPT_20251126_053310.md",
+    "keywords": [
+      "lm studio"
+    ]
+  },
+  {
+    "path": "CLAUDE_OPUS_REVIEW_COST_ANALYSIS.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "consolidate_goku_ai_files.py",
+    "keywords": [
+      "goku",
+      "shenron",
+      "dragonball",
+      "dragon ball",
+      "vm100",
+      "vm101",
+      "<VM100_IP>",
+      "<VM101_IP>",
+      "lm studio",
+      "lm-studio",
+      "personalities",
+      "control node"
+    ]
+  },
+  {
+    "path": "estimate_claude_review_cost.py",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "find_goku_files.py",
+    "keywords": [
+      "goku",
+      "shenron",
+      "dragonball",
+      "dragon ball",
+      "vm100",
+      "vm101",
+      "<VM100_IP>",
+      "<VM101_IP>",
+      "lm studio",
+      "lm-studio",
+      "personalities",
+      "control node"
+    ]
+  },
+  {
+    "path": "fix_v2.3.0_review_issues.py",
+    "keywords": [
+      "lm studio"
+    ]
+  },
+  {
+    "path": "GITIGNORE_SECURITY_AUDIT_REPORT.md",
+    "keywords": [
+      "goku",
+      "shenron"
+    ]
+  },
+  {
+    "path": "GOKU_AI_CONSOLIDATION_PLAN.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "dragonball",
+      "dragon ball",
+      "vm100",
+      "vm101",
+      "<VM100_IP>",
+      "<VM101_IP>",
+      "lm studio",
+      "lm-studio",
+      "personalities",
+      "control node"
+    ]
+  },
+  {
+    "path": "MASTER-PROMPT-PERPETUAL-SELF-UPDATING-AI-MIND-IMPROVED-v2.0.0-BACKUP.md",
+    "keywords": [
+      "lm studio"
+    ]
+  },
+  {
+    "path": "MASTER-PROMPT-PERPETUAL-SELF-UPDATING-AI-MIND-IMPROVED-v2.1.0.md",
+    "keywords": [
+      "lm studio"
+    ]
+  },
+  {
+    "path": "MASTER-PROMPT-PERPETUAL-SELF-UPDATING-AI-MIND-IMPROVED-v2.2.0.md",
+    "keywords": [
+      "lm studio"
+    ]
+  },
+  {
+    "path": "MASTER-PROMPT-PERPETUAL-SELF-UPDATING-AI-MIND-IMPROVED-v2.2.1.md",
+    "keywords": [
+      "lm studio"
+    ]
+  },
+  {
+    "path": "MASTER-PROMPT-PERPETUAL-SELF-UPDATING-AI-MIND-IMPROVED-v2.3.0.md",
+    "keywords": [
+      "lm studio"
+    ]
+  },
+  {
+    "path": "MASTER-PROMPT-PERPETUAL-SELF-UPDATING-AI-MIND-IMPROVED-v2.4.0.md",
+    "keywords": [
+      "lm studio"
+    ]
+  },
+  {
+    "path": "MASTER-PROMPT-PERPETUAL-SELF-UPDATING-AI-MIND-IMPROVED-v2.5.0.md",
+    "keywords": [
+      "lm studio"
+    ]
+  },
+  {
+    "path": "MASTER-PROMPT-PERPETUAL-SELF-UPDATING-AI-MIND-IMPROVED-v2.6.0.md",
+    "keywords": [
+      "lm studio"
+    ]
+  },
+  {
+    "path": "MASTER-PROMPT-PERPETUAL-SELF-UPDATING-AI-MIND-IMPROVED.md",
+    "keywords": [
+      "lm studio"
+    ]
+  },
+  {
+    "path": "remove_sensitive_files_safely.py",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "run_consolidate.py",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "SENSITIVE_FILES_ACTION_PLAN.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "V2.4.0_FIXES_SUMMARY.md",
+    "keywords": [
+      "lm studio"
+    ]
+  },
+  {
+    "path": "V2.5.0_FINAL_VERIFICATION.md",
+    "keywords": [
+      "lm studio"
+    ]
+  },
+  {
+    "path": "V2.6.0_REVIEW_IMPROVEMENTS_SUMMARY.md",
+    "keywords": [
+      "lm studio"
+    ]
+  },
+  {
+    "path": "ZENCODER-COMPREHENSIVE-CHANGE-LOG.md",
+    "keywords": [
+      "vm100",
+      "vm101",
+      "<VM100_IP>"
+    ]
+  },
+  {
+    "path": "ZENCODER-PROMPT-BitPhoenix.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "ZENCODER-PROMPT-Dell-Server-Roadmap.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "ZENCODER-PROMPT-Dino-Cloud.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "ZENCODER-PROMPT-DinoCloud.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "ZENCODER-PROMPT-FamilyFork.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "ZENCODER-PROMPT-Goku.AI.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "ZENCODER-PROMPT-GSMG.IO.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "ZENCODER-PROMPT-Keyhound.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "ZENCODER-PROMPT-Scalpstorm.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "ZENCODER-PROMPT-Server-Roadmap.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "ZENCODER-PROMPT-StreamForge.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "azure_reviews\\vm101_gpt41_report_20251124_031007.md",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "azure_reviews\\vm101_gpt41_report_20251124_031156.md",
+    "keywords": [
+      "vm101",
+      "vm100"
+    ]
+  },
+  {
+    "path": "azure_reviews\\vm101_gpt41_review_20251124_031007.json",
+    "keywords": [
+      "vm101",
+      "control node"
+    ]
+  },
+  {
+    "path": "azure_reviews\\vm101_gpt41_review_20251124_031156.json",
+    "keywords": [
+      "vm101",
+      "vm100"
+    ]
+  },
+  {
+    "path": "azure_reviews\\vm101_review.log",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "azure_reviews\\vm101_v1_deployment_report_20251124_041611.md",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "azure_reviews\\vm101_v1_deployment_review.log",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "azure_reviews\\vm101_v1_deployment_review_20251124_041611.json",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "BitPhoenix\\154_PERCENT_QUALITY_RESTORED.md",
+    "keywords": [
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "BitPhoenix\\CORRECTED_QUALITY_ASSESSMENT.md",
+    "keywords": [
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "BitPhoenix\\DEPLOYMENT_INSTRUCTIONS.md",
+    "keywords": [
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "BitPhoenix\\ISSUES_CONFIRMED_AND_FIXED_REPORT.md",
+    "keywords": [
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "BitPhoenix\\ORGANIZATION_REPORT.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "BitPhoenix\\PRODUCTION_READINESS_AUDIT_V1.0.0.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "BitPhoenix\\repo.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "BitPhoenix\\run_scanner.py",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "BitPhoenix\\test-ssh-connectivity.ps1",
+    "keywords": [
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\2FA-BUG-FIX-COMPLETE.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\AGENT-MODE-POWER-ACCURACY-DESIGN.md",
+    "keywords": [
+      "goku",
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\AGENT-MODE-V4.1-DEPLOYMENT-MANUAL.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "vm100",
+      "vm101",
+      "<VM100_IP>",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\AGENT-MODE-VS-ULTRA-INSTINCT-COMPREHENSIVE-ANALYSIS.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "dragon ball",
+      "vm100"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\AI-COLLAB-AGENT-VS-ULTRA-INSTINCT.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "dragon ball",
+      "vm100",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\AI-COLLAB-SHENRON-SYNDICATE-COMPLETE-PROJECT.md",
+    "keywords": [
+      "shenron",
+      "goku",
+      "dragon ball",
+      "vm100",
+      "vm101",
+      "<VM100_IP>",
+      "<VM101_IP>",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\AI-TURNOVER-DELL-PROXMOX-ADMIN.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "<VM100_IP>"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\AI-TURNOVER-MARKETING.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "dragon ball",
+      "personalities"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\API-STATUS-LIGHT-FIX.md",
+    "keywords": [
+      "shenron",
+      "vm100"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\BEAST-MODE-INJECTION-COMPLETE-2025-11-06.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "vm100",
+      "<VM100_IP>",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\BINANCE-API-KEYS-SECURE-SETUP.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "vm100",
+      "vm101",
+      "<VM100_IP>",
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\BUG-FIX-SUMMARY-2025-11-07.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "vm100"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\CORRECT-MODEL-MAPPING.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\CRITICAL-FIXES-2025-11-06.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "vm100",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\CRITICAL-WEB-UI-FIXES-v4.1.4.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\CRITICAL-WEB-UI-FIXES-v4.1.6.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\DEEPSEEK-AI-COLLAB-RESPONSE-ANALYSIS.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "vm100"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\delete-downloaded-models.ps1",
+    "keywords": [
+      "goku",
+      "shenron",
+      "vm100",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\delete-old-lms-models.ps1",
+    "keywords": [
+      "goku",
+      "shenron",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\DEPLOYMENT-COMPLETE-SUMMARY.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "vm100",
+      "<VM100_IP>"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\DEPLOYMENT-STATUS-2025-11-06.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "vm100",
+      "vm101",
+      "<VM100_IP>",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\DOCUMENTATION-UPDATE-2025-11-05.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "vm100",
+      "<VM100_IP>",
+      "lm studio",
+      "personalities"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\DRAGON-RADAR-ENHANCEMENTS-2025-11-08.md",
+    "keywords": [
+      "shenron",
+      "dragon ball"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\DRAGON-RADAR-FULL-UI-DEPLOYMENT-PLAN.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "dragon ball",
+      "vm100",
+      "<VM100_IP>",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\ETERNAL-DRAGON-SHENRON-KNOWLEDGE.md",
+    "keywords": [
+      "shenron",
+      "goku",
+      "vm100",
+      "<VM100_IP>",
+      "lm studio",
+      "personalities"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\EXECUTE-NOW.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "vm100",
+      "vm101",
+      "<VM101_IP>",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\EXECUTION-READY-2025-11-06.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "dragon ball",
+      "vm100",
+      "vm101",
+      "<VM100_IP>",
+      "<VM101_IP>",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\FINAL-EXECUTION-SUMMARY-2025-11-06.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "dragon ball",
+      "vm100",
+      "vm101",
+      "<VM100_IP>",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\FULL-SEND-COMPLETE-2025-11-06.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "vm100",
+      "<VM100_IP>",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\GSMG-ULTRA-INSTINCT-SOLVER-PROMPT.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "<VM100_IP>"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\HARDWARE-INVENTORY-SUMMARY.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\HELP-ME-07-NOV-2025.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "vm100",
+      "vm101",
+      "<VM100_IP>",
+      "<VM101_IP>",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\HTML-vs-JS-FULL-AUDIT.md",
+    "keywords": [
+      "goku",
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\INCOME-GENERATION-MASTER-PLAN.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "vm100",
+      "vm101",
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\INCOME-SYSTEM-3K-MONTHLY-COMPLETE-PLAN.md",
+    "keywords": [
+      "shenron",
+      "vm100",
+      "vm101",
+      "<VM100_IP>",
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\INFRASTRUCTURE-STATUS.md",
+    "keywords": [
+      "vm100",
+      "vm101"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\knowledge-advanced-scalpstorm-architecture.md",
+    "keywords": [
+      "shenron",
+      "vm100",
+      "<VM100_IP>"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\knowledge-base-binance-us-bnb-2025.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\knowledge-base-bitcoin-crypto-trading-2025.md",
+    "keywords": [
+      "shenron",
+      "vm100",
+      "vm101"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\knowledge-base-cpp-23.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\knowledge-base-defi-yield-farming-2025.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\knowledge-base-dell-r730-complete.md",
+    "keywords": [
+      "shenron",
+      "vm100",
+      "<VM100_IP>"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\knowledge-base-disclaimer-and-sources.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\knowledge-base-discord-bots-apis-2025.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\knowledge-base-docker-kubernetes-2025.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\knowledge-base-golang-122.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\knowledge-base-java-21.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\knowledge-base-javascript-typescript.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\knowledge-base-nvidia-grid-k1-complete.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\knowledge-base-plex-streamforge-2025.md",
+    "keywords": [
+      "shenron",
+      "vm101",
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\knowledge-base-project-scalpstorm-80-dollar.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\knowledge-base-python-311-2025.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\knowledge-base-ruby-julia-mojo-sqlserver.md",
+    "keywords": [
+      "shenron",
+      "vm100"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\knowledge-base-rust-175.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\knowledge-base-week6-trading-mastery.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\knowledge-base-week7-ai-powerhouse.md",
+    "keywords": [
+      "shenron",
+      "vm100",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\knowledge-base-weeks8-11-complete.md",
+    "keywords": [
+      "shenron",
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\knowledge-base-windows-server-2025.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "vm100",
+      "<VM100_IP>",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\knowledge-base-wordpress-monetization-2025.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\KNOWLEDGE-ENHANCEMENT-TO-100-PLAN.md",
+    "keywords": [
+      "shenron",
+      "vm100"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\KNOWLEDGE-PACK-FINAL-11-FILES.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\LM-STUDIO-AUTO-LOAD-SETUP.md",
+    "keywords": [
+      "lm-studio",
+      "goku",
+      "shenron",
+      "vm100",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\LM-STUDIO-GUIDE.md",
+    "keywords": [
+      "lm-studio",
+      "goku",
+      "shenron",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\MULTI-AI-CONSENSUS-IMPLEMENTATION-PLAN.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "vm100",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\NETWORK-IMPLEMENTATION-SUMMARY.md",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\NEXT-10-PRIORITY-TASKS.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "vm100",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\NOVEMBER-6-2025-COMPLETE-PROGRESS.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "dragon ball"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\NOVEMBER-6-2025-HARDWARE-INVENTORY-COMPLETE.md",
+    "keywords": [
+      "shenron",
+      "vm100"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\OPTIONS-D-E-COMPLETE-2025-11-06.md",
+    "keywords": [
+      "shenron",
+      "vm100",
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\PARALLEL-BUG-FIX-ANALYSIS.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "vm100",
+      "<VM100_IP>",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\PARALLEL-BUG-FIX-COMPLETE.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "vm100"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\POST-DEBUG-FIX-PLAN.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "vm100"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\POWER-MODES-DEPLOYMENT-COMPLETE.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "vm100",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\POWER-MODES-USER-GUIDE.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "dragon ball",
+      "vm100"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\QUANTIZATION-MANUAL-GUIDE.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "vm100",
+      "<VM100_IP>",
+      "lm studio",
+      "lm-studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\QUEST-MANAGER-DEPLOYMENT-GUIDE.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "vm100"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\QUICK-START-TESTING.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\README.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "vm100",
+      "vm101",
+      "personalities"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\SESSION-COMPLETE-2025-11-06-FINAL.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "vm100",
+      "vm101",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\SESSION-COMPLETE-SUMMARY.md",
+    "keywords": [
+      "goku",
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\SESSION-SUMMARY-2025-11-06.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "vm100",
+      "vm101",
+      "<VM100_IP>",
+      "<VM101_IP>",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\SHENRON-2FA-SECRET.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\SHENRON-CURRENT-STATUS-2025-11-06.md",
+    "keywords": [
+      "shenron",
+      "goku",
+      "vm100",
+      "<VM100_IP>",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\SHENRON-DEBUGGER-DESIGN.md",
+    "keywords": [
+      "shenron",
+      "goku",
+      "<VM100_IP>",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\SHENRON-FULL-ACCESS-SETUP.md",
+    "keywords": [
+      "shenron",
+      "goku",
+      "vm100",
+      "vm101",
+      "<VM100_IP>",
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\SHENRON-KNOWLEDGE-ENHANCEMENT-STRATEGY.md",
+    "keywords": [
+      "shenron",
+      "goku"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\SHENRON-KNOWLEDGE-GAPS-AND-INJECTION-PLAN.md",
+    "keywords": [
+      "shenron",
+      "goku",
+      "vm100",
+      "vm101",
+      "<VM100_IP>"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\SHENRON-KNOWLEDGE-INJECTION-WEEK-1-ACTION-PLAN.md",
+    "keywords": [
+      "shenron",
+      "goku",
+      "vm100",
+      "vm101",
+      "<VM100_IP>"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\SHENRON-NEXT-KNOWLEDGE-INJECTIONS.md",
+    "keywords": [
+      "shenron",
+      "goku",
+      "vm100",
+      "lm studio",
+      "lm-studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\SHENRON-POWER-MODES-FINAL-DEPLOYMENT.md",
+    "keywords": [
+      "shenron",
+      "goku",
+      "vm100",
+      "<VM100_IP>",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\SHENRON-PRESETS-DEPLOYMENT-v3.0.md",
+    "keywords": [
+      "shenron",
+      "goku",
+      "vm100",
+      "<VM100_IP>",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\SHENRON-PRESETS-v3.2-DEPLOYMENT.md",
+    "keywords": [
+      "shenron",
+      "goku",
+      "vm100",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\SHENRON-QUICK-START-KNOWLEDGE-INJECTION.md",
+    "keywords": [
+      "shenron",
+      "goku",
+      "vm100",
+      "vm101",
+      "<VM100_IP>"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\SHENRON-TASK-SCHEDULER-SETUP-COMPLETE.md",
+    "keywords": [
+      "shenron",
+      "goku",
+      "vm100",
+      "<VM100_IP>"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\SHENRON-ULTRA-INSTINCT-DEPLOYMENT-STATUS.md",
+    "keywords": [
+      "shenron",
+      "goku",
+      "vm100",
+      "vm101",
+      "<VM100_IP>"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\SHENRON-ULTRA-INSTINCT-UPGRADE.md",
+    "keywords": [
+      "shenron",
+      "goku",
+      "vm100",
+      "<VM100_IP>"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\SHENRON-V3-CHANGELOG.md",
+    "keywords": [
+      "shenron",
+      "goku",
+      "vm100",
+      "<VM100_IP>",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\SHENRON-V3.3-DEPLOYMENT-SUCCESS.md",
+    "keywords": [
+      "shenron",
+      "goku",
+      "dragon ball"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\SHENRON-v4-DEPLOYMENT-COMPLETE.md",
+    "keywords": [
+      "shenron",
+      "goku",
+      "vm100",
+      "vm101",
+      "<VM100_IP>",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\SHENRON-WEB-UI-FIXES-2025-11-06.md",
+    "keywords": [
+      "shenron",
+      "vm101"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\SHENRON-WEBSITE-DEBUG-COLLAB.md",
+    "keywords": [
+      "shenron",
+      "vm100",
+      "<VM100_IP>",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\SHENRON-WEBSITE-FIXES-COMPLETE.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\SHENRON-WEBSITE-REAL-TIME-STATUS-FIX.md",
+    "keywords": [
+      "shenron",
+      "goku",
+      "vm100"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\SHENRON-WEEK-1-INJECTION-SUCCESS.md",
+    "keywords": [
+      "shenron",
+      "goku",
+      "<VM100_IP>"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\SHENRONS-SYNDICATE-LMS-HUB-DEPLOYMENT.md",
+    "keywords": [
+      "shenron",
+      "goku",
+      "vm100",
+      "<VM100_IP>",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\shenrons-syndicate-presets-v3.0.tar.gz",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\shenrons-syndicate-presets-v3.2-JSON.tar.gz",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\shenrons-syndicate-warriors-v2.tar.gz",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\shenrons-syndicate-warriors-v3.tar.gz",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\SSH-SETUP-COMPLETE-CHECKLIST.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "vm100",
+      "<VM100_IP>"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\START-SHENRON-FIX-NOV7.md",
+    "keywords": [
+      "shenron",
+      "goku",
+      "vm100",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\START-SHENRON.ps1",
+    "keywords": [
+      "shenron",
+      "goku",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\TRADING-BOT-SETUP-GUIDE.md",
+    "keywords": [
+      "shenron",
+      "vm101",
+      "<VM100_IP>",
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\ULTRA-INSTINCT-CASCADING-VALIDATION-2025-11-08.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "vm100",
+      "<VM100_IP>",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\ULTRA-INSTINCT-MODE.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "dragon ball"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\ULTRA-INSTINCT-MONITORING-GUIDE.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "vm100",
+      "<VM100_IP>",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\VM100-BEAST-MODE-UPGRADE.md",
+    "keywords": [
+      "vm100",
+      "goku",
+      "shenron",
+      "<VM100_IP>",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\WEB-UI-AUDIT-DISCREPANCY-REPORT.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\WEB-UI-FIX-v4.0.2-2025-11-07.md",
+    "keywords": [
+      "goku",
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\WEB-UI-V4.0.3-DEPLOYMENT-COMPLETE.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "vm100",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\WEEK-1-KNOWLEDGE-INJECTION-COMPLETE-INSTRUCTIONS.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "vm100",
+      "vm101",
+      "<VM100_IP>",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\WEEK-2-KNOWLEDGE-INJECTION-INSTRUCTIONS.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "vm100",
+      "<VM100_IP>"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\WHATS-NEXT-2025-11-06.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "vm100",
+      "vm101",
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "End of Life\\add_llm_operational_sections.py",
+    "keywords": [
+      "lm studio"
+    ]
+  },
+  {
+    "path": "End of Life\\analysis_report_20251121_175953.json",
+    "keywords": [
+      "goku",
+      "shenron",
+      "<VM100_IP>",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "End of Life\\analysis_report_20251121_183854.json",
+    "keywords": [
+      "goku",
+      "shenron",
+      "<VM100_IP>",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "End of Life\\analysis_report_20251121_203454.json",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "End of Life\\analyze_and_organize_files.py",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "End of Life\\analyze_root_files.py",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\apply_batch_consensus.py",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\AZURE-VM101-REVIEW-SETUP.md",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "End of Life\\AZURE_FIX_AND_LEARN_20251126_013423.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\azure_fix_and_learn_from_mistakes.py",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\azure_fix_production_readiness.py",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "End of Life\\AZURE_GENERATED_SCRIPT_REVIEW_20251126_011019.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\azure_generate_100_percent_improvement_script.py",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\AZURE_IMPLEMENTATION_CONSENSUS_FIXES_20251126_025254.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\azure_review_and_reorganize.py",
+    "keywords": [
+      "goku",
+      "shenron",
+      "dragonball",
+      "dragon ball",
+      "vm100",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "End of Life\\azure_review_complete_github_project.py",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\AZURE_REVIEW_COMPLETE_PROJECT_20251126_010222.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\AZURE_REVIEW_COMPLETION_SUMMARY.md",
+    "keywords": [
+      "goku",
+      "shenron"
+    ]
+  },
+  {
+    "path": "End of Life\\AZURE_REVIEW_PROCESS.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "dragonball"
+    ]
+  },
+  {
+    "path": "End of Life\\AZURE_VALIDATION_SUMMARY.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "End of Life\\azure_vm101_final_consensus.py",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "End of Life\\azure_vm101_three_agent_consensus.py",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "End of Life\\azure_vm101_v1_deployment_review.py",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "End of Life\\azure_vm101_zencoder_gpt41_review.py",
+    "keywords": [
+      "vm101",
+      "vm100",
+      "control node"
+    ]
+  },
+  {
+    "path": "End of Life\\BATCH-ZENCODER-IMPLEMENTATION-SUMMARY.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\batch_azure_review_all_repos.py",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\check_azure_review_status.py",
+    "keywords": [
+      "goku",
+      "shenron"
+    ]
+  },
+  {
+    "path": "End of Life\\CLEANUP_AFTER_EXTENSION_UNINSTALL.md",
+    "keywords": [
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "End of Life\\cleanup_remaining_items.py",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "End of Life\\CODE_AGENT_CHANGES_LOG.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\CODE_AGENT_EXECUTION_SUMMARY.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\CODE_AGENT_RESPONSE.txt",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\CODE_REVIEW_REPORT.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\compiled_analysis_20251121_183930.json",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "End of Life\\compiled_analysis_20251121_184250.json",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "End of Life\\compiled_analysis_20251121_204014.json",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "End of Life\\compiled_analysis_20251121_204248.json",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "End of Life\\COMPILED_RESULTS_READY_TO_USE.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "End of Life\\COMPREHENSIVE-INFRASTRUCTURE-SUMMARY.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "vm100",
+      "vm101",
+      "<VM100_IP>",
+      "<VM101_IP>",
+      "lm studio",
+      "personalities",
+      "control node"
+    ]
+  },
+  {
+    "path": "End of Life\\COMPREHENSIVE-REPO-ANALYSIS-PLAN.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\COMPREHENSIVE_ANALYSIS_FEATURE.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\comprehensive_issues_log.json",
+    "keywords": [
+      "goku",
+      "shenron",
+      "vm100",
+      "<VM100_IP>"
+    ]
+  },
+  {
+    "path": "End of Life\\comprehensive_issues_summary.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "End of Life\\continue_azure_review.py",
+    "keywords": [
+      "goku",
+      "shenron",
+      "dragonball",
+      "dragon ball",
+      "vm100",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "End of Life\\CURRENT-STATUS-AND-NEXT-ACTIONS.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\Dell-Server-Roadmap-CODE-AGENT-ANALYSIS.json",
+    "keywords": [
+      "shenron",
+      "vm100",
+      "vm101",
+      "lm-studio"
+    ]
+  },
+  {
+    "path": "End of Life\\Dell-Server-Roadmap-CODE-AGENT-ANALYSIS.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "End of Life\\Dell-Server-Roadmap-ITERATION-2-FINAL-CONSENSUS.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "End of Life\\enterprise_standards.json",
+    "keywords": [
+      "goku",
+      "shenron",
+      "dragonball",
+      "vm100"
+    ]
+  },
+  {
+    "path": "End of Life\\EOL_CANDIDATES_ANALYSIS.json",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "End of Life\\EOL_FILES_IDENTIFIED.json",
+    "keywords": [
+      "goku",
+      "vm101"
+    ]
+  },
+  {
+    "path": "End of Life\\execute_enterprise_reorganization.py",
+    "keywords": [
+      "goku",
+      "shenron"
+    ]
+  },
+  {
+    "path": "End of Life\\find_all_goku_files.py",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\fix_results_20251121_200110.json",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "End of Life\\generate_all_zencoder_prompts.py",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\generate_master_batch_summary.py",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\generate_reorganization_plan.py",
+    "keywords": [
+      "goku",
+      "shenron"
+    ]
+  },
+  {
+    "path": "End of Life\\GENERIC-3-AGENT-SCRIPTS-EXPLANATION.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\GITHUB_DIRECTORY_COMPLETE_AUDIT_REPORT.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\GITHUB_DIRECTORY_PRODUCTION_READINESS_AUDIT.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\github_scan_results.json",
+    "keywords": [
+      "goku",
+      "shenron",
+      "vm100",
+      "vm101",
+      "lm-studio"
+    ]
+  },
+  {
+    "path": "End of Life\\GOKU-AI-FILES-DISCOVERY.json",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\GOKU-AI-FILES-DISCOVERY.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\Goku.AI-AZURE-CONSENSUS.json",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\Goku.AI-AZURE-CONSENSUS.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\Goku.AI-AZURE-REVIEW.json",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\Goku.AI-AZURE-REVIEW.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\Goku.AI-CODE-AGENT-ANALYSIS.json",
+    "keywords": [
+      "goku",
+      "shenron"
+    ]
+  },
+  {
+    "path": "End of Life\\Goku.AI-CODE-AGENT-ANALYSIS.md",
+    "keywords": [
+      "goku",
+      "shenron"
+    ]
+  },
+  {
+    "path": "End of Life\\Goku.AI-FINAL-CONSENSUS.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\Goku.AI-ITERATION-1-COMPILED-CHANGES.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\Goku.AI-ITERATION-1-FINAL-CONSENSUS.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\Goku.AI-REVIEW-AGENT-VALIDATION.json",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\Goku.AI-REVIEW-AGENT-VALIDATION.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\Goku.AI-ZENCODER-IMPLEMENTATION.json",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\identify_eol_files.py",
+    "keywords": [
+      "goku",
+      "vm101"
+    ]
+  },
+  {
+    "path": "End of Life\\init_missing_repos.py",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\MASTER-COMPILED-CONSENSUS.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\MASTER-ITERATIVE-IMPROVEMENT-GUIDE.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\MASTER-PROMPT-SECTION-17-IMPROVED.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\MASTER-REPO-ANALYSIS-TRACKER.md",
+    "keywords": [
+      "goku",
+      "vm101"
+    ]
+  },
+  {
+    "path": "End of Life\\MASTER-REPO-IMPROVEMENT-RESULTS.json",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\master_repo_improvement_orchestrator.py",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\move_approved_eol_files.py",
+    "keywords": [
+      "goku",
+      "vm101"
+    ]
+  },
+  {
+    "path": "End of Life\\MULTI-MACHINE-GIT-BEST-PRACTICES.md",
+    "keywords": [
+      "shenron",
+      "vm100",
+      "vm101",
+      "lm studio",
+      "control node"
+    ]
+  },
+  {
+    "path": "End of Life\\MULTI_AGENT_REORGANIZATION_README.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "dragonball",
+      "vm100"
+    ]
+  },
+  {
+    "path": "End of Life\\multi_agent_system.py",
+    "keywords": [
+      "goku",
+      "shenron"
+    ]
+  },
+  {
+    "path": "End of Life\\MULTI_AGENT_SYSTEM_SUMMARY.md",
+    "keywords": [
+      "goku",
+      "shenron"
+    ]
+  },
+  {
+    "path": "End of Life\\NEXT-STEPS-QUICK-REFERENCE.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\PASTE-THIS-INTO-ZENCODER-REVIEW-AGENT.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\phase1_fast_validate.py",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\phase2_execute_batch.py",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\phase3_testing.py",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\phase4_consolidation.py",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\phased_execution_log.json",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "End of Life\\PHASE_1_COMPLETE.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\PHASE_1_VALIDATION_REPORT.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\PHASE_2_COMPLETE.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\PHASE_2_EXECUTION_REPORT.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\PHASE_3_COMPLETE.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\PHASE_3_TESTING_REPORT.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\PHASE_3_TESTING_RESULTS.json",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\PHASE_4_COMPLETE.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\prioritized_fix_plan.json",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "End of Life\\QC_SCORE_IMPROVEMENTS.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\README_V1.0.0_AZURE_VALIDATION.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "End of Life\\read_files.py",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "End of Life\\read_files_binary.py",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "End of Life\\read_files_safe.py",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "End of Life\\read_files_utf8.py",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "End of Life\\REPO-ANALYSIS-RESULTS-SUMMARY.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\REPO-DISCOVERY-RESULTS.json",
+    "keywords": [
+      "goku",
+      "shenron"
+    ]
+  },
+  {
+    "path": "End of Life\\ROLLBACK_BATCH.py",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\run_all_repos_3_agent_process.py",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\run_azure_review.ps1",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "End of Life\\Scalpstorm-CODE-AGENT-ANALYSIS.json",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "End of Life\\Scalpstorm-CODE-AGENT-ANALYSIS.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "End of Life\\scan_github_account.py",
+    "keywords": [
+      "goku",
+      "shenron"
+    ]
+  },
+  {
+    "path": "End of Life\\SECURITY_AUDIT_REPORT.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\STEP-BY-STEP-EXECUTION-GUIDE.md",
+    "keywords": [
+      "goku",
+      "vm101"
+    ]
+  },
+  {
+    "path": "End of Life\\tmpfile1.txt",
+    "keywords": [
+      "vm101",
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "End of Life\\V1.0.0_AZURE_RELEASE_COMPLETE.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "End of Life\\V1.0.0_RELEASE_RUN_SUMMARY.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "End of Life\\validate_phase1.py",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\validate_scripts.py",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "End of Life\\validate_scripts2.py",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "End of Life\\validation_results_20251121_185847.json",
+    "keywords": [
+      "goku",
+      "shenron"
+    ]
+  },
+  {
+    "path": "End of Life\\validation_results_20251121_191547.json",
+    "keywords": [
+      "goku",
+      "shenron"
+    ]
+  },
+  {
+    "path": "End of Life\\validation_summary.txt",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\VM100-vs-VM101-COMMANDS.md",
+    "keywords": [
+      "vm100",
+      "vm101",
+      "goku",
+      "shenron",
+      "<VM100_IP>",
+      "<VM101_IP>",
+      "lm studio",
+      "control node"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-BACKUP-COMPLETED.md",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-CHECK-TASK-1.1-ERROR.md",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-CLEANUP-COMMANDS.md",
+    "keywords": [
+      "vm101",
+      "vm100",
+      "<VM100_IP>"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-CODE-SERVER-FINAL-SETUP.md",
+    "keywords": [
+      "vm101",
+      "<VM101_IP>",
+      "control node"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-CODE-SERVER-PASSWORD-RETRIEVAL.md",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-CODE-SERVER-PASSWORD-VERIFY.md",
+    "keywords": [
+      "vm101",
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-CODE-SERVER-PORT-SELECTION.md",
+    "keywords": [
+      "vm101",
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-CODE-SERVER-SECURE-PASSWORD.md",
+    "keywords": [
+      "vm101",
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-CODE-SERVER-SETUP-9001.sh",
+    "keywords": [
+      "vm101",
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-CODE-SERVER-SETUP-COMPLETE.md",
+    "keywords": [
+      "vm101",
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-CONTROL-NODE-SECURITY-ANALYSIS.md",
+    "keywords": [
+      "vm101",
+      "goku",
+      "vm100",
+      "<VM100_IP>",
+      "<VM101_IP>",
+      "control node"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-COPY-SCRIPT-TO-VM101.md",
+    "keywords": [
+      "vm101",
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-DIAGNOSE-TASK-FAILURES.md",
+    "keywords": [
+      "vm101",
+      "vm100"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-DOCKER-FIX.md",
+    "keywords": [
+      "vm101",
+      "control node"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-DOCKER-SETUP.md",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-DOCKER-TROUBLESHOOTING.md",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-FIX-LINE-ENDINGS.sh",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-FOLLOWUP-COMMANDS.md",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-GIT-LARGE-DIFF-HANDLING.md",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-GIT-LOCAL-CHANGES-REVIEW.md",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-GIT-MASSIVE-DIFF-ANALYSIS.md",
+    "keywords": [
+      "vm101",
+      "shenron"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-GIT-QUICK-ANALYSIS.sh",
+    "keywords": [
+      "vm101",
+      "shenron"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-GIT-REPO-SYNC-GUIDE.md",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-INFO-GATHERING-COMMANDS.sh",
+    "keywords": [
+      "vm101",
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-KEY-MIGRATION-GUIDE.md",
+    "keywords": [
+      "vm101",
+      "goku",
+      "shenron",
+      "vm100",
+      "<VM100_IP>"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-MIGRATION-EXECUTION-GUIDE.md",
+    "keywords": [
+      "vm101",
+      "goku",
+      "shenron",
+      "vm100",
+      "<VM100_IP>",
+      "control node"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-MIGRATION-SUMMARY.md",
+    "keywords": [
+      "vm101",
+      "goku",
+      "shenron",
+      "vm100",
+      "<VM100_IP>",
+      "<VM101_IP>",
+      "lm studio",
+      "control node"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-NEXT-STEP-QUICK-REFERENCE.md",
+    "keywords": [
+      "vm101",
+      "vm100",
+      "<VM100_IP>"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-PORT-CONFIGURATION.md",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-QUICK-COMMANDS.md",
+    "keywords": [
+      "vm101",
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-REMOVE-SECONDARY-IP.md",
+    "keywords": [
+      "vm101",
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-SECURITY-HARDENING-CHECKLIST.md",
+    "keywords": [
+      "vm101",
+      "vm100",
+      "control node"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-SECURITY-VERIFICATION-RESULTS.md",
+    "keywords": [
+      "vm101",
+      "vm100",
+      "<VM100_IP>",
+      "<VM101_IP>",
+      "control node"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-SEPARATE-KEYS-SETUP.sh",
+    "keywords": [
+      "vm101",
+      "goku",
+      "vm100",
+      "<VM100_IP>"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-SNAPSHOT-VFIO-ERROR-FIX.md",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-SSH-2FA-WITH-SMS-GUIDE.md",
+    "keywords": [
+      "vm101",
+      "shenron",
+      "<VM101_IP>",
+      "control node"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-SSH-KEY-SECURITY-ANALYSIS.md",
+    "keywords": [
+      "vm101",
+      "goku",
+      "shenron",
+      "vm100",
+      "<VM100_IP>",
+      "lm studio",
+      "control node"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-SSH-KEY-SETUP.md",
+    "keywords": [
+      "vm101",
+      "goku",
+      "vm100",
+      "<VM100_IP>"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-SSH-TEST-COMMANDS.sh",
+    "keywords": [
+      "vm101",
+      "vm100",
+      "<VM100_IP>"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-SSH-TROUBLESHOOTING.md",
+    "keywords": [
+      "vm101",
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-SYNC-ALL-REPOS-FROM-GITHUB.sh",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-SYNC-FROM-GITHUB.sh",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-v1.0.0-APPROVAL-REQUIREMENTS.md",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-v1.0.0-COMPLETE-WORK-SUMMARY.md",
+    "keywords": [
+      "vm101",
+      "vm100"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-v1.0.0-EXECUTION-START.md",
+    "keywords": [
+      "vm101",
+      "vm100",
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-v1.0.0-STATUS-SUMMARY.md",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-v1.0.0-THREE-AGENT-CONSENSUS-PROCESS.md",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-VERIFICATION-COMMANDS.md",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-VM100-COMMUNICATION-ARCHITECTURE.md",
+    "keywords": [
+      "vm100",
+      "vm101",
+      "goku",
+      "shenron",
+      "<VM100_IP>",
+      "<VM101_IP>",
+      "lm studio",
+      "control node"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-VM100-SECURITY-ISOLATION.md",
+    "keywords": [
+      "vm100",
+      "vm101",
+      "shenron",
+      "<VM100_IP>",
+      "<VM101_IP>",
+      "lm studio",
+      "control node"
+    ]
+  },
+  {
+    "path": "End of Life\\VM101-ZENCODER-FIXES-APPLIED.md",
+    "keywords": [
+      "vm101",
+      "vm100",
+      "<VM100_IP>"
+    ]
+  },
+  {
+    "path": "End of Life\\ZENCODER-CODE-AGENT-V1.0.0-DEPLOYMENT-TASKS.md",
+    "keywords": [
+      "vm100",
+      "vm101"
+    ]
+  },
+  {
+    "path": "End of Life\\ZENCODER-COMPLETE-WORKFLOW.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\ZENCODER-MANUAL-IMPLEMENTATION-GUIDE.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\ZENCODER-MASTER-IMPLEMENTATION-SUMMARY.json",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\ZENCODER-NEXT-STEPS-INSTRUCTIONS.md",
+    "keywords": [
+      "vm100",
+      "vm101",
+      "<VM100_IP>"
+    ]
+  },
+  {
+    "path": "End of Life\\ZENCODER-PROMPTS-ENHANCEMENT-SUMMARY.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\ZENCODER-REVIEW-AGENT-PROMPT.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\ZENCODER-REVIEW-AGENT-VALIDATION-REPORT.md",
+    "keywords": [
+      "vm100",
+      "vm101",
+      "<VM100_IP>"
+    ]
+  },
+  {
+    "path": "End of Life\\ZENCODER-REVIEW-AGENT-VALIDATION-REQUEST.md",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "End of Life\\ZENCODER-REVIEW-FIXED-SCRIPT-PROMPT.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "End of Life\\ZENCODER-VM101-MIGRATION-REVIEW-REQUEST.md",
+    "keywords": [
+      "vm101",
+      "goku",
+      "shenron",
+      "vm100",
+      "<VM100_IP>",
+      "<VM101_IP>",
+      "lm studio",
+      "control node"
+    ]
+  },
+  {
+    "path": "End of Life\\ZENCODER-VM101-SECURITY-REVIEW-REPORT.md",
+    "keywords": [
+      "vm101",
+      "goku",
+      "vm100",
+      "<VM100_IP>",
+      "control node"
+    ]
+  },
+  {
+    "path": "PassiveIncome\\INFRASTRUCTURE-REFERENCE.md",
+    "keywords": [
+      "vm101",
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "PassiveIncome\\INFRASTRUCTURE.md",
+    "keywords": [
+      "vm101",
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "PassiveIncome\\PORT-ALLOCATION.md",
+    "keywords": [
+      "vm101",
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "PassiveIncome\\README.md",
+    "keywords": [
+      "vm101",
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "ScalpStorm\\config.py",
+    "keywords": [
+      "shenron",
+      "<VM100_IP>"
+    ]
+  },
+  {
+    "path": "ScalpStorm\\QA_REVIEW_COMPREHENSIVE_V1.0.0.md",
+    "keywords": [
+      "shenron",
+      "<VM100_IP>"
+    ]
+  },
+  {
+    "path": "VM101-DEPLOYMENT-PACKAGE-v1.0.0\\DEPLOYMENT-EXECUTION-GUIDE.md",
+    "keywords": [
+      "vm101",
+      "goku",
+      "vm100",
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "VM101-DEPLOYMENT-PACKAGE-v1.0.0\\MASTER-DEPLOYMENT-EXECUTOR.sh",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "VM101-DEPLOYMENT-PACKAGE-v1.0.0\\PACKAGE-MANIFEST.txt",
+    "keywords": [
+      "vm101",
+      "goku",
+      "vm100"
+    ]
+  },
+  {
+    "path": "VM101-DEPLOYMENT-PACKAGE-v1.0.0\\POST-DEPLOYMENT-CHECKLIST.md",
+    "keywords": [
+      "vm101",
+      "goku",
+      "vm100",
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "VM101-DEPLOYMENT-PACKAGE-v1.0.0\\QC-VERIFY-ALL.sh",
+    "keywords": [
+      "vm101",
+      "goku",
+      "vm100"
+    ]
+  },
+  {
+    "path": "VM101-DEPLOYMENT-PACKAGE-v1.0.0\\README.md",
+    "keywords": [
+      "vm101",
+      "vm100",
+      "control node"
+    ]
+  },
+  {
+    "path": "VM101-DEPLOYMENT-PACKAGE-v1.0.0\\ROLLBACK.sh",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "VM101-DEPLOYMENT-PACKAGE-v1.0.0\\TASK-1.1-EXECUTE-SETUP.sh",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "VM101-DEPLOYMENT-PACKAGE-v1.0.0\\TASK-1.2-DEPLOY-KEYS-LINUX.sh",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "VM101-DEPLOYMENT-PACKAGE-v1.0.0\\TASK-1.3-TEST-WINDOWS.sh",
+    "keywords": [
+      "vm101",
+      "goku",
+      "vm100",
+      "<VM100_IP>"
+    ]
+  },
+  {
+    "path": "VM101-DEPLOYMENT-PACKAGE-v1.0.0\\TASK-1.4-VERIFY-SERVICES.sh",
+    "keywords": [
+      "vm101",
+      "goku",
+      "vm100"
+    ]
+  },
+  {
+    "path": "VM101-DEPLOYMENT-PACKAGE-v1.0.0\\TASK-1.5-SETUP-MONITORING.sh",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "VM101-DEPLOYMENT-PACKAGE-v1.0.0\\TROUBLESHOOTING-GUIDE.md",
+    "keywords": [
+      "vm101",
+      "goku",
+      "vm100"
+    ]
+  },
+  {
+    "path": "VM101-DEPLOYMENT-PACKAGE-v1.0.0\\vm-config.json",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "VM101-DEPLOYMENT-PACKAGE-v1.0.0\\VM101-v1.0.0-RELEASE-NOTES.md",
+    "keywords": [
+      "vm101",
+      "goku",
+      "vm100",
+      "control node"
+    ]
+  },
+  {
+    "path": "ScalpStorm\\ai_integration\\shenron_reporter.py",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "ScalpStorm\\docs\\technical-docs\\workflow.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "PassiveIncome\\Discord-Bot-Services\\VERSION-CONTROL.md",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "PassiveIncome\\Game-Server-Hosting\\VERSION-CONTROL.md",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "PassiveIncome\\WordPress-VM\\EOL_Archive\\CURRENT-STATE.md",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "PassiveIncome\\WordPress-VM\\EOL_Archive\\wordpress-stripe-integration-complete.md",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "Marketing-Automation\\Marketing-Automation\\PASSIVEINCOME-CLEANUP-GUIDE.md",
+    "keywords": [
+      "vm101",
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "Marketing-Automation\\Marketing-Automation\\public-repos\\PassiveIncome-Public-README.md",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "Goku.AI\\docs\\MODEL_TRAINING.md",
+    "keywords": [
+      "goku"
+    ]
+  },
+  {
+    "path": "Goku.AI\\shenron-ultra-instinct\\phase1\\mcp_tools.py",
+    "keywords": [
+      "goku",
+      "shenron",
+      "vm100",
+      "vm101",
+      "<VM100_IP>",
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "Goku.AI\\shenron-ultra-instinct\\phase1\\mcp_tools.py.bak",
+    "keywords": [
+      "goku",
+      "shenron"
+    ]
+  },
+  {
+    "path": "Goku.AI\\shenron-ultra-instinct\\phase1\\shenron_api_v5_mcp.py",
+    "keywords": [
+      "goku",
+      "shenron",
+      "vm100",
+      "vm101",
+      "<VM100_IP>",
+      "<VM101_IP>",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\docs\\ADMIN-AI-INFRASTRUCTURE-GUIDE.md",
+    "keywords": [
+      "vm100",
+      "vm101"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\docs\\beta-pricing-table.md",
+    "keywords": [
+      "vm100",
+      "vm101"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\docs\\chat-history-transfer.md",
+    "keywords": [
+      "vm101",
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\docs\\COPY-TO-DEV-AI-CHAT.md",
+    "keywords": [
+      "vm100",
+      "vm101"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\docs\\current-status.md",
+    "keywords": [
+      "<VM100_IP>"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\docs\\dev-chat-message.md",
+    "keywords": [
+      "vm100",
+      "vm101"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\docs\\enterprise-network-implementation.md",
+    "keywords": [
+      "vm100",
+      "vm101"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\docs\\GITHUB-REPOS-FINAL-STATUS-2025-11-04.md",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\docs\\server-infrastructure-documentation.md",
+    "keywords": [
+      "goku",
+      "shenron",
+      "vm100",
+      "<VM100_IP>",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\docs\\SHENRON-SYNDICATE-COMPLETE-DOCUMENTATION.md",
+    "keywords": [
+      "shenron",
+      "goku",
+      "vm100",
+      "<VM100_IP>",
+      "lm studio",
+      "personalities"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\docs\\SHENRON-SYNDICATE-REPOSITORY-RESTRUCTURE-AI-COLLAB.md",
+    "keywords": [
+      "shenron",
+      "vm101",
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\docs\\SHENRON-V3-COMPLETE-DOCUMENTATION.md",
+    "keywords": [
+      "shenron",
+      "goku",
+      "vm100",
+      "<VM100_IP>",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\docs\\SSH-KEYS-BACKUP.md",
+    "keywords": [
+      "vm101",
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\docs\\vm-101-final-setup-steps.md",
+    "keywords": [
+      "vm101",
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\docs\\vm-101-quick-start.md",
+    "keywords": [
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\docs\\vm-101-setup-guide.md",
+    "keywords": [
+      "vm101",
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\docs\\VM-COMPLETE-SPECIFICATIONS.md",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\docs\\wordpress-stripe-integration-complete.md",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\knowledge-base\\knowledge-advanced-steganography-2025.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\knowledge-base\\knowledge-bitcoin-challenge-puzzles-advanced-2025.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\knowledge-base\\knowledge-blockchain-forensics-2025.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\knowledge-base\\knowledge-crypto-puzzles-comprehensive-2025.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\knowledge-base\\knowledge-gpu-bip39-acceleration-2025.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\knowledge-base\\knowledge-trithemius-cipher-puzzle.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\knowledge-base\\shenron-current-hardware-config-2025-11-06.md",
+    "keywords": [
+      "shenron",
+      "goku",
+      "vm100",
+      "<VM100_IP>",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\Marketing-Automation\\PASSIVEINCOME-CLEANUP-GUIDE.md",
+    "keywords": [
+      "vm101",
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\quest-system\\deploy-quest-manager.ps1",
+    "keywords": [
+      "goku",
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\quest-system\\quest_api.py",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\quest-system\\quest_manager.py",
+    "keywords": [
+      "goku",
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\scripts\\Auto-Load-LMStudio-Models.ps1",
+    "keywords": [
+      "goku",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\scripts\\pterodactyl-automation.sh",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\scripts\\Setup-LMStudio-AutoLoad.ps1",
+    "keywords": [
+      "goku",
+      "shenron",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\scripts\\SHENRON-FULL-INJECTION.ps1",
+    "keywords": [
+      "shenron",
+      "goku",
+      "vm100"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\scripts\\shenron-income-dashboard.py",
+    "keywords": [
+      "shenron",
+      "goku"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\scripts\\sync-all-repos-to-vm101.sh",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\scripts\\vm-101-complete-setup.sh",
+    "keywords": [
+      "vm101",
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\scripts\\wordpress-multi-tenant-automation.sh",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\shenron-v3-deployment\\1-Install-Python-Packages.ps1",
+    "keywords": [
+      "shenron",
+      "goku",
+      "vm100"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\shenron-v3-deployment\\2-Ingest-Knowledge-Base.py",
+    "keywords": [
+      "shenron",
+      "goku"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\shenron-v3-deployment\\3-shenron-orchestrator.py",
+    "keywords": [
+      "shenron",
+      "goku",
+      "<VM100_IP>"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\shenron-v3-deployment\\4-shenron-api-server.py",
+    "keywords": [
+      "shenron",
+      "<VM100_IP>"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\shenron-v3-deployment\\api-v3.php",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\shenron-v3-deployment\\DEPLOY-SHENRON-V3.md",
+    "keywords": [
+      "shenron",
+      "goku",
+      "vm100",
+      "<VM100_IP>",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\shenron-v3-deployment\\README.md",
+    "keywords": [
+      "shenron",
+      "goku",
+      "vm100",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\shenron-v3-deployment\\SHENRON-V3-READY.md",
+    "keywords": [
+      "shenron",
+      "goku",
+      "vm100",
+      "<VM100_IP>",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\shenron-v3-deployment\\shenron_orchestrator.py",
+    "keywords": [
+      "shenron",
+      "goku",
+      "<VM100_IP>",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\trading-bot\\trading_bot_production.py",
+    "keywords": [
+      "shenron",
+      "<VM100_IP>"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\web\\shenron-ui\\api.php",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\web\\shenron-ui\\index.html",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\web\\shenron-ui\\script-fixed.js",
+    "keywords": [
+      "shenron",
+      "goku",
+      "dragonball",
+      "dragon ball",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\web\\shenron-ui\\style.css",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\shenron-ultra-instinct\\phase1\\DEPLOY-PHASE1.md",
+    "keywords": [
+      "shenron",
+      "goku",
+      "vm100",
+      "<VM100_IP>",
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\shenron-ultra-instinct\\phase1\\mcp_tools.py",
+    "keywords": [
+      "shenron",
+      "goku",
+      "<VM100_IP>",
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\shenron-ultra-instinct\\phase1\\requirements-phase1.txt",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\shenron-ultra-instinct\\phase1\\shenron_api_v5_mcp.py",
+    "keywords": [
+      "shenron",
+      "goku",
+      "vm100",
+      "vm101",
+      "<VM100_IP>",
+      "<VM101_IP>",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\Marketing-Automation\\public-repos\\PassiveIncome-Public-README.md",
+    "keywords": [
+      "vm101"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\backend\\shenron\\shenron-v4-api-server.py",
+    "keywords": [
+      "shenron",
+      "goku",
+      "<VM100_IP>",
+      "lm studio"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\backend\\shenron\\shenron_v4_orchestrator.py",
+    "keywords": [
+      "shenron",
+      "goku",
+      "dragon ball",
+      "<VM100_IP>"
+    ]
+  },
+  {
+    "path": "Dell-Server-Roadmap\\backend\\shenron\\start-shenron-api.ps1",
+    "keywords": [
+      "shenron",
+      "goku"
+    ]
+  },
+  {
+    "path": "BitPhoenix\\docs\\154_PERCENT_QUALITY_RESTORED.md",
+    "keywords": [
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "BitPhoenix\\docs\\CORRECTED_QUALITY_ASSESSMENT.md",
+    "keywords": [
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "BitPhoenix\\docs\\DEPLOYMENT_INSTRUCTIONS.md",
+    "keywords": [
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "BitPhoenix\\docs\\ISSUES_CONFIRMED_AND_FIXED_REPORT.md",
+    "keywords": [
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "BitPhoenix\\docs\\ORGANIZATION_REPORT.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "BitPhoenix\\docs\\repo.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "BitPhoenix\\scripts\\deployment_scripts\\test-ssh-connectivity.ps1",
+    "keywords": [
+      "<VM101_IP>"
+    ]
+  },
+  {
+    "path": "BitPhoenix\\docs\\technical-docs\\all-your-ai-services.md",
+    "keywords": [
+      "shenron",
+      "<VM100_IP>"
+    ]
+  },
+  {
+    "path": "BitPhoenix\\docs\\technical-docs\\cursor-integration-explained.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "BitPhoenix\\docs\\technical-docs\\mcp-servers-explained.md",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "BitPhoenix\\backend\\shenron\\shenron-v4-api-server.py",
+    "keywords": [
+      "shenron"
+    ]
+  },
+  {
+    "path": "BitPhoenix\\backend\\shenron\\shenron_v4_orchestrator.py",
+    "keywords": [
+      "shenron",
+      "goku",
+      "dragon ball",
+      "<VM100_IP>"
+    ]
+  }
+]

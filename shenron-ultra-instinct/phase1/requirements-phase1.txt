@@ -1,0 +1,22 @@
+# SHENRON Ultra Instinct - Phase 1 Dependencies
+# MCP Tools: File & Terminal Operations
+
+# SSH/Remote execution
+paramiko>=3.4.0
+
+# Web framework
+flask>=3.0.0
+flask-cors>=4.0.0
+
+# HTTP requests
+requests>=2.31.0
+
+# JSON handling (built-in, but specify for clarity)
+# json (built-in)
+
+# Date/time (built-in)
+# datetime (built-in)
+
+# Type hints (built-in in Python 3.5+)
+# typing (built-in)
+

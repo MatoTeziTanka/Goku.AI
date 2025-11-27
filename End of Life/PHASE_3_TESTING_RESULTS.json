@@ -1,0 +1,415 @@
+{
+  "timestamp": "2025-11-26T05:33:06.220778+00:00",
+  "phase": "Phase 3 - Testing",
+  "repositories": {
+    "BitPhoenix": {
+      "name": "BitPhoenix",
+      "path": "C:\\Users\\sethp\\Documents\\Github\\BitPhoenix",
+      "status": "FAILED",
+      "project_types": [
+        "python",
+        "github_workflows"
+      ],
+      "tests": {
+        "python_linting": {
+          "passed": false,
+          "issues": 0,
+          "tests": {}
+        },
+        "security_scanning": {
+          "passed": true,
+          "issues": 0,
+          "tests": {
+            "env_.env.example": {
+              "passed": true
+            }
+          }
+        },
+        "yaml_validation": {
+          "passed": true,
+          "issues": 0,
+          "tests": {
+            "security.yml": {
+              "passed": true
+            }
+          }
+        }
+      }
+    },
+    "Dell-Server-Roadmap": {
+      "name": "Dell-Server-Roadmap",
+      "path": "C:\\Users\\sethp\\Documents\\Github\\Dell-Server-Roadmap",
+      "status": "PASSED",
+      "project_types": [
+        "github_workflows"
+      ],
+      "tests": {
+        "security_scanning": {
+          "passed": true,
+          "issues": 0,
+          "tests": {
+            "env_.env.example": {
+              "passed": true
+            }
+          }
+        },
+        "yaml_validation": {
+          "passed": true,
+          "issues": 0,
+          "tests": {
+            "ci.yml": {
+              "passed": true
+            }
+          }
+        }
+      }
+    },
+    "Dino-Cloud": {
+      "name": "Dino-Cloud",
+      "path": "C:\\Users\\sethp\\Documents\\Github\\Dino-Cloud",
+      "status": "PASSED",
+      "project_types": [
+        "github_workflows"
+      ],
+      "tests": {
+        "security_scanning": {
+          "passed": true,
+          "issues": 0,
+          "tests": {
+            "env_.env.example": {
+              "passed": true
+            }
+          }
+        },
+        "yaml_validation": {
+          "passed": true,
+          "issues": 0,
+          "tests": {
+            "ci.yml": {
+              "passed": true
+            }
+          }
+        }
+      }
+    },
+    "DinoCloud": {
+      "name": "DinoCloud",
+      "path": "C:\\Users\\sethp\\Documents\\Github\\DinoCloud",
+      "status": "PASSED",
+      "project_types": [
+        "github_workflows"
+      ],
+      "tests": {
+        "security_scanning": {
+          "passed": true,
+          "issues": 0,
+          "tests": {
+            "env_.env.example": {
+              "passed": true
+            }
+          }
+        },
+        "yaml_validation": {
+          "passed": true,
+          "issues": 0,
+          "tests": {
+            "ci.yml": {
+              "passed": true
+            }
+          }
+        }
+      }
+    },
+    "FamilyFork": {
+      "name": "FamilyFork",
+      "path": "C:\\Users\\sethp\\Documents\\Github\\FamilyFork",
+      "status": "PASSED",
+      "project_types": [
+        "github_workflows"
+      ],
+      "tests": {
+        "security_scanning": {
+          "passed": true,
+          "issues": 0,
+          "tests": {
+            "env_.env.example": {
+              "passed": true
+            },
+            "env_.env": {
+              "passed": false,
+              "warning": "Possible real secrets in env file"
+            }
+          }
+        },
+        "yaml_validation": {
+          "passed": true,
+          "issues": 0,
+          "tests": {
+            "ci.yml": {
+              "passed": true
+            }
+          }
+        }
+      }
+    },
+    "GSMG.IO": {
+      "name": "GSMG.IO",
+      "path": "C:\\Users\\sethp\\Documents\\Github\\GSMG.IO",
+      "status": "FAILED",
+      "project_types": [
+        "python",
+        "github_workflows"
+      ],
+      "tests": {
+        "python_linting": {
+          "passed": false,
+          "issues": 0,
+          "tests": {
+            "pylint": {
+              "exit_code": 1,
+              "output": "(no output)",
+              "passed": true
+            },
+            "mypy": {
+              "exit_code": 1,
+              "output": "(no output)",
+              "passed": true
+            }
+          }
+        },
+        "security_scanning": {
+          "passed": true,
+          "issues": 0,
+          "tests": {
+            "bandit": {
+              "exit_code": 1,
+              "passed": false,
+              "output": "(no output)"
+            },
+            "env_.env.example": {
+              "passed": true
+            }
+          }
+        },
+        "yaml_validation": {
+          "passed": true,
+          "issues": 0,
+          "tests": {
+            "ci.yml": {
+              "passed": true
+            }
+          }
+        }
+      }
+    },
+    "Goku.AI": {
+      "name": "Goku.AI",
+      "path": "C:\\Users\\sethp\\Documents\\Github\\Goku.AI",
+      "status": "FAILED",
+      "project_types": [
+        "python",
+        "github_workflows"
+      ],
+      "tests": {
+        "python_linting": {
+          "passed": false,
+          "issues": 0,
+          "tests": {
+            "pylint": {
+              "exit_code": 1,
+              "output": "(no output)",
+              "passed": true
+            },
+            "mypy": {
+              "exit_code": 1,
+              "output": "(no output)",
+              "passed": true
+            }
+          }
+        },
+        "security_scanning": {
+          "passed": true,
+          "issues": 0,
+          "tests": {
+            "bandit": {
+              "exit_code": 1,
+              "passed": false,
+              "output": "(no output)"
+            }
+          }
+        },
+        "yaml_validation": {
+          "passed": true,
+          "issues": 0,
+          "tests": {
+            "ci.yml": {
+              "passed": true
+            }
+          }
+        }
+      }
+    },
+    "Keyhound": {
+      "name": "Keyhound",
+      "path": "C:\\Users\\sethp\\Documents\\Github\\Keyhound",
+      "status": "FAILED",
+      "project_types": [
+        "python",
+        "python",
+        "python",
+        "github_workflows"
+      ],
+      "tests": {
+        "python_linting": {
+          "passed": false,
+          "issues": 0,
+          "tests": {
+            "pylint": {
+              "exit_code": 1,
+              "output": "(no output)",
+              "passed": true
+            },
+            "mypy": {
+              "exit_code": 1,
+              "output": "(no output)",
+              "passed": true
+            }
+          }
+        },
+        "security_scanning": {
+          "passed": true,
+          "issues": 0,
+          "tests": {
+            "bandit": {
+              "exit_code": 1,
+              "passed": false,
+              "output": "(no output)"
+            },
+            "env_.env.example": {
+              "passed": true
+            }
+          }
+        },
+        "yaml_validation": {
+          "passed": false,
+          "issues": 1,
+          "tests": {
+            "add-to-project.yml": {
+              "passed": true
+            },
+            "ci-disabled.yml": {
+              "passed": true
+            },
+            "ci-minimal.yml": {
+              "passed": true
+            },
+            "ci-simple-disabled.yml": {
+              "passed": false,
+              "error": "expected '<document start>', but found '<block mapping start>'\n  in \"C:\\Users\\sethp\\Documents\\Github"
+            }
+          }
+        }
+      }
+    },
+    "Scalpstorm": {
+      "name": "Scalpstorm",
+      "path": "C:\\Users\\sethp\\Documents\\Github\\Scalpstorm",
+      "status": "FAILED",
+      "project_types": [
+        "python",
+        "python",
+        "github_workflows"
+      ],
+      "tests": {
+        "python_linting": {
+          "passed": false,
+          "issues": 0,
+          "tests": {
+            "pylint": {
+              "exit_code": 1,
+              "output": "(no output)",
+              "passed": true
+            },
+            "mypy": {
+              "exit_code": 1,
+              "output": "(no output)",
+              "passed": true
+            }
+          }
+        },
+        "security_scanning": {
+          "passed": true,
+          "issues": 0,
+          "tests": {
+            "bandit": {
+              "exit_code": 1,
+              "passed": false,
+              "output": "(no output)"
+            },
+            "env_.env.example": {
+              "passed": true
+            }
+          }
+        },
+        "yaml_validation": {
+          "passed": true,
+          "issues": 0,
+          "tests": {
+            "ci.yml": {
+              "passed": true
+            },
+            "development-lifecycle.yml": {
+              "passed": true
+            },
+            "docker-publish.yml": {
+              "passed": true
+            },
+            "docker.yml": {
+              "passed": true
+            }
+          }
+        }
+      }
+    },
+    "Server-Roadmap": {
+      "name": "Server-Roadmap",
+      "path": "C:\\Users\\sethp\\Documents\\Github\\Server-Roadmap",
+      "status": "PASSED",
+      "project_types": [
+        "github_workflows"
+      ],
+      "tests": {
+        "security_scanning": {
+          "passed": true,
+          "issues": 0,
+          "tests": {}
+        },
+        "yaml_validation": {
+          "passed": true,
+          "issues": 0,
+          "tests": {}
+        }
+      }
+    },
+    "StreamForge": {
+      "name": "StreamForge",
+      "path": "C:\\Users\\sethp\\Documents\\Github\\StreamForge",
+      "status": "PASSED",
+      "project_types": [
+        "generic"
+      ],
+      "tests": {
+        "security_scanning": {
+          "passed": true,
+          "issues": 0,
+          "tests": {}
+        },
+        "yaml_validation": {
+          "passed": true,
+          "issues": 0,
+          "tests": {}
+        }
+      }
+    }
+  }
+}

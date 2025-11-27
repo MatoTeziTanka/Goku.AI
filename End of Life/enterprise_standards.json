@@ -1,0 +1,206 @@
+{
+  "repository_hierarchy": {
+    "tier_1_priority": [
+      "BitPhoenix",
+      "Goku.AI",
+      "ScalpStorm",
+      "DinoCloud",
+      "GSMG.IO"
+    ],
+    "structure_rules": {
+      "required_directories": [
+        "docs/",
+        "tests/",
+        "scripts/",
+        ".github/workflows/"
+      ],
+      "required_files": [
+        "README.md",
+        "LICENSE",
+        ".gitignore",
+        ".editorconfig"
+      ]
+    },
+    "naming_conventions": {
+      "repositories": "PascalCase or kebab-case",
+      "directories": "lowercase-with-dashes",
+      "files": "snake_case (Python), camelCase (JavaScript), kebab-case (config)"
+    }
+  },
+  "versioning_standards": {
+    "format": "semver",
+    "pattern": "MAJOR.MINOR.PATCH",
+    "rules": {
+      "major": "Breaking changes",
+      "minor": "New features, backward compatible",
+      "patch": "Bug fixes, backward compatible"
+    },
+    "existing_version_handling": {
+      "note": "Do not reset to v1.0.0 if version exists",
+      "action": "Increment from current version"
+    }
+  },
+  "documentation_standards": {
+    "readme_requirements": {
+      "sections": [
+        "Project Title & Description",
+        "Features",
+        "Installation",
+        "Usage",
+        "Configuration",
+        "Contributing",
+        "License"
+      ]
+    },
+    "inline_comment_style": {
+      "format": "# Comment (Python), // Comment (JavaScript/TypeScript)",
+      "purpose": "Explain complex logic, not obvious code"
+    },
+    "block_comment_format": {
+      "python": "\"\"\"\nMulti-line\nComment\n\"\"\"",
+      "javascript": "/*\n * Multi-line\n * Comment\n */"
+    },
+    "docstring_requirements": {
+      "format": "Google-style docstrings",
+      "required_sections": [
+        "Description",
+        "Args",
+        "Returns",
+        "Raises (if applicable)",
+        "Examples (if complex)"
+      ]
+    },
+    "todo_comment_format": "# TODO(username): Description - Priority (High/Medium/Low) - Date"
+  },
+  "commit_message_standards": {
+    "format": "type(scope): subject\n\nbody\n\nfooter",
+    "types": [
+      "feat: New feature",
+      "fix: Bug fix",
+      "docs: Documentation changes",
+      "style: Code style changes (formatting, etc.)",
+      "refactor: Code refactoring",
+      "perf: Performance improvements",
+      "test: Adding or updating tests",
+      "chore: Maintenance tasks",
+      "ci: CI/CD changes",
+      "build: Build system changes",
+      "security: Security fixes"
+    ],
+    "examples": [
+      "feat(backend): Add user authentication endpoint",
+      "fix(frontend): Resolve login form validation issue",
+      "docs: Update API documentation with new endpoints",
+      "refactor(api): Optimize database queries in user service"
+    ]
+  },
+  "coding_style_standards": {
+    "comment_formats": {
+      "python": {
+        "inline": "# Single-line comment",
+        "block": "\"\"\"Multi-line docstring\"\"\"",
+        "todo": "# TODO(username): Description - Priority - Date"
+      },
+      "javascript": {
+        "inline": "// Single-line comment",
+        "block": "/* Multi-line comment */",
+        "todo": "// TODO(username): Description - Priority - Date"
+      },
+      "typescript": {
+        "inline": "// Single-line comment",
+        "block": "/* Multi-line comment */",
+        "todo": "// TODO(username): Description - Priority - Date"
+      }
+    },
+    "language_specific_rules": {
+      "python": {
+        "style_guide": "PEP 8",
+        "line_length": 100,
+        "indentation": "4 spaces"
+      },
+      "javascript": {
+        "style_guide": "Airbnb JavaScript Style Guide",
+        "line_length": 100,
+        "indentation": "2 spaces"
+      },
+      "typescript": {
+        "style_guide": "Airbnb TypeScript Style Guide",
+        "line_length": 100,
+        "indentation": "2 spaces"
+      }
+    }
+  },
+  "port_registry": {
+    "BitPhoenix": 8000,
+    "Goku.AI": 8001,
+    "ScalpStorm": 8002,
+    "DinoCloud": 8003,
+    "GSMG.IO": 8004,
+    "FamilyFork": 8005,
+    "KeyHound": 8006,
+    "passive-income-infrastructure": 8007,
+    "wordpress-stripe-automation": 8008,
+    "pterodactyl-game-hosting": 8009,
+    "discord-bot-monetization": 8010,
+    "conflict_resolution": {
+      "note": "If conflict detected, increment from highest existing port",
+      "auto_assign": true
+    }
+  },
+  "security_standards": {
+    "scanning_protocols": [
+      "Secret detection (API keys, passwords)",
+      "Dependency vulnerability scanning",
+      "Code injection pattern detection",
+      "Deprecated library detection"
+    ],
+    "secret_detection": {
+      "patterns": [
+        "API_KEY",
+        "SECRET",
+        "PASSWORD",
+        "TOKEN",
+        "PRIVATE_KEY"
+      ],
+      "action": "Flag for immediate review"
+    },
+    "dependency_checking": {
+      "frequency": "Weekly automated scans",
+      "action": "Update or replace vulnerable dependencies"
+    }
+  },
+  "file_reorganization": {
+    "misplaced_file_categories": {
+      "goku_ai_files": {
+        "keywords": ["shenron", "goku", "vegeta", "dragonball", "ultra instinct"],
+        "destination_repo": "Goku.AI",
+        "note": "Files with these themes belong in Goku.AI repository"
+      },
+      "bitphoenix_files": {
+        "keywords": ["recovery", "data recovery", "file carving", "recovery engine"],
+        "destination_repo": "BitPhoenix",
+        "note": "Data recovery related files"
+      }
+    },
+    "classification_rules": {
+      "understand_purpose": "Must understand every file's purpose before moving",
+      "backup_before_move": true,
+      "verify_after_move": true
+    }
+  },
+  "network_configuration": {
+    "reverse_proxy": {
+      "vm_name": "Reverse Proxy VM",
+      "setup": "Nginx or Traefik reverse proxy configuration",
+      "port_allocation": "Use port_registry for consistent allocation"
+    },
+    "vm_configuration": {
+      "vm100": {
+        "name": "VM100",
+        "os": "Windows 2025",
+        "purpose": "Local AI Agent (Goku.AI)"
+      }
+    }
+  }
+}
+

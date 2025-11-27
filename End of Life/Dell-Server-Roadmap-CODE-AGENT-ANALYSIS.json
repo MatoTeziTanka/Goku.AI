@@ -1,0 +1,3029 @@
+{
+  "timestamp": "2025-11-25T19:25:25.950978",
+  "repository": "Dell-Server-Roadmap",
+  "repository_path": "C:\\Users\\sethp\\Documents\\Github\\Dell-Server-Roadmap",
+  "analysis": "# Dell-Server-Roadmap Repository – Deep Analysis & Assessment\n\n---\n\n## 1. PURPOSE & MEANING ANALYSIS\n\n### **Primary Purpose**\nThe **Dell-Server-Roadmap** repository serves as the comprehensive backbone for the deployment, management, and scaling of the \"SHENRON Syndicate\"—an advanced AI-driven server and automation suite running on enterprise-grade Dell hardware (notably, the Dell PowerEdge R730). Its scope includes system orchestration, autonomous agents, trading bots, marketing automation, infrastructure documentation, and guides for both technical and business stakeholders.\n\n### **What Problem Does It Solve?**\n- **Centralizes** all technical, operational, and business processes related to deploying advanced multi-model AI systems on-premises.\n- **Bridges** gaps between AI infrastructure, automation, crypto puzzle solving, trading bot operation, and business enablement.\n- **Provides** step-by-step, actionable documentation for repeatable deployment, scaling, and revenue generation.\n- **Enables** rapid onboarding, turnover, and knowledge transfer for both technical and non-technical users.\n\n### **Target Audience**\n- **Technical operators:** Sysadmins, DevOps, AI engineers managing on-premise AI infrastructure.\n- **Business leaders:** CTOs/founders evaluating on-prem AI business models/income streams.\n- **Contributors:** Developers enhancing or maintaining the SHENRON ecosystem.\n- **Newcomers:** Anyone onboarding to the project needing end-to-end visibility.\n\n### **Intended Impact**\n- **Accelerate deployment** of enterprise AI, trading, and automation tools on robust hardware.\n- **Demonstrate feasibility** of high-accuracy, multi-model AI orchestration in a self-hosted context.\n- **Enable income streams** (trading, affiliate, hosting APIs, game servers) from a single, well-documented platform.\n- **Foster transparency** and high operational standards via exhaustive documentation and session logs.\n\n---\n\n## 2. DEVELOPMENT STATUS ANALYSIS\n\n| Aspect            | Status/Notes                                                                                                                                          |\n|-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|\n| **Version/Status**| FINAL (as of Nov 6, 2025), \"ALL SYSTEMS DEPLOYED - EXECUTION READY\" per README.md.                                                                   |\n| **Progress**      | Claimed 100% deployment of core systems. Many docs, scripts, and code indicate >95% completion for main features, with some ongoing refinements.      |\n| **Complete Features**| - SHENRON v4.0+ (AI Orchestrator, multi-model consensus, agent mode)<br> - Quest Manager (crypto puzzle solver)<br> - Trading Bot<br> - Agent Mode UI & API<br> - Full knowledge base<br> - Marketing Automation suite<br> - Multi-VM, Proxmox-based deployment<br> - Extensive documentation/manuals |\n| **Partial/Missing**| - End-to-end automated testing<br> - Unified configuration management<br> - Polished web UI (bugfixes still ongoing)<br> - Security hardening across all scripts<br> - Customer onboarding automation<br> - Monitoring (some scripts, but not a full solution)<br> - Some business docs (pricing, customer scaling) are works-in-progress |\n| **Roadmap**       | - Immediate: Bugfixes for Agent Mode UI and 2FA<br> - Next 30 days: Scaling to customers, resource optimization, marketing expansion<br> - Future: Further AI model upgrades, improved consensus methods, more automation for customer delivery, advanced security, full CI/CD, and scaling guides |\n\n---\n\n## 3. FILE ORGANIZATION ANALYSIS\n\n### **Files That Probably Don't Belong / Should Be Moved**\n| File/Group                                         | Reason/Action                                                                                          |\n|----------------------------------------------------|--------------------------------------------------------------------------------------------------------|\n| `CryptoPuzzles/Trithemius/notebooks/*.ipynb`       | Only 1-byte placeholder—remove or add real content, or move to a dedicated crypto-puzzles repo.        |\n| `Marketing-Automation/public-repos/*`              | These are documentation for other public projects—should be in their respective repos as README files.  |\n| `Potential Customers/`                             | Customer-specific docs should be in CRM or private notes, unless anonymized or generalized.            |\n| `github-setup/legal/LICENSE-APACHE.md`             | Should be in the root as `LICENSE` for clear legal standing.                                           |\n| PowerShell scripts for VM setup (`vm-200-setup*.ps1`, etc.) | Consider packaging these in a \"setup-scripts\" or \"provisioning\" repo if they're generic.               |\n| `Marketing-Automation/blog-posts/`                 | May be better in a marketing-content repo or CMS, not infra roadmap.                                   |\n\n### **Files That Should Be EOL (End of Life)**\n- Placeholder notebooks (`*.ipynb` with 1 byte)\n- Outdated session logs and deployment checklists that have been superseded by newer docs.\n- Scripts for tasks that have been automated elsewhere (old model deletion scripts, etc.).\n\n### **Duplicate Files**\n- `README.md` and `readme.md` are identical (case-sensitive environments may treat as separate).\n- Multiple changelogs and session logs with overlapping content (SESSION-COMPLETE*, FINAL-EXECUTION*, etc.).\n\n### **Orphaned Files**\n- Some content in `CryptoPuzzles/`, `Potential Customers/`, and one-off markdowns (e.g., `GOOGLE-CALENDAR-SHARING-INSTRUCTIONS.md`) do not connect to any automation or mainline guides.\n\n---\n\n## 4. CONSOLIDATION OPPORTUNITIES\n\n### **Related Repositories to Merge**\n- Public documentation in `Marketing-Automation/public-repos/*` should be referenced, not duplicated—prefer submodules or links.\n- Crypto puzzle logic and notebooks could be split into their own repository if intended for public/OSS collaboration.\n\n### **Duplicate Functionality**\n- Multiple marketing automation scripts and configs; could be unified under a single, modular automation framework.\n- Several agent mode and trading bot scripts across different folders—consider centralizing under `backend/` or `services/`.\n\n### **Shared Dependencies**\n- Requirements (`requirements.txt` and others) scattered—unify into a monorepo-style dependency tree or employ tools like `poetry` or `pipenv` for all Python projects.\n- PowerShell, Bash, and Python scripts for setup could be refactored into a single cross-platform provisioning tool.\n\n---\n\n## 5. PATH TO v1.0.0\n\n### **Blockers**\n| Area                | Issues                                                                                                                                       |\n|---------------------|----------------------------------------------------------------------------------------------------------------------------------------------|\n| **Testing**         | No evidence of automated, end-to-end, or integration tests.                                                                                  |\n| **Security**        | 2FA bug was critical; need systematic credential, API key, and access management reviews.                                                    |\n| **Documentation**   | Some documentation is duplicated, outdated, or not clearly versioned; onboarding and quickstarts are scattered.                              |\n| **Code Quality**    | Some scripts lack error handling, logging, or comments; inconsistent style across languages.                                                 |\n| **Configuration**   | Many configs are hardcoded or duplicated in multiple places (marketing, agent, trading bot, etc.).                                           |\n| **Modularity**      | Business logic, customer-specific, and infrastructure code are mixed—should be separated for clarity and maintainability.                    |\n\n### **Critical Bugs**\n- 2FA prompt bug (recently fixed, but highlights risk).\n- Potential for duplicate event handlers in UI code.\n- Inconsistent handling of agent mode toggle and state.\n- No systematic handling of credentials/secrets in scripts.\n\n### **Missing Features**\n- Automated, repeatable deployment (IaC, Docker/Ansible).\n- Self-service customer onboarding.\n- Centralized error monitoring/alerting.\n- Unified, real-time system status dashboard.\n\n### **Documentation Gaps**\n- No single, authoritative quickstart for fresh contributors.\n- No high-level architecture diagram or flow.\n- Customer onboarding and support documentation are incomplete.\n- Some guides are out-of-date (e.g., referencing old VM configs).\n\n### **Testing Needed**\n- Automated UI testing for the web interface.\n- Unit/integration tests for API servers, bots, and orchestrators.\n- Security penetration test (especially on agent mode & trading bot).\n\n### **Security Issues**\n- Scripts handle credentials in plaintext (see marketing/social-media-automation/credentials).\n- API keys and secrets may be checked into version control (need to enforce `.gitignore` and secret scanning).\n- No explicit mention of network firewalling or RBAC for web/API endpoints.\n\n---\n\n## 6. QC STANDARDS (100/10 MINDSET)\n\n| Category                  | Score (0-100) | Reasoning & Examples                                                                                                                                                                                     |\n|---------------------------|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|\n| **Functional QA**         | **16/20**     | Core systems (SHENRON, Quest Manager, Trading Bot) are deployed and operational. However, true automated test coverage is lacking, and some features are still being patched.                            |\n| **Documentation/Comments**| **18/20**     | Extremely thorough documentation, covering every aspect from setup to business logic. Minor points lost for duplication and some outdated files, but overall very strong.                                 |\n| **Security & Safety**     | **10/15**     | 2FA and agent mode mitigate some risk, but plaintext credentials, hardcoded secrets, and lack of holistic security review are significant issues.                                                         |\n| **Efficiency/Optimization**| **12/15**    | System leverages parallel AI models and resource allocation plans. However, some scripts are not optimized, and RAM/CPU use is high for multi-model operation.                                            |\n| **AI Learning & Adaptation**| **13/15**   | Multi-model consensus, agent execution, and adaptive agent mode are innovative. Room to improve in reinforcement learning, active monitoring, or feedback loops.                                          |\n| **Innovation & Impact**   | **14/15**     | Blending AI orchestration, automation, and income-generating tools in a self-hosted stack is highly innovative. Clear impact, though public/community involvement could be enhanced.                      |\n\n**Total: 83/100**\n\n---\n\n## 7. CRITICAL ISSUES FOUND\n\n| Priority  | Issue                                                                                   | Location/Details                                                    |\n|-----------|-----------------------------------------------------------------------------------------|---------------------------------------------------------------------|\n| Critical  | Lack of automated, end-to-end testing                                                   | No test/ directory; scripts/manuals mention only manual verification|\n| Critical  | Security: Credentials in plaintext/scripts                                               | Marketing-Automation & social-media-automation                      |\n| High      | Duplicate/conflicting event handlers in web UI                                           | 2FA bug in script-fixed.js                                          |\n| High      | Absence of centralized error logging/alerting                                            | All backend services                                                |\n| High      | No clear secret management or .gitignore for sensitive files                             | credentials/ and config/ folders                                    |\n| Medium    | Documentation duplication and outdated guides                                            | Session logs, multiple README, etc.                                 |\n| Medium    | Orphaned/placeholder files (notebooks, old scripts)                                      | CryptoPuzzles, PowerShell scripts                                   |\n| Medium    | Marketing automation and web UI have inconsistent style and error handling               | Various scripts                                                     |\n| Low       | Customer-specific files in public repo                                                   | Potential Customers/                                                |\n| Low       | Inconsistent file naming (README.md vs readme.md, etc.)                                 | Root directory                                                      |\n| Low       | Scattered dependencies and redundant config files                                        | requirements.txt, marketing configs, etc.                           |\n\n---\n\n## 8. RECOMMENDED ACTIONS (Prioritized for v1.0.0)\n\n### **Critical/High Priority**\n1. **Implement Automated Testing**\n   - Unit/integration tests for all core services (backend, trading bot, agent mode).\n   - Automated UI testing for web interface.\n   - Add CI pipeline for PR/test validation.\n\n2. **Security Overhaul**\n   - Move all credentials and API keys to external secrets manager or environment variables.\n   - Add `.gitignore` for all sensitive files.\n   - Remove any plaintext credentials from the repo and history.\n   - Conduct a security audit (automated secret scanning, dependency check, firewalling).\n\n3. **Consolidate and Clean File Structure**\n   - Move LICENSE file to root.\n   - Merge duplicate README files; remove/collapse outdated session logs.\n   - Archive or remove placeholder/notebook files.\n\n4. **Centralize Configuration Management**\n   - Use a unified config system for all automation, agent, and bot services.\n   - Reference public repos instead of duplicating their README/docs.\n\n5. **Documentation Refresh**\n   - Create a single, up-to-date quickstart for all contributors.\n   - Add system architecture diagrams (SVG/PNG in docs/).\n   - Remove or archive outdated/partial documentation.\n\n### **Medium/Low Priority**\n6. **Refactor Customer/Business Files**\n   - Move customer-specific files to a private/CRM repo.\n   - Generalize business plans for public consumption.\n\n7. **Dependency & Requirements Unification**\n   - Consolidate all `requirements.txt` into a top-level environment manager.\n   - Document all external dependencies.\n\n8. **Monitoring & Logging**\n   - Add centralized logging for all backend services.\n   - Deploy a monitoring dashboard and tie it into alerting for failures.\n\n9. **Polish UI/UX**\n   - Standardize UI event handling, error display, and logging.\n   - Add accessibility improvements to web UI.\n\n10. **Community & Contribution**\n   - Add a CONTRIBUTING.md to the root.\n   - Encourage external PRs, bug reports, and feedback.\n\n---\n\n## **Summary Table: Path to v1.0.0**\n\n| Action                                   | Status   | Impact         |\n|-------------------------------------------|----------|----------------|\n| Automated Testing                        | TODO     | Critical       |\n| Security & Secret Management              | TODO     | Critical       |\n| File Structure & Consolidation            | PARTIAL  | High           |\n| Documentation Cleanup & Diagrams          | PARTIAL  | High           |\n| Config Management Unification             | PARTIAL  | High           |\n| Customer File Refactor                    | TODO     | Medium         |\n| Dependency Unification                    | PARTIAL  | Medium         |\n| Centralized Monitoring/Logging            | TODO     | Medium         |\n| UI/UX Standardization                     | PARTIAL  | Medium         |\n| Community Contribution Process            | PARTIAL  | Low            |\n\n---\n\n# **Conclusion**\n\n**Dell-Server-Roadmap** is a comprehensive, innovative repository with a strong foundation in both automation and documentation. To reach world-class (100/10) quality and hit v1.0.0, it must address gaps in automated testing, security, file organization, and dependency management, while consolidating documentation and removing legacy/duplicate files.\n\n**Immediate focus:** Security, automated testing, and consolidation.  \n**Secondary:** Monitoring/logging, customer/business separation, and UI polish.\n\n**With these improvements, the project will not only be robust and scalable but also maintainable and welcoming for new contributors and customers.**",
+  "directory_structure": [
+    {
+      "type": "directory",
+      "name": ".git",
+      "path": "Dell-Server-Roadmap\\.git",
+      "children": [
+        {
+          "type": "file",
+          "name": "config",
+          "path": ".git\\config",
+          "size": 385
+        },
+        {
+          "type": "file",
+          "name": "description",
+          "path": ".git\\description",
+          "size": 73
+        },
+        {
+          "type": "file",
+          "name": "HEAD",
+          "path": ".git\\HEAD",
+          "size": 21
+        },
+        {
+          "type": "directory",
+          "name": "hooks",
+          "path": ".git\\hooks",
+          "children": [
+            {
+              "type": "file",
+              "name": "applypatch-msg.sample",
+              "path": "hooks\\applypatch-msg.sample",
+              "size": 478
+            },
+            {
+              "type": "file",
+              "name": "commit-msg.sample",
+              "path": "hooks\\commit-msg.sample",
+              "size": 896
+            },
+            {
+              "type": "file",
+              "name": "fsmonitor-watchman.sample",
+              "path": "hooks\\fsmonitor-watchman.sample",
+              "size": 4726
+            },
+            {
+              "type": "file",
+              "name": "post-update.sample",
+              "path": "hooks\\post-update.sample",
+              "size": 189
+            },
+            {
+              "type": "file",
+              "name": "pre-applypatch.sample",
+              "path": "hooks\\pre-applypatch.sample",
+              "size": 424
+            },
+            {
+              "type": "file",
+              "name": "pre-commit.sample",
+              "path": "hooks\\pre-commit.sample",
+              "size": 1649
+            },
+            {
+              "type": "file",
+              "name": "pre-merge-commit.sample",
+              "path": "hooks\\pre-merge-commit.sample",
+              "size": 416
+            },
+            {
+              "type": "file",
+              "name": "pre-push.sample",
+              "path": "hooks\\pre-push.sample",
+              "size": 1374
+            },
+            {
+              "type": "file",
+              "name": "pre-rebase.sample",
+              "path": "hooks\\pre-rebase.sample",
+              "size": 4898
+            },
+            {
+              "type": "file",
+              "name": "pre-receive.sample",
+              "path": "hooks\\pre-receive.sample",
+              "size": 544
+            },
+            {
+              "type": "file",
+              "name": "prepare-commit-msg.sample",
+              "path": "hooks\\prepare-commit-msg.sample",
+              "size": 1492
+            },
+            {
+              "type": "file",
+              "name": "push-to-checkout.sample",
+              "path": "hooks\\push-to-checkout.sample",
+              "size": 2783
+            },
+            {
+              "type": "file",
+              "name": "sendemail-validate.sample",
+              "path": "hooks\\sendemail-validate.sample",
+              "size": 2308
+            },
+            {
+              "type": "file",
+              "name": "update.sample",
+              "path": "hooks\\update.sample",
+              "size": 3650
+            }
+          ]
+        },
+        {
+          "type": "file",
+          "name": "index",
+          "path": ".git\\index",
+          "size": 43564
+        },
+        {
+          "type": "directory",
+          "name": "info",
+          "path": ".git\\info",
+          "children": [
+            {
+              "type": "file",
+              "name": "exclude",
+              "path": "info\\exclude",
+              "size": 240
+            }
+          ]
+        },
+        {
+          "type": "directory",
+          "name": "logs",
+          "path": ".git\\logs",
+          "children": [
+            {
+              "type": "file",
+              "name": "HEAD",
+              "path": "logs\\HEAD",
+              "size": 203
+            },
+            {
+              "type": "directory",
+              "name": "refs",
+              "path": "logs\\refs",
+              "children": [
+                {
+                  "type": "directory",
+                  "name": "heads",
+                  "path": "refs\\heads",
+                  "note": "max depth reached"
+                },
+                {
+                  "type": "directory",
+                  "name": "remotes",
+                  "path": "refs\\remotes",
+                  "note": "max depth reached"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "directory",
+          "name": "objects",
+          "path": ".git\\objects",
+          "children": [
+            {
+              "type": "directory",
+              "name": "16",
+              "path": "objects\\16",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "240cd2bcc29b3d03a26472c460cae4173fd24f",
+                  "path": "16\\240cd2bcc29b3d03a26472c460cae4173fd24f",
+                  "size": 149
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "32",
+              "path": "objects\\32",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "0af456aa220f8c3c8fd5bb0eee11a8a8f55cff",
+                  "path": "32\\0af456aa220f8c3c8fd5bb0eee11a8a8f55cff",
+                  "size": 148
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "46",
+              "path": "objects\\46",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "b17dd3d98fd154f9e23d492b57cb6170687e01",
+                  "path": "46\\b17dd3d98fd154f9e23d492b57cb6170687e01",
+                  "size": 149
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "8b",
+              "path": "objects\\8b",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "b5617106b2c7a7e1311812e68f2c8d36ce5024",
+                  "path": "8b\\b5617106b2c7a7e1311812e68f2c8d36ce5024",
+                  "size": 148
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "9d",
+              "path": "objects\\9d",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "6d55520485828b28dd095b0354c6c6685a22e5",
+                  "path": "9d\\6d55520485828b28dd095b0354c6c6685a22e5",
+                  "size": 148
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "a5",
+              "path": "objects\\a5",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "f9da7266cb4ec252d5978da24a8a1c5197ae00",
+                  "path": "a5\\f9da7266cb4ec252d5978da24a8a1c5197ae00",
+                  "size": 148
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "b8",
+              "path": "objects\\b8",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "df7c1e818bb3b88a476f845c2a879869bc056f",
+                  "path": "b8\\df7c1e818bb3b88a476f845c2a879869bc056f",
+                  "size": 149
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "cc",
+              "path": "objects\\cc",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "4f4672cd7a19fb9969555eedff58e0e3e267ba",
+                  "path": "cc\\4f4672cd7a19fb9969555eedff58e0e3e267ba",
+                  "size": 149
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "cf",
+              "path": "objects\\cf",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "f707540a83cc1b11f8fed3e838bfcbbde6ea9c",
+                  "path": "cf\\f707540a83cc1b11f8fed3e838bfcbbde6ea9c",
+                  "size": 148
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "e7",
+              "path": "objects\\e7",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "f2095d16220aeff5e0495b702dd34498b7c757",
+                  "path": "e7\\f2095d16220aeff5e0495b702dd34498b7c757",
+                  "size": 149
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "fd",
+              "path": "objects\\fd",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "34dceb914c4d9d72f307b1ceb577ab0e7f4e9c",
+                  "path": "fd\\34dceb914c4d9d72f307b1ceb577ab0e7f4e9c",
+                  "size": 148
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "info",
+              "path": "objects\\info",
+              "children": []
+            },
+            {
+              "type": "directory",
+              "name": "pack",
+              "path": "objects\\pack",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "pack-dd15a5625deede0b1801acf14fc3215f3176c313.idx",
+                  "path": "pack\\pack-dd15a5625deede0b1801acf14fc3215f3176c313.idx",
+                  "size": 27700
+                },
+                {
+                  "type": "file",
+                  "name": "pack-dd15a5625deede0b1801acf14fc3215f3176c313.pack",
+                  "path": "pack\\pack-dd15a5625deede0b1801acf14fc3215f3176c313.pack",
+                  "size": 1920553
+                },
+                {
+                  "type": "file",
+                  "name": "pack-dd15a5625deede0b1801acf14fc3215f3176c313.rev",
+                  "path": "pack\\pack-dd15a5625deede0b1801acf14fc3215f3176c313.rev",
+                  "size": 3856
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "file",
+          "name": "packed-refs",
+          "path": ".git\\packed-refs",
+          "size": 180
+        },
+        {
+          "type": "directory",
+          "name": "refs",
+          "path": ".git\\refs",
+          "children": [
+            {
+              "type": "directory",
+              "name": "heads",
+              "path": "refs\\heads",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "main",
+                  "path": "heads\\main",
+                  "size": 41
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "remotes",
+              "path": "refs\\remotes",
+              "children": [
+                {
+                  "type": "directory",
+                  "name": "origin",
+                  "path": "remotes\\origin",
+                  "note": "max depth reached"
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "tags",
+              "path": "refs\\tags",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "2FA-BUG-FIX-COMPLETE.md",
+      "path": "Dell-Server-Roadmap\\2FA-BUG-FIX-COMPLETE.md",
+      "size": 7152
+    },
+    {
+      "type": "file",
+      "name": "AGENT-MODE-POWER-ACCURACY-DESIGN.md",
+      "path": "Dell-Server-Roadmap\\AGENT-MODE-POWER-ACCURACY-DESIGN.md",
+      "size": 17457
+    },
+    {
+      "type": "file",
+      "name": "AGENT-MODE-V4.1-DEPLOYMENT-MANUAL.md",
+      "path": "Dell-Server-Roadmap\\AGENT-MODE-V4.1-DEPLOYMENT-MANUAL.md",
+      "size": 8701
+    },
+    {
+      "type": "file",
+      "name": "AGENT-MODE-VS-ULTRA-INSTINCT-COMPREHENSIVE-ANALYSIS.md",
+      "path": "Dell-Server-Roadmap\\AGENT-MODE-VS-ULTRA-INSTINCT-COMPREHENSIVE-ANALYSIS.md",
+      "size": 25156
+    },
+    {
+      "type": "file",
+      "name": "AI-COLLAB-AGENT-VS-ULTRA-INSTINCT.md",
+      "path": "Dell-Server-Roadmap\\AI-COLLAB-AGENT-VS-ULTRA-INSTINCT.md",
+      "size": 16617
+    },
+    {
+      "type": "file",
+      "name": "AI-COLLAB-SHENRON-SYNDICATE-COMPLETE-PROJECT.md",
+      "path": "Dell-Server-Roadmap\\AI-COLLAB-SHENRON-SYNDICATE-COMPLETE-PROJECT.md",
+      "size": 25653
+    },
+    {
+      "type": "file",
+      "name": "AI-TURNOVER-DELL-PROXMOX-ADMIN.md",
+      "path": "Dell-Server-Roadmap\\AI-TURNOVER-DELL-PROXMOX-ADMIN.md",
+      "size": 14322
+    },
+    {
+      "type": "file",
+      "name": "AI-TURNOVER-MARKETING.md",
+      "path": "Dell-Server-Roadmap\\AI-TURNOVER-MARKETING.md",
+      "size": 14011
+    },
+    {
+      "type": "file",
+      "name": "API-STATUS-LIGHT-FIX.md",
+      "path": "Dell-Server-Roadmap\\API-STATUS-LIGHT-FIX.md",
+      "size": 6822
+    },
+    {
+      "type": "directory",
+      "name": "backend",
+      "path": "Dell-Server-Roadmap\\backend",
+      "children": [
+        {
+          "type": "directory",
+          "name": "shenron",
+          "path": "backend\\shenron",
+          "children": [
+            {
+              "type": "file",
+              "name": "shenron-v4-api-server.py",
+              "path": "shenron\\shenron-v4-api-server.py",
+              "size": 28704
+            },
+            {
+              "type": "file",
+              "name": "shenron_v4_orchestrator.py",
+              "path": "shenron\\shenron_v4_orchestrator.py",
+              "size": 37806
+            },
+            {
+              "type": "file",
+              "name": "start-shenron-api.ps1",
+              "path": "shenron\\start-shenron-api.ps1",
+              "size": 3138
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "directory",
+      "name": "backups",
+      "path": "Dell-Server-Roadmap\\backups",
+      "children": []
+    },
+    {
+      "type": "file",
+      "name": "BEAST-MODE-INJECTION-COMPLETE-2025-11-06.md",
+      "path": "Dell-Server-Roadmap\\BEAST-MODE-INJECTION-COMPLETE-2025-11-06.md",
+      "size": 10228
+    },
+    {
+      "type": "file",
+      "name": "BINANCE-API-KEYS-SECURE-SETUP.md",
+      "path": "Dell-Server-Roadmap\\BINANCE-API-KEYS-SECURE-SETUP.md",
+      "size": 10178
+    },
+    {
+      "type": "file",
+      "name": "BUG-FIX-SUMMARY-2025-11-07.md",
+      "path": "Dell-Server-Roadmap\\BUG-FIX-SUMMARY-2025-11-07.md",
+      "size": 10634
+    },
+    {
+      "type": "file",
+      "name": "COMPLETE-ALL-TASKS-SUMMARY.md",
+      "path": "Dell-Server-Roadmap\\COMPLETE-ALL-TASKS-SUMMARY.md",
+      "size": 4216
+    },
+    {
+      "type": "file",
+      "name": "COMPLETE-UPDATES-SUMMARY.md",
+      "path": "Dell-Server-Roadmap\\COMPLETE-UPDATES-SUMMARY.md",
+      "size": 8781
+    },
+    {
+      "type": "directory",
+      "name": "configs",
+      "path": "Dell-Server-Roadmap\\configs",
+      "children": [
+        {
+          "type": "file",
+          "name": "idrac-access.md",
+          "path": "configs\\idrac-access.md",
+          "size": 3695
+        },
+        {
+          "type": "file",
+          "name": "network-config.md",
+          "path": "configs\\network-config.md",
+          "size": 4257
+        },
+        {
+          "type": "file",
+          "name": "pinball.lightspeedup.com.conf",
+          "path": "configs\\pinball.lightspeedup.com.conf",
+          "size": 3924
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "COPY-PASTE-DAY-2-POSTS.txt",
+      "path": "Dell-Server-Roadmap\\COPY-PASTE-DAY-2-POSTS.txt",
+      "size": 12859
+    },
+    {
+      "type": "file",
+      "name": "CORRECT-MODEL-MAPPING.md",
+      "path": "Dell-Server-Roadmap\\CORRECT-MODEL-MAPPING.md",
+      "size": 4965
+    },
+    {
+      "type": "file",
+      "name": "CRITICAL-FIXES-2025-11-06.md",
+      "path": "Dell-Server-Roadmap\\CRITICAL-FIXES-2025-11-06.md",
+      "size": 10856
+    },
+    {
+      "type": "file",
+      "name": "CRITICAL-TODO-PRIORITY.md",
+      "path": "Dell-Server-Roadmap\\CRITICAL-TODO-PRIORITY.md",
+      "size": 5515
+    },
+    {
+      "type": "file",
+      "name": "CRITICAL-WEB-UI-FIXES-v4.1.4.md",
+      "path": "Dell-Server-Roadmap\\CRITICAL-WEB-UI-FIXES-v4.1.4.md",
+      "size": 3864
+    },
+    {
+      "type": "file",
+      "name": "CRITICAL-WEB-UI-FIXES-v4.1.6.md",
+      "path": "Dell-Server-Roadmap\\CRITICAL-WEB-UI-FIXES-v4.1.6.md",
+      "size": 9134
+    },
+    {
+      "type": "directory",
+      "name": "CryptoPuzzles",
+      "path": "Dell-Server-Roadmap\\CryptoPuzzles",
+      "children": [
+        {
+          "type": "directory",
+          "name": "Trithemius",
+          "path": "CryptoPuzzles\\Trithemius",
+          "children": [
+            {
+              "type": "file",
+              "name": "AI_COLLABORATION_V2_CHATGPT.md",
+              "path": "Trithemius\\AI_COLLABORATION_V2_CHATGPT.md",
+              "size": 10785
+            },
+            {
+              "type": "file",
+              "name": "AI_COLLABORATION_V2_CLAUDE.md",
+              "path": "Trithemius\\AI_COLLABORATION_V2_CLAUDE.md",
+              "size": 10056
+            },
+            {
+              "type": "file",
+              "name": "AI_COLLABORATION_V3.md",
+              "path": "Trithemius\\AI_COLLABORATION_V3.md",
+              "size": 7684
+            },
+            {
+              "type": "file",
+              "name": "AI_GROUP_CONSENSUS_V2.md",
+              "path": "Trithemius\\AI_GROUP_CONSENSUS_V2.md",
+              "size": 15981
+            },
+            {
+              "type": "directory",
+              "name": "notebooks",
+              "path": "Trithemius\\notebooks",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "Trithemian_Seed_Solver_V2.0.0_PRODUCTION.ipynb",
+                  "path": "notebooks\\Trithemian_Seed_Solver_V2.0.0_PRODUCTION.ipynb",
+                  "size": 1
+                }
+              ]
+            },
+            {
+              "type": "file",
+              "name": "V2.0.0_READY.md",
+              "path": "Trithemius\\V2.0.0_READY.md",
+              "size": 3853
+            },
+            {
+              "type": "file",
+              "name": "V2.0.0_RESULTS_ANALYSIS.md",
+              "path": "Trithemius\\V2.0.0_RESULTS_ANALYSIS.md",
+              "size": 4895
+            },
+            {
+              "type": "file",
+              "name": "V2.0.1_RESULTS_ANALYSIS.md",
+              "path": "Trithemius\\V2.0.1_RESULTS_ANALYSIS.md",
+              "size": 5567
+            },
+            {
+              "type": "file",
+              "name": "V2.0.2_ERROR_ANALYSIS.md",
+              "path": "Trithemius\\V2.0.2_ERROR_ANALYSIS.md",
+              "size": 4331
+            },
+            {
+              "type": "file",
+              "name": "V2.0.2_FINAL_SUMMARY.md",
+              "path": "Trithemius\\V2.0.2_FINAL_SUMMARY.md",
+              "size": 2493
+            },
+            {
+              "type": "file",
+              "name": "V2.0.2_RESULTS_ANALYSIS.md",
+              "path": "Trithemius\\V2.0.2_RESULTS_ANALYSIS.md",
+              "size": 6200
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "DAY-2-MARKETING-ALL-PLATFORMS.md",
+      "path": "Dell-Server-Roadmap\\DAY-2-MARKETING-ALL-PLATFORMS.md",
+      "size": 22917
+    },
+    {
+      "type": "file",
+      "name": "DEEPSEEK-AI-COLLAB-RESPONSE-ANALYSIS.md",
+      "path": "Dell-Server-Roadmap\\DEEPSEEK-AI-COLLAB-RESPONSE-ANALYSIS.md",
+      "size": 15528
+    },
+    {
+      "type": "file",
+      "name": "delete-downloaded-models.ps1",
+      "path": "Dell-Server-Roadmap\\delete-downloaded-models.ps1",
+      "size": 5659
+    },
+    {
+      "type": "file",
+      "name": "delete-old-lms-models.ps1",
+      "path": "Dell-Server-Roadmap\\delete-old-lms-models.ps1",
+      "size": 5401
+    },
+    {
+      "type": "file",
+      "name": "DELL-R730-COMPLETE-HARDWARE-INVENTORY.md",
+      "path": "Dell-Server-Roadmap\\DELL-R730-COMPLETE-HARDWARE-INVENTORY.md",
+      "size": 21614
+    },
+    {
+      "type": "file",
+      "name": "DEPLOYMENT-COMPLETE-SUMMARY.md",
+      "path": "Dell-Server-Roadmap\\DEPLOYMENT-COMPLETE-SUMMARY.md",
+      "size": 15179
+    },
+    {
+      "type": "file",
+      "name": "DEPLOYMENT-STATUS-2025-11-06.md",
+      "path": "Dell-Server-Roadmap\\DEPLOYMENT-STATUS-2025-11-06.md",
+      "size": 8242
+    },
+    {
+      "type": "directory",
+      "name": "docs",
+      "path": "Dell-Server-Roadmap\\docs",
+      "children": [
+        {
+          "type": "file",
+          "name": "4k-transcoding-analysis.md",
+          "path": "docs\\4k-transcoding-analysis.md",
+          "size": 4807
+        },
+        {
+          "type": "file",
+          "name": "ADMIN-AI-INFRASTRUCTURE-GUIDE.md",
+          "path": "docs\\ADMIN-AI-INFRASTRUCTURE-GUIDE.md",
+          "size": 24718
+        },
+        {
+          "type": "file",
+          "name": "app-ideas.md",
+          "path": "docs\\app-ideas.md",
+          "size": 9128
+        },
+        {
+          "type": "file",
+          "name": "beta-pricing-final.md",
+          "path": "docs\\beta-pricing-final.md",
+          "size": 12051
+        },
+        {
+          "type": "file",
+          "name": "beta-pricing-table.md",
+          "path": "docs\\beta-pricing-table.md",
+          "size": 6749
+        },
+        {
+          "type": "file",
+          "name": "celebrating-elyse-photo-gallery.md",
+          "path": "docs\\celebrating-elyse-photo-gallery.md",
+          "size": 7048
+        },
+        {
+          "type": "file",
+          "name": "chat-history-transfer.md",
+          "path": "docs\\chat-history-transfer.md",
+          "size": 3940
+        },
+        {
+          "type": "file",
+          "name": "cloudflare-tunnel-setup.md",
+          "path": "docs\\cloudflare-tunnel-setup.md",
+          "size": 4217
+        },
+        {
+          "type": "file",
+          "name": "comprehensive-server-setup-guide.md",
+          "path": "docs\\comprehensive-server-setup-guide.md",
+          "size": 10626
+        },
+        {
+          "type": "file",
+          "name": "COPY-TO-DEV-AI-CHAT.md",
+          "path": "docs\\COPY-TO-DEV-AI-CHAT.md",
+          "size": 16317
+        },
+        {
+          "type": "file",
+          "name": "current-status.md",
+          "path": "docs\\current-status.md",
+          "size": 7592
+        },
+        {
+          "type": "file",
+          "name": "custom-media-app-analysis.md",
+          "path": "docs\\custom-media-app-analysis.md",
+          "size": 5224
+        },
+        {
+          "type": "file",
+          "name": "detailed-system-inventory.md",
+          "path": "docs\\detailed-system-inventory.md",
+          "size": 7189
+        },
+        {
+          "type": "file",
+          "name": "dev-chat-message.md",
+          "path": "docs\\dev-chat-message.md",
+          "size": 10582
+        },
+        {
+          "type": "file",
+          "name": "enterprise-network-implementation.md",
+          "path": "docs\\enterprise-network-implementation.md",
+          "size": 10290
+        },
+        {
+          "type": "file",
+          "name": "GITHUB-REPOS-FINAL-STATUS-2025-11-04.md",
+          "path": "docs\\GITHUB-REPOS-FINAL-STATUS-2025-11-04.md",
+          "size": 6772
+        },
+        {
+          "type": "file",
+          "name": "idrac-automatic-updates.md",
+          "path": "docs\\idrac-automatic-updates.md",
+          "size": 16972
+        },
+        {
+          "type": "file",
+          "name": "lightspeedup-hosting-pricing-tiers.md",
+          "path": "docs\\lightspeedup-hosting-pricing-tiers.md",
+          "size": 12016
+        },
+        {
+          "type": "file",
+          "name": "marketing-chat-message-UPDATED.md",
+          "path": "docs\\marketing-chat-message-UPDATED.md",
+          "size": 18366
+        },
+        {
+          "type": "file",
+          "name": "marketing-chat-message.md",
+          "path": "docs\\marketing-chat-message.md",
+          "size": 17195
+        },
+        {
+          "type": "file",
+          "name": "media-client-options.md",
+          "path": "docs\\media-client-options.md",
+          "size": 4899
+        },
+        {
+          "type": "file",
+          "name": "microsoft-licenses-deployment.md",
+          "path": "docs\\microsoft-licenses-deployment.md",
+          "size": 10029
+        },
+        {
+          "type": "file",
+          "name": "optimal-vm-separation.md",
+          "path": "docs\\optimal-vm-separation.md",
+          "size": 3757
+        },
+        {
+          "type": "file",
+          "name": "proxmox-ssl-troubleshooting.md",
+          "path": "docs\\proxmox-ssl-troubleshooting.md",
+          "size": 8479
+        },
+        {
+          "type": "file",
+          "name": "REMOTE_STATISTICS_DASHBOARD.md",
+          "path": "docs\\REMOTE_STATISTICS_DASHBOARD.md",
+          "size": 10352
+        },
+        {
+          "type": "file",
+          "name": "resource-optimization-guide.md",
+          "path": "docs\\resource-optimization-guide.md",
+          "size": 6947
+        },
+        {
+          "type": "file",
+          "name": "scalpstorm-deployment.md",
+          "path": "docs\\scalpstorm-deployment.md",
+          "size": 5609
+        },
+        {
+          "type": "file",
+          "name": "server-infrastructure-documentation.md",
+          "path": "docs\\server-infrastructure-documentation.md",
+          "size": 7949
+        },
+        {
+          "type": "file",
+          "name": "SHENRON-SYNDICATE-COMPLETE-DOCUMENTATION.md",
+          "path": "docs\\SHENRON-SYNDICATE-COMPLETE-DOCUMENTATION.md",
+          "size": 26964
+        },
+        {
+          "type": "file",
+          "name": "SHENRON-SYNDICATE-REPOSITORY-RESTRUCTURE-AI-COLLAB.md",
+          "path": "docs\\SHENRON-SYNDICATE-REPOSITORY-RESTRUCTURE-AI-COLLAB.md",
+          "size": 58208
+        },
+        {
+          "type": "file",
+          "name": "SHENRON-V3-COMPLETE-DOCUMENTATION.md",
+          "path": "docs\\SHENRON-V3-COMPLETE-DOCUMENTATION.md",
+          "size": 23344
+        },
+        {
+          "type": "file",
+          "name": "SSH-KEYS-BACKUP.md",
+          "path": "docs\\SSH-KEYS-BACKUP.md",
+          "size": 8395
+        },
+        {
+          "type": "file",
+          "name": "system-status.md",
+          "path": "docs\\system-status.md",
+          "size": 3274
+        },
+        {
+          "type": "file",
+          "name": "thermal-power-optimization.md",
+          "path": "docs\\thermal-power-optimization.md",
+          "size": 11082
+        },
+        {
+          "type": "directory",
+          "name": "transparency",
+          "path": "docs\\transparency",
+          "children": [
+            {
+              "type": "file",
+              "name": "COPY-PASTE-DOWNTIME-UPDATES.txt",
+              "path": "transparency\\COPY-PASTE-DOWNTIME-UPDATES.txt",
+              "size": 5706
+            },
+            {
+              "type": "file",
+              "name": "CUSTOMER-DISCOVERY-AI-FRAMEWORK-2025-11-04.md",
+              "path": "transparency\\CUSTOMER-DISCOVERY-AI-FRAMEWORK-2025-11-04.md",
+              "size": 10456
+            },
+            {
+              "type": "file",
+              "name": "CUSTOMER-DISCOVERY-QUICK-START-2025-11-04.md",
+              "path": "transparency\\CUSTOMER-DISCOVERY-QUICK-START-2025-11-04.md",
+              "size": 8207
+            },
+            {
+              "type": "file",
+              "name": "DEVTO-DAY-1-TRANSPARENCY-ARTICLE.md",
+              "path": "transparency\\DEVTO-DAY-1-TRANSPARENCY-ARTICLE.md",
+              "size": 4237
+            },
+            {
+              "type": "file",
+              "name": "DOWNTIME-UPDATE-2025-11-04-1900.md",
+              "path": "transparency\\DOWNTIME-UPDATE-2025-11-04-1900.md",
+              "size": 9612
+            },
+            {
+              "type": "file",
+              "name": "HACKERNEWS-UPDATE-POST-2025-11-04.md",
+              "path": "transparency\\HACKERNEWS-UPDATE-POST-2025-11-04.md",
+              "size": 5800
+            },
+            {
+              "type": "file",
+              "name": "HN-UPDATE-COPY-PASTE.txt",
+              "path": "transparency\\HN-UPDATE-COPY-PASTE.txt",
+              "size": 3500
+            },
+            {
+              "type": "file",
+              "name": "PASTE-INTO-CUSTOMER-AI-CHAT-2025-11-04.txt",
+              "path": "transparency\\PASTE-INTO-CUSTOMER-AI-CHAT-2025-11-04.txt",
+              "size": 6430
+            },
+            {
+              "type": "file",
+              "name": "POST-UPDATES-NOW-ACTION-PLAN.md",
+              "path": "transparency\\POST-UPDATES-NOW-ACTION-PLAN.md",
+              "size": 4789
+            }
+          ]
+        },
+        {
+          "type": "file",
+          "name": "troubleshooting-guide.md",
+          "path": "docs\\troubleshooting-guide.md",
+          "size": 8908
+        },
+        {
+          "type": "file",
+          "name": "vm-101-final-setup-steps.md",
+          "path": "docs\\vm-101-final-setup-steps.md",
+          "size": 5031
+        },
+        {
+          "type": "file",
+          "name": "vm-101-quick-start.md",
+          "path": "docs\\vm-101-quick-start.md",
+          "size": 2776
+        },
+        {
+          "type": "file",
+          "name": "vm-101-setup-guide.md",
+          "path": "docs\\vm-101-setup-guide.md",
+          "size": 10639
+        },
+        {
+          "type": "file",
+          "name": "vm-150-wordpress-config.md",
+          "path": "docs\\vm-150-wordpress-config.md",
+          "size": 4696
+        },
+        {
+          "type": "file",
+          "name": "vm-access-credentials.md",
+          "path": "docs\\vm-access-credentials.md",
+          "size": 3428
+        },
+        {
+          "type": "file",
+          "name": "VM-COMPLETE-SPECIFICATIONS.md",
+          "path": "docs\\VM-COMPLETE-SPECIFICATIONS.md",
+          "size": 25014
+        },
+        {
+          "type": "file",
+          "name": "vm-recovery-guide.md",
+          "path": "docs\\vm-recovery-guide.md",
+          "size": 4586
+        },
+        {
+          "type": "file",
+          "name": "windows-gpu-plex-compatibility.md",
+          "path": "docs\\windows-gpu-plex-compatibility.md",
+          "size": 4407
+        },
+        {
+          "type": "file",
+          "name": "windows-server-2025-deployment.md",
+          "path": "docs\\windows-server-2025-deployment.md",
+          "size": 6950
+        },
+        {
+          "type": "file",
+          "name": "wireguard-server-config.md",
+          "path": "docs\\wireguard-server-config.md",
+          "size": 5209
+        },
+        {
+          "type": "file",
+          "name": "wordpress-production-hardening.md",
+          "path": "docs\\wordpress-production-hardening.md",
+          "size": 1044
+        },
+        {
+          "type": "file",
+          "name": "wordpress-stripe-integration-complete.md",
+          "path": "docs\\wordpress-stripe-integration-complete.md",
+          "size": 9519
+        }
+      ]
+    },
+    {
+      "type": "directory",
+      "name": "documentation",
+      "path": "Dell-Server-Roadmap\\documentation",
+      "children": [
+        {
+          "type": "directory",
+          "name": "business-plan",
+          "path": "documentation\\business-plan",
+          "children": [
+            {
+              "type": "file",
+              "name": "connectivity-options.md",
+              "path": "business-plan\\connectivity-options.md",
+              "size": 3440
+            },
+            {
+              "type": "file",
+              "name": "device-specs.md",
+              "path": "business-plan\\device-specs.md",
+              "size": 2435
+            },
+            {
+              "type": "file",
+              "name": "name-ideas.md",
+              "path": "business-plan\\name-ideas.md",
+              "size": 1834
+            },
+            {
+              "type": "file",
+              "name": "roadmap.md",
+              "path": "business-plan\\roadmap.md",
+              "size": 2146
+            },
+            {
+              "type": "file",
+              "name": "server-requirements.md",
+              "path": "business-plan\\server-requirements.md",
+              "size": 4771
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "DOCUMENTATION-UPDATE-2025-11-05.md",
+      "path": "Dell-Server-Roadmap\\DOCUMENTATION-UPDATE-2025-11-05.md",
+      "size": 7096
+    },
+    {
+      "type": "file",
+      "name": "DRAGON-RADAR-ENHANCEMENTS-2025-11-08.md",
+      "path": "Dell-Server-Roadmap\\DRAGON-RADAR-ENHANCEMENTS-2025-11-08.md",
+      "size": 3753
+    },
+    {
+      "type": "file",
+      "name": "DRAGON-RADAR-FULL-UI-DEPLOYMENT-PLAN.md",
+      "path": "Dell-Server-Roadmap\\DRAGON-RADAR-FULL-UI-DEPLOYMENT-PLAN.md",
+      "size": 29882
+    },
+    {
+      "type": "file",
+      "name": "ecpi-license-keys.md",
+      "path": "Dell-Server-Roadmap\\ecpi-license-keys.md",
+      "size": 1053
+    },
+    {
+      "type": "file",
+      "name": "ENTERPRISE-SERVICES-ANALYSIS.md",
+      "path": "Dell-Server-Roadmap\\ENTERPRISE-SERVICES-ANALYSIS.md",
+      "size": 24313
+    },
+    {
+      "type": "file",
+      "name": "ENTERPRISE-SERVICES-IMPLEMENTATION-GUIDE.md",
+      "path": "Dell-Server-Roadmap\\ENTERPRISE-SERVICES-IMPLEMENTATION-GUIDE.md",
+      "size": 28221
+    },
+    {
+      "type": "file",
+      "name": "ENTERPRISE-SERVICES-ROADMAP.md",
+      "path": "Dell-Server-Roadmap\\ENTERPRISE-SERVICES-ROADMAP.md",
+      "size": 22266
+    },
+    {
+      "type": "file",
+      "name": "ETERNAL-DRAGON-SHENRON-KNOWLEDGE.md",
+      "path": "Dell-Server-Roadmap\\ETERNAL-DRAGON-SHENRON-KNOWLEDGE.md",
+      "size": 30196
+    },
+    {
+      "type": "file",
+      "name": "EXECUTE-NOW.md",
+      "path": "Dell-Server-Roadmap\\EXECUTE-NOW.md",
+      "size": 6172
+    },
+    {
+      "type": "file",
+      "name": "EXECUTION-READY-2025-11-06.md",
+      "path": "Dell-Server-Roadmap\\EXECUTION-READY-2025-11-06.md",
+      "size": 14803
+    },
+    {
+      "type": "file",
+      "name": "FINAL-EXECUTION-SUMMARY-2025-11-06.md",
+      "path": "Dell-Server-Roadmap\\FINAL-EXECUTION-SUMMARY-2025-11-06.md",
+      "size": 18995
+    },
+    {
+      "type": "file",
+      "name": "FINAL-IMPLEMENTATION-SUMMARY.md",
+      "path": "Dell-Server-Roadmap\\FINAL-IMPLEMENTATION-SUMMARY.md",
+      "size": 7869
+    },
+    {
+      "type": "file",
+      "name": "final-pre-clone-checklist.ps1",
+      "path": "Dell-Server-Roadmap\\final-pre-clone-checklist.ps1",
+      "size": 5084
+    },
+    {
+      "type": "file",
+      "name": "FINAL-UPDATE-SUMMARY.md",
+      "path": "Dell-Server-Roadmap\\FINAL-UPDATE-SUMMARY.md",
+      "size": 5576
+    },
+    {
+      "type": "file",
+      "name": "FULL-SEND-COMPLETE-2025-11-06.md",
+      "path": "Dell-Server-Roadmap\\FULL-SEND-COMPLETE-2025-11-06.md",
+      "size": 15819
+    },
+    {
+      "type": "directory",
+      "name": "github-setup",
+      "path": "Dell-Server-Roadmap\\github-setup",
+      "children": [
+        {
+          "type": "directory",
+          "name": "contributing",
+          "path": "github-setup\\contributing",
+          "children": [
+            {
+              "type": "file",
+              "name": "CODE_STYLE.md",
+              "path": "contributing\\CODE_STYLE.md",
+              "size": 7103
+            },
+            {
+              "type": "file",
+              "name": "CONTRIBUTING.md",
+              "path": "contributing\\CONTRIBUTING.md",
+              "size": 6600
+            }
+          ]
+        },
+        {
+          "type": "directory",
+          "name": "legal",
+          "path": "github-setup\\legal",
+          "children": [
+            {
+              "type": "file",
+              "name": "LICENSE-APACHE.md",
+              "path": "legal\\LICENSE-APACHE.md",
+              "size": 3347
+            }
+          ]
+        },
+        {
+          "type": "directory",
+          "name": "organization",
+          "path": "github-setup\\organization",
+          "children": [
+            {
+              "type": "file",
+              "name": "MISSION.md",
+              "path": "organization\\MISSION.md",
+              "size": 4024
+            },
+            {
+              "type": "file",
+              "name": "README.md",
+              "path": "organization\\README.md",
+              "size": 4317
+            }
+          ]
+        },
+        {
+          "type": "directory",
+          "name": "processes",
+          "path": "github-setup\\processes",
+          "children": [
+            {
+              "type": "file",
+              "name": "COMPLIANCE.md",
+              "path": "processes\\COMPLIANCE.md",
+              "size": 5833
+            },
+            {
+              "type": "file",
+              "name": "RELEASE_PROCESS.md",
+              "path": "processes\\RELEASE_PROCESS.md",
+              "size": 6182
+            },
+            {
+              "type": "file",
+              "name": "SECURITY.md",
+              "path": "processes\\SECURITY.md",
+              "size": 5570
+            }
+          ]
+        },
+        {
+          "type": "file",
+          "name": "README.md",
+          "path": "github-setup\\README.md",
+          "size": 56
+        },
+        {
+          "type": "directory",
+          "name": "repositories",
+          "path": "github-setup\\repositories",
+          "children": [
+            {
+              "type": "file",
+              "name": "ROADSCAN-NETWORK.md",
+              "path": "repositories\\ROADSCAN-NETWORK.md",
+              "size": 6146
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "GOOGLE-CALENDAR-SHARING-INSTRUCTIONS.md",
+      "path": "Dell-Server-Roadmap\\GOOGLE-CALENDAR-SHARING-INSTRUCTIONS.md",
+      "size": 4809
+    },
+    {
+      "type": "file",
+      "name": "GPU-PASSTHROUGH-GUIDE.md",
+      "path": "Dell-Server-Roadmap\\GPU-PASSTHROUGH-GUIDE.md",
+      "size": 5351
+    },
+    {
+      "type": "file",
+      "name": "GSMG-ULTRA-INSTINCT-SOLVER-PROMPT.md",
+      "path": "Dell-Server-Roadmap\\GSMG-ULTRA-INSTINCT-SOLVER-PROMPT.md",
+      "size": 11109
+    },
+    {
+      "type": "file",
+      "name": "GSMG_PUZZLE_NOTES.md",
+      "path": "Dell-Server-Roadmap\\GSMG_PUZZLE_NOTES.md",
+      "size": 1343
+    },
+    {
+      "type": "file",
+      "name": "HARDWARE-INVENTORY-SUMMARY.md",
+      "path": "Dell-Server-Roadmap\\HARDWARE-INVENTORY-SUMMARY.md",
+      "size": 8175
+    },
+    {
+      "type": "file",
+      "name": "HELP-ME-07-NOV-2025.md",
+      "path": "Dell-Server-Roadmap\\HELP-ME-07-NOV-2025.md",
+      "size": 44791
+    },
+    {
+      "type": "file",
+      "name": "HTML-vs-JS-FULL-AUDIT.md",
+      "path": "Dell-Server-Roadmap\\HTML-vs-JS-FULL-AUDIT.md",
+      "size": 8119
+    },
+    {
+      "type": "file",
+      "name": "IMMEDIATE-NEXT-STEPS.md",
+      "path": "Dell-Server-Roadmap\\IMMEDIATE-NEXT-STEPS.md",
+      "size": 4864
+    },
+    {
+      "type": "file",
+      "name": "INCOME-GENERATION-MASTER-PLAN.md",
+      "path": "Dell-Server-Roadmap\\INCOME-GENERATION-MASTER-PLAN.md",
+      "size": 32240
+    },
+    {
+      "type": "file",
+      "name": "INCOME-SYSTEM-3K-MONTHLY-COMPLETE-PLAN.md",
+      "path": "Dell-Server-Roadmap\\INCOME-SYSTEM-3K-MONTHLY-COMPLETE-PLAN.md",
+      "size": 30055
+    },
+    {
+      "type": "file",
+      "name": "INFRASTRUCTURE-STATUS.md",
+      "path": "Dell-Server-Roadmap\\INFRASTRUCTURE-STATUS.md",
+      "size": 9236
+    },
+    {
+      "type": "file",
+      "name": "knowledge-advanced-scalpstorm-architecture.md",
+      "path": "Dell-Server-Roadmap\\knowledge-advanced-scalpstorm-architecture.md",
+      "size": 23951
+    },
+    {
+      "type": "directory",
+      "name": "knowledge-base",
+      "path": "Dell-Server-Roadmap\\knowledge-base",
+      "children": [
+        {
+          "type": "file",
+          "name": "knowledge-advanced-steganography-2025.md",
+          "path": "knowledge-base\\knowledge-advanced-steganography-2025.md",
+          "size": 17295
+        },
+        {
+          "type": "file",
+          "name": "knowledge-bitcoin-challenge-puzzles-advanced-2025.md",
+          "path": "knowledge-base\\knowledge-bitcoin-challenge-puzzles-advanced-2025.md",
+          "size": 17895
+        },
+        {
+          "type": "file",
+          "name": "knowledge-blockchain-forensics-2025.md",
+          "path": "knowledge-base\\knowledge-blockchain-forensics-2025.md",
+          "size": 17884
+        },
+        {
+          "type": "file",
+          "name": "knowledge-crypto-puzzles-comprehensive-2025.md",
+          "path": "knowledge-base\\knowledge-crypto-puzzles-comprehensive-2025.md",
+          "size": 17116
+        },
+        {
+          "type": "file",
+          "name": "knowledge-gpu-bip39-acceleration-2025.md",
+          "path": "knowledge-base\\knowledge-gpu-bip39-acceleration-2025.md",
+          "size": 18177
+        },
+        {
+          "type": "file",
+          "name": "knowledge-trithemius-cipher-puzzle.md",
+          "path": "knowledge-base\\knowledge-trithemius-cipher-puzzle.md",
+          "size": 12624
+        },
+        {
+          "type": "file",
+          "name": "shenron-current-hardware-config-2025-11-06.md",
+          "path": "knowledge-base\\shenron-current-hardware-config-2025-11-06.md",
+          "size": 2819
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "knowledge-base-binance-us-bnb-2025.md",
+      "path": "Dell-Server-Roadmap\\knowledge-base-binance-us-bnb-2025.md",
+      "size": 13701
+    },
+    {
+      "type": "file",
+      "name": "knowledge-base-bitcoin-crypto-trading-2025.md",
+      "path": "Dell-Server-Roadmap\\knowledge-base-bitcoin-crypto-trading-2025.md",
+      "size": 12417
+    },
+    {
+      "type": "file",
+      "name": "knowledge-base-cpp-23.md",
+      "path": "Dell-Server-Roadmap\\knowledge-base-cpp-23.md",
+      "size": 4777
+    },
+    {
+      "type": "file",
+      "name": "knowledge-base-defi-yield-farming-2025.md",
+      "path": "Dell-Server-Roadmap\\knowledge-base-defi-yield-farming-2025.md",
+      "size": 11161
+    },
+    {
+      "type": "file",
+      "name": "knowledge-base-dell-r730-complete.md",
+      "path": "Dell-Server-Roadmap\\knowledge-base-dell-r730-complete.md",
+      "size": 22746
+    },
+    {
+      "type": "file",
+      "name": "knowledge-base-disclaimer-and-sources.md",
+      "path": "Dell-Server-Roadmap\\knowledge-base-disclaimer-and-sources.md",
+      "size": 6910
+    },
+    {
+      "type": "file",
+      "name": "knowledge-base-discord-bots-apis-2025.md",
+      "path": "Dell-Server-Roadmap\\knowledge-base-discord-bots-apis-2025.md",
+      "size": 15618
+    },
+    {
+      "type": "file",
+      "name": "knowledge-base-docker-kubernetes-2025.md",
+      "path": "Dell-Server-Roadmap\\knowledge-base-docker-kubernetes-2025.md",
+      "size": 9237
+    },
+    {
+      "type": "file",
+      "name": "knowledge-base-golang-122.md",
+      "path": "Dell-Server-Roadmap\\knowledge-base-golang-122.md",
+      "size": 12669
+    },
+    {
+      "type": "file",
+      "name": "knowledge-base-java-21.md",
+      "path": "Dell-Server-Roadmap\\knowledge-base-java-21.md",
+      "size": 13957
+    },
+    {
+      "type": "file",
+      "name": "knowledge-base-javascript-typescript.md",
+      "path": "Dell-Server-Roadmap\\knowledge-base-javascript-typescript.md",
+      "size": 4648
+    },
+    {
+      "type": "file",
+      "name": "knowledge-base-nvidia-grid-k1-complete.md",
+      "path": "Dell-Server-Roadmap\\knowledge-base-nvidia-grid-k1-complete.md",
+      "size": 24962
+    },
+    {
+      "type": "file",
+      "name": "knowledge-base-plex-streamforge-2025.md",
+      "path": "Dell-Server-Roadmap\\knowledge-base-plex-streamforge-2025.md",
+      "size": 12507
+    },
+    {
+      "type": "file",
+      "name": "knowledge-base-project-scalpstorm-80-dollar.md",
+      "path": "Dell-Server-Roadmap\\knowledge-base-project-scalpstorm-80-dollar.md",
+      "size": 11961
+    },
+    {
+      "type": "file",
+      "name": "knowledge-base-python-311-2025.md",
+      "path": "Dell-Server-Roadmap\\knowledge-base-python-311-2025.md",
+      "size": 9170
+    },
+    {
+      "type": "file",
+      "name": "knowledge-base-ruby-julia-mojo-sqlserver.md",
+      "path": "Dell-Server-Roadmap\\knowledge-base-ruby-julia-mojo-sqlserver.md",
+      "size": 5001
+    },
+    {
+      "type": "file",
+      "name": "knowledge-base-rust-175.md",
+      "path": "Dell-Server-Roadmap\\knowledge-base-rust-175.md",
+      "size": 11871
+    },
+    {
+      "type": "file",
+      "name": "knowledge-base-week6-trading-mastery.md",
+      "path": "Dell-Server-Roadmap\\knowledge-base-week6-trading-mastery.md",
+      "size": 12199
+    },
+    {
+      "type": "file",
+      "name": "knowledge-base-week7-ai-powerhouse.md",
+      "path": "Dell-Server-Roadmap\\knowledge-base-week7-ai-powerhouse.md",
+      "size": 11103
+    },
+    {
+      "type": "file",
+      "name": "knowledge-base-weeks8-11-complete.md",
+      "path": "Dell-Server-Roadmap\\knowledge-base-weeks8-11-complete.md",
+      "size": 11380
+    },
+    {
+      "type": "file",
+      "name": "knowledge-base-windows-server-2025.md",
+      "path": "Dell-Server-Roadmap\\knowledge-base-windows-server-2025.md",
+      "size": 20745
+    },
+    {
+      "type": "file",
+      "name": "knowledge-base-wordpress-monetization-2025.md",
+      "path": "Dell-Server-Roadmap\\knowledge-base-wordpress-monetization-2025.md",
+      "size": 11624
+    },
+    {
+      "type": "file",
+      "name": "KNOWLEDGE-ENHANCEMENT-TO-100-PLAN.md",
+      "path": "Dell-Server-Roadmap\\KNOWLEDGE-ENHANCEMENT-TO-100-PLAN.md",
+      "size": 9043
+    },
+    {
+      "type": "file",
+      "name": "KNOWLEDGE-PACK-FINAL-11-FILES.md",
+      "path": "Dell-Server-Roadmap\\KNOWLEDGE-PACK-FINAL-11-FILES.md",
+      "size": 22598
+    },
+    {
+      "type": "file",
+      "name": "LINKEDIN-DAY-2-POSTS.md",
+      "path": "Dell-Server-Roadmap\\LINKEDIN-DAY-2-POSTS.md",
+      "size": 13721
+    },
+    {
+      "type": "file",
+      "name": "LM-STUDIO-AUTO-LOAD-SETUP.md",
+      "path": "Dell-Server-Roadmap\\LM-STUDIO-AUTO-LOAD-SETUP.md",
+      "size": 5997
+    },
+    {
+      "type": "file",
+      "name": "LM-STUDIO-GUIDE.md",
+      "path": "Dell-Server-Roadmap\\LM-STUDIO-GUIDE.md",
+      "size": 13417
+    },
+    {
+      "type": "directory",
+      "name": "logistics-strategy",
+      "path": "Dell-Server-Roadmap\\logistics-strategy",
+      "children": [
+        {
+          "type": "file",
+          "name": "OVERVIEW.md",
+          "path": "logistics-strategy\\OVERVIEW.md",
+          "size": 6525
+        }
+      ]
+    },
+    {
+      "type": "directory",
+      "name": "Marketing-Automation",
+      "path": "Dell-Server-Roadmap\\Marketing-Automation",
+      "children": [
+        {
+          "type": "directory",
+          "name": "agents",
+          "path": "Marketing-Automation\\agents",
+          "children": [
+            {
+              "type": "file",
+              "name": "content_creator.py",
+              "path": "agents\\content_creator.py",
+              "size": 21711
+            },
+            {
+              "type": "file",
+              "name": "marketing_bot.py",
+              "path": "agents\\marketing_bot.py",
+              "size": 22695
+            }
+          ]
+        },
+        {
+          "type": "directory",
+          "name": "blog-posts",
+          "path": "Marketing-Automation\\blog-posts",
+          "children": [
+            {
+              "type": "file",
+              "name": "month-1-building-in-public.md",
+              "path": "blog-posts\\month-1-building-in-public.md",
+              "size": 16300
+            }
+          ]
+        },
+        {
+          "type": "file",
+          "name": "check-setup.sh",
+          "path": "Marketing-Automation\\check-setup.sh",
+          "size": 8969
+        },
+        {
+          "type": "file",
+          "name": "cleanup_passiveincome.sh",
+          "path": "Marketing-Automation\\cleanup_passiveincome.sh",
+          "size": 4330
+        },
+        {
+          "type": "directory",
+          "name": "config",
+          "path": "Marketing-Automation\\config",
+          "children": [
+            {
+              "type": "file",
+              "name": "content_config.json",
+              "path": "config\\content_config.json",
+              "size": 3955
+            },
+            {
+              "type": "file",
+              "name": "marketing_config.json",
+              "path": "config\\marketing_config.json",
+              "size": 4109
+            },
+            {
+              "type": "file",
+              "name": "marketing_schedule.json",
+              "path": "config\\marketing_schedule.json",
+              "size": 3967
+            }
+          ]
+        },
+        {
+          "type": "directory",
+          "name": "content",
+          "path": "Marketing-Automation\\content",
+          "children": [
+            {
+              "type": "file",
+              "name": "api-services-comparison-20251101.md",
+              "path": "content\\api-services-comparison-20251101.md",
+              "size": 1714
+            },
+            {
+              "type": "file",
+              "name": "api-services-how-to-20251101.md",
+              "path": "content\\api-services-how-to-20251101.md",
+              "size": 1333
+            },
+            {
+              "type": "file",
+              "name": "api-services-tutorial-20251101.md",
+              "path": "content\\api-services-tutorial-20251101.md",
+              "size": 1714
+            },
+            {
+              "type": "file",
+              "name": "content_calendar.json",
+              "path": "content\\content_calendar.json",
+              "size": 3873
+            },
+            {
+              "type": "file",
+              "name": "discord-bots-comparison-20251101.md",
+              "path": "content\\discord-bots-comparison-20251101.md",
+              "size": 1688
+            },
+            {
+              "type": "file",
+              "name": "discord-bots-how-to-20251101.md",
+              "path": "content\\discord-bots-how-to-20251101.md",
+              "size": 1320
+            },
+            {
+              "type": "file",
+              "name": "discord-bots-tutorial-20251101.md",
+              "path": "content\\discord-bots-tutorial-20251101.md",
+              "size": 1727
+            },
+            {
+              "type": "file",
+              "name": "game-server-hosting-comparison-20251101.md",
+              "path": "content\\game-server-hosting-comparison-20251101.md",
+              "size": 1725
+            },
+            {
+              "type": "file",
+              "name": "game-server-hosting-how-to-20251101.md",
+              "path": "content\\game-server-hosting-how-to-20251101.md",
+              "size": 1377
+            },
+            {
+              "type": "file",
+              "name": "game-server-hosting-tutorial-20251101.md",
+              "path": "content\\game-server-hosting-tutorial-20251101.md",
+              "size": 1740
+            },
+            {
+              "type": "file",
+              "name": "wordpress-hosting-comparison-20251101.md",
+              "path": "content\\wordpress-hosting-comparison-20251101.md",
+              "size": 1740
+            },
+            {
+              "type": "file",
+              "name": "wordpress-hosting-how-to-20251101.md",
+              "path": "content\\wordpress-hosting-how-to-20251101.md",
+              "size": 1705
+            },
+            {
+              "type": "file",
+              "name": "wordpress-hosting-tutorial-20251101.md",
+              "path": "content\\wordpress-hosting-tutorial-20251101.md",
+              "size": 1747
+            }
+          ]
+        },
+        {
+          "type": "file",
+          "name": "FAMILY-CARE-DASHBOARD-COMMUNITY-STRATEGY.md",
+          "path": "Marketing-Automation\\FAMILY-CARE-DASHBOARD-COMMUNITY-STRATEGY.md",
+          "size": 23720
+        },
+        {
+          "type": "file",
+          "name": "FAMILY-CARE-DASHBOARD-CONTENT-CALENDAR.md",
+          "path": "Marketing-Automation\\FAMILY-CARE-DASHBOARD-CONTENT-CALENDAR.md",
+          "size": 22104
+        },
+        {
+          "type": "file",
+          "name": "FAMILY-CARE-DASHBOARD-LAUNCH-STRATEGY.md",
+          "path": "Marketing-Automation\\FAMILY-CARE-DASHBOARD-LAUNCH-STRATEGY.md",
+          "size": 19556
+        },
+        {
+          "type": "file",
+          "name": "FAMILY-CARE-DASHBOARD-PRESS-OUTREACH.md",
+          "path": "Marketing-Automation\\FAMILY-CARE-DASHBOARD-PRESS-OUTREACH.md",
+          "size": 23908
+        },
+        {
+          "type": "file",
+          "name": "FAMILY-CARE-DASHBOARD-QUICK-START.md",
+          "path": "Marketing-Automation\\FAMILY-CARE-DASHBOARD-QUICK-START.md",
+          "size": 15766
+        },
+        {
+          "type": "file",
+          "name": "FAMILY-CARE-DASHBOARD-README.md",
+          "path": "Marketing-Automation\\FAMILY-CARE-DASHBOARD-README.md",
+          "size": 13175
+        },
+        {
+          "type": "file",
+          "name": "get-linkedin-token.py",
+          "path": "Marketing-Automation\\get-linkedin-token.py",
+          "size": 6271
+        },
+        {
+          "type": "directory",
+          "name": "github-launch",
+          "path": "Marketing-Automation\\github-launch",
+          "children": [
+            {
+              "type": "file",
+              "name": "blog-post-1-progress-report.md",
+              "path": "github-launch\\blog-post-1-progress-report.md",
+              "size": 14043
+            },
+            {
+              "type": "file",
+              "name": "INTEGRATED-LAUNCH-STRATEGY.md",
+              "path": "github-launch\\INTEGRATED-LAUNCH-STRATEGY.md",
+              "size": 14907
+            },
+            {
+              "type": "file",
+              "name": "LAUNCH-GUIDE.md",
+              "path": "github-launch\\LAUNCH-GUIDE.md",
+              "size": 12052
+            },
+            {
+              "type": "file",
+              "name": "PassiveIncome-README-BuildInPublic.md",
+              "path": "github-launch\\PassiveIncome-README-BuildInPublic.md",
+              "size": 10394
+            },
+            {
+              "type": "file",
+              "name": "PassiveIncome-README-FINAL.md",
+              "path": "github-launch\\PassiveIncome-README-FINAL.md",
+              "size": 10724
+            },
+            {
+              "type": "file",
+              "name": "reddit-post-FINAL.md",
+              "path": "github-launch\\reddit-post-FINAL.md",
+              "size": 8398
+            },
+            {
+              "type": "file",
+              "name": "reddit-selfhosted-post.md",
+              "path": "github-launch\\reddit-selfhosted-post.md",
+              "size": 8149
+            },
+            {
+              "type": "file",
+              "name": "waitlist-page.html",
+              "path": "github-launch\\waitlist-page.html",
+              "size": 11817
+            }
+          ]
+        },
+        {
+          "type": "file",
+          "name": "launch-automation.py",
+          "path": "Marketing-Automation\\launch-automation.py",
+          "size": 22830
+        },
+        {
+          "type": "file",
+          "name": "launch-config.json",
+          "path": "Marketing-Automation\\launch-config.json",
+          "size": 2103
+        },
+        {
+          "type": "file",
+          "name": "launch.sh",
+          "path": "Marketing-Automation\\launch.sh",
+          "size": 4405
+        },
+        {
+          "type": "file",
+          "name": "PASSIVEINCOME-CLEANUP-GUIDE.md",
+          "path": "Marketing-Automation\\PASSIVEINCOME-CLEANUP-GUIDE.md",
+          "size": 8088
+        },
+        {
+          "type": "directory",
+          "name": "public-repos",
+          "path": "Marketing-Automation\\public-repos",
+          "children": [
+            {
+              "type": "directory",
+              "name": "LightSpeedUp-APIs",
+              "path": "public-repos\\LightSpeedUp-APIs",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "README.md",
+                  "path": "LightSpeedUp-APIs\\README.md",
+                  "size": 12049
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "LightSpeedUp-DiscordBots",
+              "path": "public-repos\\LightSpeedUp-DiscordBots",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "README.md",
+                  "path": "LightSpeedUp-DiscordBots\\README.md",
+                  "size": 9922
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "LightSpeedUp-GameServers",
+              "path": "public-repos\\LightSpeedUp-GameServers",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "README.md",
+                  "path": "LightSpeedUp-GameServers\\README.md",
+                  "size": 10170
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "LightSpeedUp-WordPress",
+              "path": "public-repos\\LightSpeedUp-WordPress",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "README.md",
+                  "path": "LightSpeedUp-WordPress\\README.md",
+                  "size": 7230
+                }
+              ]
+            },
+            {
+              "type": "file",
+              "name": "PassiveIncome-Public-README.md",
+              "path": "public-repos\\PassiveIncome-Public-README.md",
+              "size": 11410
+            }
+          ]
+        },
+        {
+          "type": "file",
+          "name": "README.md",
+          "path": "Marketing-Automation\\README.md",
+          "size": 10638
+        },
+        {
+          "type": "file",
+          "name": "SETUP-GUIDE.md",
+          "path": "Marketing-Automation\\SETUP-GUIDE.md",
+          "size": 12073
+        },
+        {
+          "type": "file",
+          "name": "setup_cron.sh",
+          "path": "Marketing-Automation\\setup_cron.sh",
+          "size": 2163
+        },
+        {
+          "type": "directory",
+          "name": "social-media-automation",
+          "path": "Marketing-Automation\\social-media-automation",
+          "children": [
+            {
+              "type": "file",
+              "name": "ACTION-PLAN-TODAY.md",
+              "path": "social-media-automation\\ACTION-PLAN-TODAY.md",
+              "size": 9006
+            },
+            {
+              "type": "file",
+              "name": "API-SETUP-GUIDE.md",
+              "path": "social-media-automation\\API-SETUP-GUIDE.md",
+              "size": 10094
+            },
+            {
+              "type": "directory",
+              "name": "config",
+              "path": "social-media-automation\\config",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "schedule.json",
+                  "path": "config\\schedule.json",
+                  "size": 2275
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "content",
+              "path": "social-media-automation\\content",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "additional-reddit-posts.json",
+                  "path": "content\\additional-reddit-posts.json",
+                  "size": 28671
+                },
+                {
+                  "type": "file",
+                  "name": "geographic-datacenter-posts.json",
+                  "path": "content\\geographic-datacenter-posts.json",
+                  "size": 17688
+                },
+                {
+                  "type": "file",
+                  "name": "global-architect-posts.json",
+                  "path": "content\\global-architect-posts.json",
+                  "size": 16716
+                },
+                {
+                  "type": "file",
+                  "name": "india-international-posts.json",
+                  "path": "content\\india-international-posts.json",
+                  "size": 12661
+                },
+                {
+                  "type": "file",
+                  "name": "massive-launch-posts.json",
+                  "path": "content\\massive-launch-posts.json",
+                  "size": 12950
+                },
+                {
+                  "type": "file",
+                  "name": "posts.json",
+                  "path": "content\\posts.json",
+                  "size": 117805
+                },
+                {
+                  "type": "file",
+                  "name": "reddit-communities-research.md",
+                  "path": "content\\reddit-communities-research.md",
+                  "size": 8827
+                },
+                {
+                  "type": "file",
+                  "name": "reddit-launch-posts-revised.md",
+                  "path": "content\\reddit-launch-posts-revised.md",
+                  "size": 15098
+                },
+                {
+                  "type": "file",
+                  "name": "reddit-launch-posts.md",
+                  "path": "content\\reddit-launch-posts.md",
+                  "size": 14978
+                },
+                {
+                  "type": "file",
+                  "name": "sunday-monday-posts.json",
+                  "path": "content\\sunday-monday-posts.json",
+                  "size": 8751
+                },
+                {
+                  "type": "file",
+                  "name": "target_subreddits.txt",
+                  "path": "content\\target_subreddits.txt",
+                  "size": 467
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "credentials",
+              "path": "social-media-automation\\credentials",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "api_credentials.json.template",
+                  "path": "credentials\\api_credentials.json.template",
+                  "size": 616
+                }
+              ]
+            },
+            {
+              "type": "file",
+              "name": "LAUNCH-SUMMARY.md",
+              "path": "social-media-automation\\LAUNCH-SUMMARY.md",
+              "size": 13141
+            },
+            {
+              "type": "file",
+              "name": "MASTER-GUIDE.md",
+              "path": "social-media-automation\\MASTER-GUIDE.md",
+              "size": 15581
+            },
+            {
+              "type": "file",
+              "name": "QUICK-START.md",
+              "path": "social-media-automation\\QUICK-START.md",
+              "size": 7889
+            },
+            {
+              "type": "file",
+              "name": "README.md",
+              "path": "social-media-automation\\README.md",
+              "size": 9807
+            },
+            {
+              "type": "file",
+              "name": "requirements.txt",
+              "path": "social-media-automation\\requirements.txt",
+              "size": 270
+            },
+            {
+              "type": "directory",
+              "name": "scripts",
+              "path": "social-media-automation\\scripts",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "check_subreddit_rules.py",
+                  "path": "scripts\\check_subreddit_rules.py",
+                  "size": 8817
+                },
+                {
+                  "type": "file",
+                  "name": "linkedin_poster.py",
+                  "path": "scripts\\linkedin_poster.py",
+                  "size": 7946
+                },
+                {
+                  "type": "file",
+                  "name": "master_poster.py",
+                  "path": "scripts\\master_poster.py",
+                  "size": 12195
+                },
+                {
+                  "type": "file",
+                  "name": "monitor.py",
+                  "path": "scripts\\monitor.py",
+                  "size": 9967
+                },
+                {
+                  "type": "file",
+                  "name": "reddit_poster.py",
+                  "path": "scripts\\reddit_poster.py",
+                  "size": 10952
+                },
+                {
+                  "type": "file",
+                  "name": "setup_automation.sh",
+                  "path": "scripts\\setup_automation.sh",
+                  "size": 5805
+                },
+                {
+                  "type": "file",
+                  "name": "twitter_poster.py",
+                  "path": "scripts\\twitter_poster.py",
+                  "size": 8723
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "file",
+          "name": "SUMMARY.md",
+          "path": "Marketing-Automation\\SUMMARY.md",
+          "size": 9678
+        },
+        {
+          "type": "directory",
+          "name": "templates",
+          "path": "Marketing-Automation\\templates",
+          "children": [
+            {
+              "type": "file",
+              "name": "reddit-api-services-free-resource.md",
+              "path": "templates\\reddit-api-services-free-resource.md",
+              "size": 1660
+            },
+            {
+              "type": "file",
+              "name": "reddit-discord-bots-behind-the-scenes.md",
+              "path": "templates\\reddit-discord-bots-behind-the-scenes.md",
+              "size": 1225
+            },
+            {
+              "type": "file",
+              "name": "reddit-discord-bots-helpful-tutorial.md",
+              "path": "templates\\reddit-discord-bots-helpful-tutorial.md",
+              "size": 1281
+            },
+            {
+              "type": "file",
+              "name": "reddit-game-server-hosting-helpful-tutorial.md",
+              "path": "templates\\reddit-game-server-hosting-helpful-tutorial.md",
+              "size": 1656
+            },
+            {
+              "type": "file",
+              "name": "reddit-wordpress-hosting-comparison-article.md",
+              "path": "templates\\reddit-wordpress-hosting-comparison-article.md",
+              "size": 1471
+            },
+            {
+              "type": "file",
+              "name": "reddit-wordpress-hosting-free-resource.md",
+              "path": "templates\\reddit-wordpress-hosting-free-resource.md",
+              "size": 1042
+            },
+            {
+              "type": "file",
+              "name": "reddit-wordpress-hosting-helpful-tutorial.md",
+              "path": "templates\\reddit-wordpress-hosting-helpful-tutorial.md",
+              "size": 1365
+            }
+          ]
+        },
+        {
+          "type": "file",
+          "name": "workflow.sh",
+          "path": "Marketing-Automation\\workflow.sh",
+          "size": 6810
+        }
+      ]
+    },
+    {
+      "type": "directory",
+      "name": "monitoring",
+      "path": "Dell-Server-Roadmap\\monitoring",
+      "children": [
+        {
+          "type": "file",
+          "name": "server-health.md",
+          "path": "monitoring\\server-health.md",
+          "size": 4670
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "MULTI-AI-CONSENSUS-IMPLEMENTATION-PLAN.md",
+      "path": "Dell-Server-Roadmap\\MULTI-AI-CONSENSUS-IMPLEMENTATION-PLAN.md",
+      "size": 21216
+    },
+    {
+      "type": "file",
+      "name": "NETWORK-IMPLEMENTATION-SUMMARY.md",
+      "path": "Dell-Server-Roadmap\\NETWORK-IMPLEMENTATION-SUMMARY.md",
+      "size": 7749
+    },
+    {
+      "type": "file",
+      "name": "NEXT-10-PRIORITY-TASKS.md",
+      "path": "Dell-Server-Roadmap\\NEXT-10-PRIORITY-TASKS.md",
+      "size": 11407
+    },
+    {
+      "type": "file",
+      "name": "NOVEMBER-6-2025-COMPLETE-PROGRESS.md",
+      "path": "Dell-Server-Roadmap\\NOVEMBER-6-2025-COMPLETE-PROGRESS.md",
+      "size": 11833
+    },
+    {
+      "type": "file",
+      "name": "NOVEMBER-6-2025-HARDWARE-INVENTORY-COMPLETE.md",
+      "path": "Dell-Server-Roadmap\\NOVEMBER-6-2025-HARDWARE-INVENTORY-COMPLETE.md",
+      "size": 16262
+    },
+    {
+      "type": "file",
+      "name": "OPTIONS-D-E-COMPLETE-2025-11-06.md",
+      "path": "Dell-Server-Roadmap\\OPTIONS-D-E-COMPLETE-2025-11-06.md",
+      "size": 14967
+    },
+    {
+      "type": "file",
+      "name": "PARALLEL-BUG-FIX-ANALYSIS.md",
+      "path": "Dell-Server-Roadmap\\PARALLEL-BUG-FIX-ANALYSIS.md",
+      "size": 13822
+    },
+    {
+      "type": "file",
+      "name": "PARALLEL-BUG-FIX-COMPLETE.md",
+      "path": "Dell-Server-Roadmap\\PARALLEL-BUG-FIX-COMPLETE.md",
+      "size": 15085
+    },
+    {
+      "type": "file",
+      "name": "POST-DEBUG-FIX-PLAN.md",
+      "path": "Dell-Server-Roadmap\\POST-DEBUG-FIX-PLAN.md",
+      "size": 11508
+    },
+    {
+      "type": "file",
+      "name": "POST-NOW-ACTION-PLAN.md",
+      "path": "Dell-Server-Roadmap\\POST-NOW-ACTION-PLAN.md",
+      "size": 10390
+    },
+    {
+      "type": "directory",
+      "name": "Potential Customers",
+      "path": "Dell-Server-Roadmap\\Potential Customers",
+      "children": [
+        {
+          "type": "file",
+          "name": "MatoTeziTanka-WordPress-VM.md",
+          "path": "Potential Customers\\MatoTeziTanka-WordPress-VM.md",
+          "size": 2592
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "POWER-MODES-DEPLOYMENT-COMPLETE.md",
+      "path": "Dell-Server-Roadmap\\POWER-MODES-DEPLOYMENT-COMPLETE.md",
+      "size": 11688
+    },
+    {
+      "type": "file",
+      "name": "POWER-MODES-USER-GUIDE.md",
+      "path": "Dell-Server-Roadmap\\POWER-MODES-USER-GUIDE.md",
+      "size": 9429
+    },
+    {
+      "type": "file",
+      "name": "pre-clone-setup.ps1",
+      "path": "Dell-Server-Roadmap\\pre-clone-setup.ps1",
+      "size": 2911
+    },
+    {
+      "type": "file",
+      "name": "PRICING-ALLOCATION-RECOMMENDATION.md",
+      "path": "Dell-Server-Roadmap\\PRICING-ALLOCATION-RECOMMENDATION.md",
+      "size": 4108
+    },
+    {
+      "type": "file",
+      "name": "proactive-downloads-list.md",
+      "path": "Dell-Server-Roadmap\\proactive-downloads-list.md",
+      "size": 2392
+    },
+    {
+      "type": "file",
+      "name": "PROXMOX-ZFS-GPU-FINDINGS.md",
+      "path": "Dell-Server-Roadmap\\PROXMOX-ZFS-GPU-FINDINGS.md",
+      "size": 8564
+    },
+    {
+      "type": "file",
+      "name": "QUANTIZATION-MANUAL-GUIDE.md",
+      "path": "Dell-Server-Roadmap\\QUANTIZATION-MANUAL-GUIDE.md",
+      "size": 9664
+    },
+    {
+      "type": "file",
+      "name": "QUEST-MANAGER-DEPLOYMENT-GUIDE.md",
+      "path": "Dell-Server-Roadmap\\QUEST-MANAGER-DEPLOYMENT-GUIDE.md",
+      "size": 10755
+    },
+    {
+      "type": "directory",
+      "name": "quest-system",
+      "path": "Dell-Server-Roadmap\\quest-system",
+      "children": [
+        {
+          "type": "file",
+          "name": "deploy-quest-manager.ps1",
+          "path": "quest-system\\deploy-quest-manager.ps1",
+          "size": 5898
+        },
+        {
+          "type": "file",
+          "name": "quest_api.py",
+          "path": "quest-system\\quest_api.py",
+          "size": 7666
+        },
+        {
+          "type": "file",
+          "name": "quest_manager.py",
+          "path": "quest-system\\quest_manager.py",
+          "size": 20566
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "QUICK-START-TESTING.md",
+      "path": "Dell-Server-Roadmap\\QUICK-START-TESTING.md",
+      "size": 1094
+    },
+    {
+      "type": "file",
+      "name": "README.md",
+      "path": "Dell-Server-Roadmap\\README.md",
+      "size": 8334
+    },
+    {
+      "type": "file",
+      "name": "READY-FOR-LAUNCH.md",
+      "path": "Dell-Server-Roadmap\\READY-FOR-LAUNCH.md",
+      "size": 5353
+    },
+    {
+      "type": "file",
+      "name": "REDDIT-POSTS-NO-LINKS.md",
+      "path": "Dell-Server-Roadmap\\REDDIT-POSTS-NO-LINKS.md",
+      "size": 13981
+    },
+    {
+      "type": "file",
+      "name": "ROADMAP-RECOMMENDATION.md",
+      "path": "Dell-Server-Roadmap\\ROADMAP-RECOMMENDATION.md",
+      "size": 3545
+    },
+    {
+      "type": "directory",
+      "name": "scripts",
+      "path": "Dell-Server-Roadmap\\scripts",
+      "children": [
+        {
+          "type": "file",
+          "name": "Auto-Load-LMStudio-Models.ps1",
+          "path": "scripts\\Auto-Load-LMStudio-Models.ps1",
+          "size": 6120
+        },
+        {
+          "type": "file",
+          "name": "hardware-assessment.sh",
+          "path": "scripts\\hardware-assessment.sh",
+          "size": 2429
+        },
+        {
+          "type": "file",
+          "name": "monitor-free-tier-abuse.sh",
+          "path": "scripts\\monitor-free-tier-abuse.sh",
+          "size": 4006
+        },
+        {
+          "type": "file",
+          "name": "pterodactyl-automation.sh",
+          "path": "scripts\\pterodactyl-automation.sh",
+          "size": 18968
+        },
+        {
+          "type": "file",
+          "name": "Setup-LMStudio-AutoLoad.ps1",
+          "path": "scripts\\Setup-LMStudio-AutoLoad.ps1",
+          "size": 4121
+        },
+        {
+          "type": "file",
+          "name": "SHENRON-FULL-INJECTION.ps1",
+          "path": "scripts\\SHENRON-FULL-INJECTION.ps1",
+          "size": 12011
+        },
+        {
+          "type": "file",
+          "name": "shenron-income-dashboard.py",
+          "path": "scripts\\shenron-income-dashboard.py",
+          "size": 13544
+        },
+        {
+          "type": "file",
+          "name": "start_remote_stats.bat",
+          "path": "scripts\\start_remote_stats.bat",
+          "size": 1072
+        },
+        {
+          "type": "file",
+          "name": "start_remote_stats.py",
+          "path": "scripts\\start_remote_stats.py",
+          "size": 3161
+        },
+        {
+          "type": "file",
+          "name": "sync-all-repos-to-vm101.sh",
+          "path": "scripts\\sync-all-repos-to-vm101.sh",
+          "size": 3820
+        },
+        {
+          "type": "file",
+          "name": "test_remote_stats.py",
+          "path": "scripts\\test_remote_stats.py",
+          "size": 6809
+        },
+        {
+          "type": "file",
+          "name": "vm-101-complete-setup.sh",
+          "path": "scripts\\vm-101-complete-setup.sh",
+          "size": 9110
+        },
+        {
+          "type": "directory",
+          "name": "wordpress",
+          "path": "scripts\\wordpress",
+          "children": [
+            {
+              "type": "file",
+              "name": "bootstrap-wordpress.sh",
+              "path": "wordpress\\bootstrap-wordpress.sh",
+              "size": 4867
+            }
+          ]
+        },
+        {
+          "type": "file",
+          "name": "wordpress-multi-tenant-automation.sh",
+          "path": "scripts\\wordpress-multi-tenant-automation.sh",
+          "size": 16520
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "Server-Roadmap.md",
+      "path": "Dell-Server-Roadmap\\Server-Roadmap.md",
+      "size": 10759
+    },
+    {
+      "type": "file",
+      "name": "SESSION-COMPLETE-2025-11-06-FINAL.md",
+      "path": "Dell-Server-Roadmap\\SESSION-COMPLETE-2025-11-06-FINAL.md",
+      "size": 26652
+    },
+    {
+      "type": "file",
+      "name": "SESSION-COMPLETE-SUMMARY.md",
+      "path": "Dell-Server-Roadmap\\SESSION-COMPLETE-SUMMARY.md",
+      "size": 8513
+    },
+    {
+      "type": "file",
+      "name": "SESSION-SUMMARY-2025-11-06.md",
+      "path": "Dell-Server-Roadmap\\SESSION-SUMMARY-2025-11-06.md",
+      "size": 14567
+    },
+    {
+      "type": "file",
+      "name": "SHENRON-2FA-SECRET.md",
+      "path": "Dell-Server-Roadmap\\SHENRON-2FA-SECRET.md",
+      "size": 2125
+    },
+    {
+      "type": "file",
+      "name": "SHENRON-CURRENT-STATUS-2025-11-06.md",
+      "path": "Dell-Server-Roadmap\\SHENRON-CURRENT-STATUS-2025-11-06.md",
+      "size": 7254
+    },
+    {
+      "type": "file",
+      "name": "SHENRON-DEBUGGER-DESIGN.md",
+      "path": "Dell-Server-Roadmap\\SHENRON-DEBUGGER-DESIGN.md",
+      "size": 19308
+    },
+    {
+      "type": "file",
+      "name": "SHENRON-FULL-ACCESS-SETUP.md",
+      "path": "Dell-Server-Roadmap\\SHENRON-FULL-ACCESS-SETUP.md",
+      "size": 17545
+    },
+    {
+      "type": "file",
+      "name": "SHENRON-KNOWLEDGE-ENHANCEMENT-STRATEGY.md",
+      "path": "Dell-Server-Roadmap\\SHENRON-KNOWLEDGE-ENHANCEMENT-STRATEGY.md",
+      "size": 21705
+    },
+    {
+      "type": "file",
+      "name": "SHENRON-KNOWLEDGE-GAPS-AND-INJECTION-PLAN.md",
+      "path": "Dell-Server-Roadmap\\SHENRON-KNOWLEDGE-GAPS-AND-INJECTION-PLAN.md",
+      "size": 33655
+    },
+    {
+      "type": "file",
+      "name": "SHENRON-KNOWLEDGE-INJECTION-WEEK-1-ACTION-PLAN.md",
+      "path": "Dell-Server-Roadmap\\SHENRON-KNOWLEDGE-INJECTION-WEEK-1-ACTION-PLAN.md",
+      "size": 19795
+    },
+    {
+      "type": "file",
+      "name": "SHENRON-NEXT-KNOWLEDGE-INJECTIONS.md",
+      "path": "Dell-Server-Roadmap\\SHENRON-NEXT-KNOWLEDGE-INJECTIONS.md",
+      "size": 9267
+    },
+    {
+      "type": "file",
+      "name": "SHENRON-POWER-MODES-FINAL-DEPLOYMENT.md",
+      "path": "Dell-Server-Roadmap\\SHENRON-POWER-MODES-FINAL-DEPLOYMENT.md",
+      "size": 22232
+    },
+    {
+      "type": "file",
+      "name": "SHENRON-PRESETS-DEPLOYMENT-v3.0.md",
+      "path": "Dell-Server-Roadmap\\SHENRON-PRESETS-DEPLOYMENT-v3.0.md",
+      "size": 10611
+    },
+    {
+      "type": "file",
+      "name": "SHENRON-PRESETS-v3.2-DEPLOYMENT.md",
+      "path": "Dell-Server-Roadmap\\SHENRON-PRESETS-v3.2-DEPLOYMENT.md",
+      "size": 10023
+    },
+    {
+      "type": "file",
+      "name": "SHENRON-QUICK-START-KNOWLEDGE-INJECTION.md",
+      "path": "Dell-Server-Roadmap\\SHENRON-QUICK-START-KNOWLEDGE-INJECTION.md",
+      "size": 8672
+    },
+    {
+      "type": "file",
+      "name": "SHENRON-TASK-SCHEDULER-SETUP-COMPLETE.md",
+      "path": "Dell-Server-Roadmap\\SHENRON-TASK-SCHEDULER-SETUP-COMPLETE.md",
+      "size": 6519
+    },
+    {
+      "type": "directory",
+      "name": "shenron-ultra-instinct",
+      "path": "Dell-Server-Roadmap\\shenron-ultra-instinct",
+      "children": [
+        {
+          "type": "directory",
+          "name": "phase1",
+          "path": "shenron-ultra-instinct\\phase1",
+          "children": [
+            {
+              "type": "file",
+              "name": "DEPLOY-PHASE1.md",
+              "path": "phase1\\DEPLOY-PHASE1.md",
+              "size": 9215
+            },
+            {
+              "type": "file",
+              "name": "mcp_tools.py",
+              "path": "phase1\\mcp_tools.py",
+              "size": 18737
+            },
+            {
+              "type": "file",
+              "name": "requirements-phase1.txt",
+              "path": "phase1\\requirements-phase1.txt",
+              "size": 410
+            },
+            {
+              "type": "file",
+              "name": "shenron_api_v5_mcp.py",
+              "path": "phase1\\shenron_api_v5_mcp.py",
+              "size": 13668
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "SHENRON-ULTRA-INSTINCT-DEPLOYMENT-STATUS.md",
+      "path": "Dell-Server-Roadmap\\SHENRON-ULTRA-INSTINCT-DEPLOYMENT-STATUS.md",
+      "size": 5256
+    },
+    {
+      "type": "file",
+      "name": "SHENRON-ULTRA-INSTINCT-UPGRADE.md",
+      "path": "Dell-Server-Roadmap\\SHENRON-ULTRA-INSTINCT-UPGRADE.md",
+      "size": 19377
+    },
+    {
+      "type": "file",
+      "name": "SHENRON-V3-CHANGELOG.md",
+      "path": "Dell-Server-Roadmap\\SHENRON-V3-CHANGELOG.md",
+      "size": 15997
+    },
+    {
+      "type": "directory",
+      "name": "shenron-v3-deployment",
+      "path": "Dell-Server-Roadmap\\shenron-v3-deployment",
+      "children": [
+        {
+          "type": "file",
+          "name": "1-Install-Python-Packages.ps1",
+          "path": "shenron-v3-deployment\\1-Install-Python-Packages.ps1",
+          "size": 6053
+        },
+        {
+          "type": "file",
+          "name": "2-Ingest-Knowledge-Base.py",
+          "path": "shenron-v3-deployment\\2-Ingest-Knowledge-Base.py",
+          "size": 8506
+        },
+        {
+          "type": "file",
+          "name": "3-shenron-orchestrator.py",
+          "path": "shenron-v3-deployment\\3-shenron-orchestrator.py",
+          "size": 15380
+        },
+        {
+          "type": "file",
+          "name": "4-shenron-api-server.py",
+          "path": "shenron-v3-deployment\\4-shenron-api-server.py",
+          "size": 5683
+        },
+        {
+          "type": "file",
+          "name": "api-v3.php",
+          "path": "shenron-v3-deployment\\api-v3.php",
+          "size": 2522
+        },
+        {
+          "type": "file",
+          "name": "DEPLOY-SHENRON-V3.md",
+          "path": "shenron-v3-deployment\\DEPLOY-SHENRON-V3.md",
+          "size": 9967
+        },
+        {
+          "type": "file",
+          "name": "README.md",
+          "path": "shenron-v3-deployment\\README.md",
+          "size": 8407
+        },
+        {
+          "type": "file",
+          "name": "SHENRON-V3-READY.md",
+          "path": "shenron-v3-deployment\\SHENRON-V3-READY.md",
+          "size": 10598
+        },
+        {
+          "type": "file",
+          "name": "shenron_orchestrator.py",
+          "path": "shenron-v3-deployment\\shenron_orchestrator.py",
+          "size": 15460
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "SHENRON-V3.3-DEPLOYMENT-SUCCESS.md",
+      "path": "Dell-Server-Roadmap\\SHENRON-V3.3-DEPLOYMENT-SUCCESS.md",
+      "size": 8798
+    },
+    {
+      "type": "file",
+      "name": "SHENRON-v4-DEPLOYMENT-COMPLETE.md",
+      "path": "Dell-Server-Roadmap\\SHENRON-v4-DEPLOYMENT-COMPLETE.md",
+      "size": 6656
+    },
+    {
+      "type": "file",
+      "name": "SHENRON-WEB-UI-FIXES-2025-11-06.md",
+      "path": "Dell-Server-Roadmap\\SHENRON-WEB-UI-FIXES-2025-11-06.md",
+      "size": 15978
+    },
+    {
+      "type": "file",
+      "name": "SHENRON-WEBSITE-DEBUG-COLLAB.md",
+      "path": "Dell-Server-Roadmap\\SHENRON-WEBSITE-DEBUG-COLLAB.md",
+      "size": 8541
+    },
+    {
+      "type": "file",
+      "name": "SHENRON-WEBSITE-FIXES-COMPLETE.md",
+      "path": "Dell-Server-Roadmap\\SHENRON-WEBSITE-FIXES-COMPLETE.md",
+      "size": 7827
+    },
+    {
+      "type": "file",
+      "name": "SHENRON-WEBSITE-REAL-TIME-STATUS-FIX.md",
+      "path": "Dell-Server-Roadmap\\SHENRON-WEBSITE-REAL-TIME-STATUS-FIX.md",
+      "size": 7807
+    },
+    {
+      "type": "file",
+      "name": "SHENRON-WEEK-1-INJECTION-SUCCESS.md",
+      "path": "Dell-Server-Roadmap\\SHENRON-WEEK-1-INJECTION-SUCCESS.md",
+      "size": 5847
+    },
+    {
+      "type": "file",
+      "name": "SHENRONS-SYNDICATE-LMS-HUB-DEPLOYMENT.md",
+      "path": "Dell-Server-Roadmap\\SHENRONS-SYNDICATE-LMS-HUB-DEPLOYMENT.md",
+      "size": 8405
+    },
+    {
+      "type": "file",
+      "name": "SSH-DELAY-NOTES.md",
+      "path": "Dell-Server-Roadmap\\SSH-DELAY-NOTES.md",
+      "size": 2017
+    },
+    {
+      "type": "file",
+      "name": "SSH-SETUP-COMPLETE-CHECKLIST.md",
+      "path": "Dell-Server-Roadmap\\SSH-SETUP-COMPLETE-CHECKLIST.md",
+      "size": 6435
+    },
+    {
+      "type": "file",
+      "name": "START-SHENRON-FIX-NOV7.md",
+      "path": "Dell-Server-Roadmap\\START-SHENRON-FIX-NOV7.md",
+      "size": 6541
+    },
+    {
+      "type": "file",
+      "name": "START-SHENRON.ps1",
+      "path": "Dell-Server-Roadmap\\START-SHENRON.ps1",
+      "size": 15002
+    },
+    {
+      "type": "file",
+      "name": "StreamForge-CONCEPT.md",
+      "path": "Dell-Server-Roadmap\\StreamForge-CONCEPT.md",
+      "size": 4343
+    },
+    {
+      "type": "file",
+      "name": "StreamForge-README.md",
+      "path": "Dell-Server-Roadmap\\StreamForge-README.md",
+      "size": 2200
+    },
+    {
+      "type": "file",
+      "name": "TABLED-IDEAS.md",
+      "path": "Dell-Server-Roadmap\\TABLED-IDEAS.md",
+      "size": 38671
+    },
+    {
+      "type": "file",
+      "name": "TECHNICAL-ASSESSMENT-PLAN.md",
+      "path": "Dell-Server-Roadmap\\TECHNICAL-ASSESSMENT-PLAN.md",
+      "size": 10818
+    },
+    {
+      "type": "directory",
+      "name": "templates",
+      "path": "Dell-Server-Roadmap\\templates",
+      "children": [
+        {
+          "type": "file",
+          "name": "remote_stats_dashboard.html",
+          "path": "templates\\remote_stats_dashboard.html",
+          "size": 26832
+        }
+      ]
+    },
+    {
+      "type": "directory",
+      "name": "trading-bot",
+      "path": "Dell-Server-Roadmap\\trading-bot",
+      "children": [
+        {
+          "type": "file",
+          "name": "requirements.txt",
+          "path": "trading-bot\\requirements.txt",
+          "size": 81
+        },
+        {
+          "type": "file",
+          "name": "trading_bot_production.py",
+          "path": "trading-bot\\trading_bot_production.py",
+          "size": 21369
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "TRADING-BOT-SETUP-GUIDE.md",
+      "path": "Dell-Server-Roadmap\\TRADING-BOT-SETUP-GUIDE.md",
+      "size": 8785
+    },
+    {
+      "type": "file",
+      "name": "TUNNEL-FIX.md",
+      "path": "Dell-Server-Roadmap\\TUNNEL-FIX.md",
+      "size": 3019
+    },
+    {
+      "type": "file",
+      "name": "ULTRA-INSTINCT-CASCADING-VALIDATION-2025-11-08.md",
+      "path": "Dell-Server-Roadmap\\ULTRA-INSTINCT-CASCADING-VALIDATION-2025-11-08.md",
+      "size": 4397
+    },
+    {
+      "type": "file",
+      "name": "ULTRA-INSTINCT-MODE.md",
+      "path": "Dell-Server-Roadmap\\ULTRA-INSTINCT-MODE.md",
+      "size": 12585
+    },
+    {
+      "type": "file",
+      "name": "ULTRA-INSTINCT-MONITORING-GUIDE.md",
+      "path": "Dell-Server-Roadmap\\ULTRA-INSTINCT-MONITORING-GUIDE.md",
+      "size": 9784
+    },
+    {
+      "type": "file",
+      "name": "vm-200-setup-fixed.ps1",
+      "path": "Dell-Server-Roadmap\\vm-200-setup-fixed.ps1",
+      "size": 4913
+    },
+    {
+      "type": "file",
+      "name": "vm-200-setup.ps1",
+      "path": "Dell-Server-Roadmap\\vm-200-setup.ps1",
+      "size": 5336
+    },
+    {
+      "type": "file",
+      "name": "vm-201-setup.ps1",
+      "path": "Dell-Server-Roadmap\\vm-201-setup.ps1",
+      "size": 7212
+    },
+    {
+      "type": "file",
+      "name": "vm-203-final-setup.md",
+      "path": "Dell-Server-Roadmap\\vm-203-final-setup.md",
+      "size": 2036
+    },
+    {
+      "type": "file",
+      "name": "vm-203-nginx-config.sh",
+      "path": "Dell-Server-Roadmap\\vm-203-nginx-config.sh",
+      "size": 2674
+    },
+    {
+      "type": "file",
+      "name": "vm-203-packages.txt",
+      "path": "Dell-Server-Roadmap\\vm-203-packages.txt",
+      "size": 593
+    },
+    {
+      "type": "file",
+      "name": "vm-203-setup-script.sh",
+      "path": "Dell-Server-Roadmap\\vm-203-setup-script.sh",
+      "size": 1997
+    },
+    {
+      "type": "file",
+      "name": "vm-203-wireguard-config.sh",
+      "path": "Dell-Server-Roadmap\\vm-203-wireguard-config.sh",
+      "size": 2066
+    },
+    {
+      "type": "file",
+      "name": "vm-setup-from-proxmox.sh",
+      "path": "Dell-Server-Roadmap\\vm-setup-from-proxmox.sh",
+      "size": 2692
+    },
+    {
+      "type": "file",
+      "name": "VM100-BEAST-MODE-UPGRADE.md",
+      "path": "Dell-Server-Roadmap\\VM100-BEAST-MODE-UPGRADE.md",
+      "size": 6543
+    },
+    {
+      "type": "directory",
+      "name": "web",
+      "path": "Dell-Server-Roadmap\\web",
+      "children": [
+        {
+          "type": "file",
+          "name": "remote_stats_server.py",
+          "path": "web\\remote_stats_server.py",
+          "size": 9764
+        },
+        {
+          "type": "directory",
+          "name": "shenron-ui",
+          "path": "web\\shenron-ui",
+          "children": [
+            {
+              "type": "file",
+              "name": "api.php",
+              "path": "shenron-ui\\api.php",
+              "size": 7342
+            },
+            {
+              "type": "file",
+              "name": "index.html",
+              "path": "shenron-ui\\index.html",
+              "size": 19827
+            },
+            {
+              "type": "file",
+              "name": "script-fixed.js",
+              "path": "shenron-ui\\script-fixed.js",
+              "size": 101438
+            },
+            {
+              "type": "file",
+              "name": "style.css",
+              "path": "shenron-ui\\style.css",
+              "size": 62087
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "WEB-UI-AUDIT-DISCREPANCY-REPORT.md",
+      "path": "Dell-Server-Roadmap\\WEB-UI-AUDIT-DISCREPANCY-REPORT.md",
+      "size": 926
+    },
+    {
+      "type": "file",
+      "name": "WEB-UI-FIX-v4.0.2-2025-11-07.md",
+      "path": "Dell-Server-Roadmap\\WEB-UI-FIX-v4.0.2-2025-11-07.md",
+      "size": 12769
+    },
+    {
+      "type": "file",
+      "name": "WEB-UI-V4.0.3-DEPLOYMENT-COMPLETE.md",
+      "path": "Dell-Server-Roadmap\\WEB-UI-V4.0.3-DEPLOYMENT-COMPLETE.md",
+      "size": 12387
+    },
+    {
+      "type": "file",
+      "name": "WEEK-1-KNOWLEDGE-INJECTION-COMPLETE-INSTRUCTIONS.md",
+      "path": "Dell-Server-Roadmap\\WEEK-1-KNOWLEDGE-INJECTION-COMPLETE-INSTRUCTIONS.md",
+      "size": 16832
+    },
+    {
+      "type": "file",
+      "name": "WEEK-2-KNOWLEDGE-INJECTION-INSTRUCTIONS.md",
+      "path": "Dell-Server-Roadmap\\WEEK-2-KNOWLEDGE-INJECTION-INSTRUCTIONS.md",
+      "size": 17188
+    },
+    {
+      "type": "file",
+      "name": "WHATS-NEXT-2025-11-06.md",
+      "path": "Dell-Server-Roadmap\\WHATS-NEXT-2025-11-06.md",
+      "size": 12765
+    },
+    {
+      "type": "file",
+      "name": "ZFS-POOL-SETUP-GUIDE.md",
+      "path": "Dell-Server-Roadmap\\ZFS-POOL-SETUP-GUIDE.md",
+      "size": 5368
+    }
+  ],
+  "files_analyzed": 20
+}

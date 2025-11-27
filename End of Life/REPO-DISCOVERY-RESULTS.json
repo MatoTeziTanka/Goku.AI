@@ -1,0 +1,88 @@
+{
+  "BitPhoenix": {
+    "path": "C:\\Users\\sethp\\Documents\\Github\\BitPhoenix",
+    "exists": true,
+    "file_count": 334,
+    "dir_count": 44,
+    "size_mb": 3.65
+  },
+  "Dell-Server-Roadmap": {
+    "path": "C:\\Users\\sethp\\Documents\\Github\\Dell-Server-Roadmap",
+    "exists": true,
+    "file_count": 390,
+    "dir_count": 48,
+    "size_mb": 3.98
+  },
+  "Dino-Cloud": {
+    "path": "C:\\Users\\sethp\\Documents\\Github\\Dino-Cloud",
+    "exists": true,
+    "file_count": 13,
+    "dir_count": 5,
+    "size_mb": 0.08
+  },
+  "DinoCloud": {
+    "path": "C:\\Users\\sethp\\Documents\\Github\\DinoCloud",
+    "exists": true,
+    "file_count": 5,
+    "dir_count": 2,
+    "size_mb": 0.04
+  },
+  "FamilyFork": {
+    "path": "C:\\Users\\sethp\\Documents\\Github\\FamilyFork",
+    "exists": true,
+    "file_count": 135,
+    "dir_count": 25,
+    "size_mb": 1.12
+  },
+  "GSMG.IO": {
+    "path": "C:\\Users\\sethp\\Documents\\Github\\GSMG.IO",
+    "exists": true,
+    "file_count": 578,
+    "dir_count": 17,
+    "size_mb": 43.86
+  },
+  "Goku.AI": {
+    "path": "C:\\Users\\sethp\\Documents\\Github\\Goku.AI",
+    "exists": true,
+    "file_count": 3,
+    "dir_count": 2,
+    "size_mb": 0.06,
+    "scattered_files": [
+      "C:\\Users\\sethp\\Documents\\Github\\find_all_goku_files.py",
+      "C:\\Users\\sethp\\Documents\\Github\\GOKU-AI-FILES-DISCOVERY.json",
+      "C:\\Users\\sethp\\Documents\\Github\\GOKU-AI-FILES-DISCOVERY.md",
+      "C:\\Users\\sethp\\Documents\\Github\\Goku.AI\\shenron-ultra-instinct\\phase1\\mcp_tools.py",
+      "C:\\Users\\sethp\\Documents\\Github\\Goku.AI\\shenron-ultra-instinct\\phase1\\mcp_tools.py.bak",
+      "C:\\Users\\sethp\\Documents\\Github\\Goku.AI\\shenron-ultra-instinct\\phase1\\shenron_api_v5_mcp.py"
+    ],
+    "scattered_file_count": 6
+  },
+  "Keyhound": {
+    "path": "C:\\Users\\sethp\\Documents\\Github\\Keyhound",
+    "exists": true,
+    "file_count": 177,
+    "dir_count": 27,
+    "size_mb": 2.21
+  },
+  "Scalpstorm": {
+    "path": "C:\\Users\\sethp\\Documents\\Github\\Scalpstorm",
+    "exists": true,
+    "file_count": 94,
+    "dir_count": 23,
+    "size_mb": 1.0
+  },
+  "Server-Roadmap": {
+    "path": "C:\\Users\\sethp\\Documents\\Github\\Server-Roadmap",
+    "exists": true,
+    "file_count": 1,
+    "dir_count": 0,
+    "size_mb": 0.01
+  },
+  "StreamForge": {
+    "path": "C:\\Users\\sethp\\Documents\\Github\\StreamForge",
+    "exists": true,
+    "file_count": 1,
+    "dir_count": 0,
+    "size_mb": 0.01
+  }
+}

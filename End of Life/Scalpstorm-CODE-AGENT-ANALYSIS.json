@@ -1,0 +1,1168 @@
+{
+  "timestamp": "2025-11-25T19:41:03.354953",
+  "repository": "Scalpstorm",
+  "repository_path": "C:\\Users\\sethp\\Documents\\Github\\Scalpstorm",
+  "analysis": "# Scalpstorm Repository Deep Analysis\n\n---\n\n## 1. PURPOSE & MEANING ANALYSIS\n\n| Aspect | Analysis |\n|--------|----------|\n| **Primary Purpose** | Scalpstorm is a professional trading platform focused on algorithmic trading, technical analysis, risk management, and AI-driven analytics. The repo contains backend code, risk management tools, AI integration components, exchange API interfaces, and extensive project management documentation. |\n| **Problem Solved** | It streamlines high-frequency, scalable, and AI-enhanced trading—a notoriously fragmented space—by providing a unified codebase with risk management, advanced analytics (including GPU acceleration), and robust automation. |\n| **Target Audience** | - Professional traders<br>- Algorithmic trading developers<br>- Quantitative finance researchers<br>- Fintech engineers<br>- Advanced hobbyists<br>- AI/ML practitioners seeking finance applications |\n| **Intended Impact** | - Democratize access to high-performance trading infrastructure.<br>- Enable rapid algorithm development, testing, and deployment.<br>- Raise bar for security, automation, and AI in trading platforms.<br>- Facilitate collaboration via GitHub project management best practices. |\n\n---\n\n## 2. DEVELOPMENT STATUS ANALYSIS\n\n### 2.1 Current Version/Status\n\n- **Latest version file (V1_EOL/VERSION):** `0.1.1`\n- **Active roadmap milestones:** v0.2.1 (GPU), v0.3.0 (Mobile + Binance.com), v0.4.0 (Machine Learning), v0.5.0 (Enterprise)\n- **V1_EOL folder:** signals transition from legacy (V1) to new architecture.\n\n### 2.2 Development Progress\n\n| Area | % Complete | Notes |\n|------|------------|-------|\n| **Core Backend** | ~65% | Most backend logic in V1_EOL/backend/server.py, but newer code present in main repo. |\n| **Risk Management** | 90% | `risk_management/` modules (circuit_breaker.py, risk_manager.py) are present and substantial. |\n| **AI Integration** | 50% | Initial AI integration (`shenron_reporter.py`, TensorFlow/Keras in requirements), but not fully production-grade. |\n| **Exchange APIs** | 10% | Placeholder only (`__init__.py`), needs further development. |\n| **Monitoring** | 20% | Structure present, but little implementation detail. |\n| **Deployment** | 40% | Dockerfiles present; needs more robust CI/CD, multi-environment support. |\n| **Project Management** | 95% | Documentation, templates, and automation scripts are exemplary. |\n| **Frontend** | 5% | Only a simple HTML in V1_EOL/frontend; not a robust UI. |\n| **Documentation** | 70% | Technical docs, setup guides, and templates are excellent, but need further consolidation and updating for new architecture. |\n| **Testing** | 40% | Legacy tests in V1_EOL/backend/tests, but not integrated into new codebase. |\n| **Security** | 60% | Security policies, analysis, and secure logging present, but some coverage gaps. |\n\n### 2.3 Roadmap Features\n\n| Feature | Status | Location |\n|---------|--------|----------|\n| **GPU Acceleration** | Planned | Roadmap docs; not yet implemented. |\n| **Binance.com Integration** | Planned | Roadmap docs. |\n| **Mobile App Support** | Planned | Roadmap docs. |\n| **Machine Learning Integration** | Partial | AI modules, requirements.txt. |\n| **Risk Management** | Strong | risk_management/ |\n| **Exchange API Interfaces** | Skeleton | exchange_apis/ |\n| **Monitoring/Observability** | Partial | monitoring/, requirements.txt (Prometheus, Grafana). |\n| **Automation/Project Mgmt** | Best-in-class | Many templates/scripts for project setup. |\n\n---\n\n## 3. FILE ORGANIZATION ANALYSIS\n\n### 3.1 File Belonging & Placement\n\n| File/Folder | Issue | Recommendation |\n|-------------|-------|----------------|\n| `V1_EOL/` | Legacy code, docs, scripts | Archive in a separate branch or repo for historical reference. Only migrate needed modules to new codebase. |\n| `frontend/` (in V1_EOL) | Legacy, simple HTML | Migrate to a dedicated frontend repo if a full UI is planned (e.g., React/Next.js). |\n| `mongo-init.js(.bak)` | Legacy DB scripts | Remove or migrate to a deployment/config repo. |\n| Multiple README/Docs in V1_EOL/docs | Duplication/confusion | Consolidate into a single docs/ directory in main repo. |\n| `LICENSE` (in V1_EOL) | Should be at root | Move to the root of the repo for compliance. |\n| Multiple requirements.txt | Fragmented dependencies | Unify into a single requirements.txt (main codebase); keep dev requirements separate. |\n| `QA_REVIEW_COMPREHENSIVE_V1.0.0.md` | Oversize for root | Move to docs/QA/ or split into shorter, actionable docs. |\n| Orphaned __init__.py | Many empty __init__.py | Remove if not needed, or initialize with docstrings explaining purpose. |\n\n### 3.2 Duplicates & Orphans\n\n| Type | Files |\n|------|-------|\n| **Duplicate requirements** | V1_EOL/backend/requirements.txt, requirements-dev.txt, main requirements.txt |\n| **Orphaned files** | Empty `__init__.py` across several folders; legacy scripts not referenced in new codebase. |\n| **EOL candidates** | V1_EOL scripts and docs; old Dockerfiles; mongo-init.js.bak |\n\n---\n\n## 4. CONSOLIDATION OPPORTUNITIES\n\n| Opportunity | Recommendation |\n|-------------|----------------|\n| **Legacy/New Code Merge** | Migrate only needed legacy code (V1_EOL) into new modular architecture, then archive V1_EOL. |\n| **Docs Unification** | Merge all roadmap, setup, QA, and architecture docs into a single docs/ directory with clear TOC. |\n| **Requirements Consolidation** | Use one requirements.txt at root for runtime, requirements-dev.txt for dev, remove legacy files. |\n| **Testing Framework** | Move all tests from V1_EOL/backend/tests into a new tests/ folder at repo root, modernize for pytest and coverage. |\n| **Frontend Separation** | If UI is a priority, start a new repo for frontend (React/Next.js), communicate API contract here. |\n| **Security Policies** | Consolidate all security docs into docs/security/. |\n| **Project Management Scripts** | Move all automation scripts to scripts/ or tools/ directory. |\n\n---\n\n## 5. PATH TO v1.0.0\n\n### 5.1 Blockers\n\n| Blocker | Details |\n|---------|---------|\n| **Fragmented codebase** | Legacy (V1_EOL) and new code not unified; risk of divergence. |\n| **Missing key features** | GPU acceleration, Binance integration, Mobile support, advanced monitoring. |\n| **Testing gaps** | No tests for new code; legacy tests not run in CI. |\n| **Documentation gaps** | Docs not fully updated to match new architecture; scattered location. |\n| **Security holes** | Need end-to-end audit of new code, secrets handling, permission boundaries. |\n| **Deployment immaturity** | Dockerfiles need CI integration, multi-env support, secrets management. |\n\n### 5.2 Critical Bugs\n\n- Unable to assess code bugs directly (code not fully provided), but likely issues:\n  - Incomplete/untested exchange APIs\n  - Potential misconfiguration in Dockerfiles/secrets handling\n  - Absence of exception handling in new modules\n\n### 5.3 Missing Features\n\n- GPU acceleration (CUDA/OpenCL implementation)\n- Full Binance.com exchange integration\n- Mobile app support (API endpoints, documentation)\n- Robust AI/ML pipeline (model training/inference workflows)\n- Real-time monitoring dashboards\n- Scalable, production-ready deployment scripts\n\n### 5.4 Documentation Gaps\n\n- Unified README at root level summarizing architecture, install, quickstart, contributing, and security.\n- API reference for backend endpoints.\n- Step-by-step deployment for Docker/Kubernetes.\n- Updated risk management and AI integration docs.\n\n### 5.5 Testing Requirements\n\n- Pytest coverage for all new modules.\n- CI pipeline for automated tests (GitHub Actions recommended).\n- Integration tests for exchange APIs, risk modules, AI inference.\n- Security and permission boundary tests.\n\n### 5.6 Security Issues\n\n- Secrets in code/config (move to env vars/secrets manager).\n- Secure logging (ensure no sensitive data leaks).\n- API credential handling (rotate/test regularly).\n- Role-based access control for APIs.\n- Regular dependency vulnerability scanning.\n\n---\n\n## 6. QC STANDARDS (100/10 MINDSET)\n\n| Category                | Score | Reasoning |\n|-------------------------|-------|-----------|\n| **Functional QA**       | 13/20 | Good risk mgmt and AI skeletons, but incomplete features and fragmented codebase. |\n| **Documentation**       | 16/20 | Extensive docs, templates, and guides. Needs consolidation, update for new code. |\n| **Security & Safety**   | 9/15  | Strong policy docs, secure logging, but code audit needed for new modules. |\n| **Efficiency/Optimization** | 8/15 | Plans for GPU, efficient risk modules, but optimization not yet realized. |\n| **AI Learning & Adaptation** | 7/15 | Initial AI integration (tensorflow/keras), but not production-grade. |\n| **Innovation & Impact** | 12/15 | Strong roadmap, project management, vision for AI trading. Needs execution of planned features. |\n\n**Total Score: 65/100 (Current state)**\n- **Potential with consolidation and feature completion: 85+/100**\n\n---\n\n## 7. CRITICAL ISSUES FOUND\n\n### High Priority\n\n| # | Issue | Impact | Location |\n|---|-------|--------|----------|\n| 1 | Codebase fragmentation (legacy vs new) | High | V1_EOL vs new dirs |\n| 2 | Incomplete feature implementations | High | exchange_apis/, ai_integration/, monitoring/ |\n| 3 | Testing gaps (no CI coverage for new code) | High | No root tests/ |\n| 4 | Security: secrets/config handling | High | config.py, Dockerfiles |\n| 5 | Documentation scattered/outdated | High | V1_EOL/docs, roadmap docs |\n\n### Medium Priority\n\n| # | Issue | Impact | Location |\n|---|-------|--------|----------|\n| 6 | Multiple requirements.txt, risk of dependency drift | Med | V1_EOL/backend, root |\n| 7 | Orphaned/empty __init__.py files | Med | All modules |\n| 8 | Legacy DB scripts not maintained | Med | V1_EOL/mongo-init.js |\n| 9 | No modern frontend | Med | Only legacy HTML |\n\n### Low Priority\n\n| # | Issue | Impact | Location |\n|---|-------|--------|----------|\n| 10 | Oversized QA/compliance docs in root | Low | QA_REVIEW_COMPREHENSIVE_V1.0.0.md |\n| 11 | Duplicate documentation | Low | README.md, PROJECT.md, roadmap docs |\n| 12 | Minor: inconsistent naming conventions | Low | Mixed use of camelCase, snake_case |\n\n---\n\n## 8. RECOMMENDED ACTIONS (Prioritized for v1.0.0)\n\n### P1: Core Actions (Critical Blockers)\n1. **Unify codebase:** Migrate essential legacy modules from V1_EOL to the new directory structure, archive V1_EOL.\n2. **Consolidate documentation:** Merge all docs into a single docs/ directory; update for current architecture.\n3. **Single requirements.txt:** Standardize dependencies in root requirements.txt and requirements-dev.txt.\n4. **Security review:** Remove hardcoded secrets, implement environment variable management, audit config.py.\n5. **Testing framework:** Create root-level tests/ directory; migrate and modernize existing tests (pytest, coverage).\n6. **Setup CI/CD:** Implement GitHub Actions for testing, linting, security scanning, and Docker builds.\n\n### P2: Feature Completion\n7. **Implement GPU acceleration:** Integrate CUDA/OpenCL options as per roadmap.\n8. **Exchange API integration:** Build out exchange_apis/ for Binance.com and other major exchanges.\n9. **Monitoring system:** Complete monitoring/ with Prometheus, Grafana dashboarding, and health checks.\n10. **AI/ML pipeline:** Expand ai_integration/ with robust model training, inference, and reporting.\n\n### P3: Documentation & Usability\n11. **Unified README:** At repo root, covering install, usage, architecture, contributing, security.\n12. **API reference docs:** For backend endpoints, risk management, and AI modules.\n13. **Deployment guides:** Step-by-step for Docker, Kubernetes, and cloud options.\n\n### P4: Security & Compliance\n14. **Regular dependency audit:** Use Dependabot or similar for vulnerability alerts.\n15. **Role-based access control:** For sensitive API endpoints.\n16. **Secure logging:** Ensure no sensitive data is output in logs.\n\n### P5: Clean-up & Polish\n17. **Remove orphaned/empty files:** Clean __init__.py, unused scripts, legacy DB files.\n18. **Consolidate project management scripts:** Move all automation scripts to scripts/ or tools/.\n19. **Move LICENSE to root:** Ensure compliance and visibility.\n20. **Frontend planning:** Decide on dedicated UI repo if full frontend is planned.\n\n---\n\n## TABLE SUMMARY: CRITICAL ISSUES & ACTIONS\n\n| Priority | Issue/Action                          | Owner         | Status    |\n|----------|---------------------------------------|---------------|-----------|\n| P1       | Unify codebase, archive legacy        | Lead Dev      | Blocked   |\n| P1       | Consolidate docs, update for v1.0.0   | Docs Lead     | Blocked   |\n| P1       | Standardize requirements.txt          | DevOps        | Blocked   |\n| P1       | Security audit, config.py review      | Security Eng. | Blocked   |\n| P1       | Setup automated testing (pytest/CI)   | QA Lead       | Blocked   |\n| P1       | GitHub Actions CI/CD setup            | DevOps        | Blocked   |\n| P2       | GPU Acceleration implementation       | ML Eng.       | Planned   |\n| P2       | Binance.com API integration           | Backend Dev   | Planned   |\n| P2       | Monitoring system completion          | Infra Lead    | Planned   |\n| P2       | Expand AI/ML pipeline                 | ML Eng.       | Planned   |\n| P3       | Unified README + API docs             | Docs Lead     | Planned   |\n| P3       | Deployment guides (Docker/K8s)        | DevOps        | Planned   |\n| P4       | Dependency & secrets audit            | Security Eng. | Planned   |\n| P5       | Clean-up orphaned/legacy files        | All           | Planned   |\n| P5       | Move LICENSE to root                  | Docs Lead     | Planned   |\n| P5       | Frontend repo decision                | PM/Arch Lead  | Planned   |\n\n---\n\n## CONCLUSION\n\n**Scalpstorm** demonstrates strong vision, excellent project management practices, and robust risk management architecture. Its current state is promising but fragmented between legacy and new code. The roadmap is ambitious (GPU, AI, mobile, exchange APIs), but execution is incomplete. Documentation and setup guides are best-in-class, yet scattered.\n\n**To reach v1.0.0:**\n- Unify the codebase and documentation\n- Complete planned features (GPU, exchange, monitoring, AI)\n- Standardize and automate testing and security\n- Clean up legacy and duplicate files\n- Provide a world-class developer and user experience\n\n**Current QC Score: 65/100.**\nWith focused action, Scalpstorm can become a leading open-source trading platform for professionals and researchers alike.\n\n---\n\n**Actionable Next Steps:**  \n- [ ] Unify repo, archive V1_EOL, consolidate docs  \n- [ ] Complete critical features per roadmap  \n- [ ] Standardize dependencies, automate tests  \n- [ ] Harden security, clean up legacy files  \n- [ ] Finalize documentation and deployment guides  \n- [ ] Prepare v1.0.0 milestone for release candidate\n\n---\n\n*Reviewed by: Zencoder Code Agent, with a 100/10 world-class quality mindset.*",
+  "directory_structure": [
+    {
+      "type": "directory",
+      "name": ".git",
+      "path": "Scalpstorm\\.git",
+      "children": [
+        {
+          "type": "file",
+          "name": "COMMIT_EDITMSG",
+          "path": ".git\\COMMIT_EDITMSG",
+          "size": 312
+        },
+        {
+          "type": "file",
+          "name": "config",
+          "path": ".git\\config",
+          "size": 409
+        },
+        {
+          "type": "file",
+          "name": "description",
+          "path": ".git\\description",
+          "size": 73
+        },
+        {
+          "type": "file",
+          "name": "HEAD",
+          "path": ".git\\HEAD",
+          "size": 21
+        },
+        {
+          "type": "directory",
+          "name": "hooks",
+          "path": ".git\\hooks",
+          "children": [
+            {
+              "type": "file",
+              "name": "applypatch-msg.sample",
+              "path": "hooks\\applypatch-msg.sample",
+              "size": 478
+            },
+            {
+              "type": "file",
+              "name": "commit-msg.sample",
+              "path": "hooks\\commit-msg.sample",
+              "size": 896
+            },
+            {
+              "type": "file",
+              "name": "fsmonitor-watchman.sample",
+              "path": "hooks\\fsmonitor-watchman.sample",
+              "size": 4726
+            },
+            {
+              "type": "file",
+              "name": "post-update.sample",
+              "path": "hooks\\post-update.sample",
+              "size": 189
+            },
+            {
+              "type": "file",
+              "name": "pre-applypatch.sample",
+              "path": "hooks\\pre-applypatch.sample",
+              "size": 424
+            },
+            {
+              "type": "file",
+              "name": "pre-commit.sample",
+              "path": "hooks\\pre-commit.sample",
+              "size": 1649
+            },
+            {
+              "type": "file",
+              "name": "pre-merge-commit.sample",
+              "path": "hooks\\pre-merge-commit.sample",
+              "size": 416
+            },
+            {
+              "type": "file",
+              "name": "pre-push.sample",
+              "path": "hooks\\pre-push.sample",
+              "size": 1374
+            },
+            {
+              "type": "file",
+              "name": "pre-rebase.sample",
+              "path": "hooks\\pre-rebase.sample",
+              "size": 4898
+            },
+            {
+              "type": "file",
+              "name": "pre-receive.sample",
+              "path": "hooks\\pre-receive.sample",
+              "size": 544
+            },
+            {
+              "type": "file",
+              "name": "prepare-commit-msg.sample",
+              "path": "hooks\\prepare-commit-msg.sample",
+              "size": 1492
+            },
+            {
+              "type": "file",
+              "name": "push-to-checkout.sample",
+              "path": "hooks\\push-to-checkout.sample",
+              "size": 2783
+            },
+            {
+              "type": "file",
+              "name": "sendemail-validate.sample",
+              "path": "hooks\\sendemail-validate.sample",
+              "size": 2308
+            },
+            {
+              "type": "file",
+              "name": "update.sample",
+              "path": "hooks\\update.sample",
+              "size": 3650
+            }
+          ]
+        },
+        {
+          "type": "file",
+          "name": "index",
+          "path": ".git\\index",
+          "size": 9646
+        },
+        {
+          "type": "directory",
+          "name": "info",
+          "path": ".git\\info",
+          "children": [
+            {
+              "type": "file",
+              "name": "exclude",
+              "path": "info\\exclude",
+              "size": 240
+            }
+          ]
+        },
+        {
+          "type": "directory",
+          "name": "logs",
+          "path": ".git\\logs",
+          "children": [
+            {
+              "type": "file",
+              "name": "HEAD",
+              "path": "logs\\HEAD",
+              "size": 415
+            },
+            {
+              "type": "directory",
+              "name": "refs",
+              "path": "logs\\refs",
+              "children": [
+                {
+                  "type": "directory",
+                  "name": "heads",
+                  "path": "refs\\heads",
+                  "note": "max depth reached"
+                },
+                {
+                  "type": "directory",
+                  "name": "remotes",
+                  "path": "refs\\remotes",
+                  "note": "max depth reached"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "directory",
+          "name": "objects",
+          "path": ".git\\objects",
+          "children": [
+            {
+              "type": "directory",
+              "name": "08",
+              "path": "objects\\08",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "011652d1632fed39e9f84b314ea843bc58ea07",
+                  "path": "08\\011652d1632fed39e9f84b314ea843bc58ea07",
+                  "size": 2233
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "1d",
+              "path": "objects\\1d",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "426c777dd75c1e9be41eb68ba5502780da7134",
+                  "path": "1d\\426c777dd75c1e9be41eb68ba5502780da7134",
+                  "size": 148
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "25",
+              "path": "objects\\25",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "735fc7ce628bac39055d19e4290939c057adec",
+                  "path": "25\\735fc7ce628bac39055d19e4290939c057adec",
+                  "size": 148
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "2a",
+              "path": "objects\\2a",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "cfb8d7a1c6a146ac83b36337a94a565d6672b6",
+                  "path": "2a\\cfb8d7a1c6a146ac83b36337a94a565d6672b6",
+                  "size": 148
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "32",
+              "path": "objects\\32",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "1f16b43d86bd77da549eff6a88f44aaeb73537",
+                  "path": "32\\1f16b43d86bd77da549eff6a88f44aaeb73537",
+                  "size": 148
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "3e",
+              "path": "objects\\3e",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "efcb9dd5b38e2c1dc061052455dd97bcd51e6c",
+                  "path": "3e\\efcb9dd5b38e2c1dc061052455dd97bcd51e6c",
+                  "size": 21
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "40",
+              "path": "objects\\40",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "93f81f55a216820d0b2151c35facfd50f4bd0b",
+                  "path": "40\\93f81f55a216820d0b2151c35facfd50f4bd0b",
+                  "size": 56
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "4e",
+              "path": "objects\\4e",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "b0e8289f5468524ce0af08ade6fb2bda2cc5de",
+                  "path": "4e\\b0e8289f5468524ce0af08ade6fb2bda2cc5de",
+                  "size": 97
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "5b",
+              "path": "objects\\5b",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "02a1e6f0b4d7c7b7eab583b2fc6872b3b680f5",
+                  "path": "5b\\02a1e6f0b4d7c7b7eab583b2fc6872b3b680f5",
+                  "size": 416
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "71",
+              "path": "objects\\71",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "a48ed4cd0e8b751c9c8c2e0c1be4a5e372df57",
+                  "path": "71\\a48ed4cd0e8b751c9c8c2e0c1be4a5e372df57",
+                  "size": 289
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "73",
+              "path": "objects\\73",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "19d61be167ae2fa89cfb32b4f6bbd8cd5dd1f9",
+                  "path": "73\\19d61be167ae2fa89cfb32b4f6bbd8cd5dd1f9",
+                  "size": 4714
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "7d",
+              "path": "objects\\7d",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "5bb957d5d300ea6433f33878c7ec24ec0fd2a8",
+                  "path": "7d\\5bb957d5d300ea6433f33878c7ec24ec0fd2a8",
+                  "size": 147
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "83",
+              "path": "objects\\83",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "bf7783f7c1062acb33b5f1df2d7b4c0f2531ca",
+                  "path": "83\\bf7783f7c1062acb33b5f1df2d7b4c0f2531ca",
+                  "size": 1266
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "8a",
+              "path": "objects\\8a",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "377894c1a994c7fd1c8cad1dab82b00c3a9511",
+                  "path": "8a\\377894c1a994c7fd1c8cad1dab82b00c3a9511",
+                  "size": 1079
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "91",
+              "path": "objects\\91",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "555bd038f5a1ec5b602e811349491328292073",
+                  "path": "91\\555bd038f5a1ec5b602e811349491328292073",
+                  "size": 147
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "92",
+              "path": "objects\\92",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "cb0e925639c39bf2255138a70f70f3151efa1b",
+                  "path": "92\\cb0e925639c39bf2255138a70f70f3151efa1b",
+                  "size": 5822
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "9b",
+              "path": "objects\\9b",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "f5665527459bcae766a8eab5db9500ade47e81",
+                  "path": "9b\\f5665527459bcae766a8eab5db9500ade47e81",
+                  "size": 417
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "a7",
+              "path": "objects\\a7",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "50b2879ebb9d8330f464f6d37f4df02666999a",
+                  "path": "a7\\50b2879ebb9d8330f464f6d37f4df02666999a",
+                  "size": 147
+                },
+                {
+                  "type": "file",
+                  "name": "a1f411488ba34fb8b19630861a318c2e73dddc",
+                  "path": "a7\\a1f411488ba34fb8b19630861a318c2e73dddc",
+                  "size": 3873
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "ac",
+              "path": "objects\\ac",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "3016187d48a9bcee9d2cf716add9234fe47f34",
+                  "path": "ac\\3016187d48a9bcee9d2cf716add9234fe47f34",
+                  "size": 3871
+                },
+                {
+                  "type": "file",
+                  "name": "872bf56e4be221f76a1203aae267a08bbb3b49",
+                  "path": "ac\\872bf56e4be221f76a1203aae267a08bbb3b49",
+                  "size": 148
+                },
+                {
+                  "type": "file",
+                  "name": "9d6e3b2d21fddb81127796edb47f94aae00f6d",
+                  "path": "ac\\9d6e3b2d21fddb81127796edb47f94aae00f6d",
+                  "size": 56
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "bd",
+              "path": "objects\\bd",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "d368f228a5e13d67272beb5a0cb40780726af5",
+                  "path": "bd\\d368f228a5e13d67272beb5a0cb40780726af5",
+                  "size": 149
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "be",
+              "path": "objects\\be",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "99467f2e36f4b25205fd732840d82caf85371c",
+                  "path": "be\\99467f2e36f4b25205fd732840d82caf85371c",
+                  "size": 56
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "c6",
+              "path": "objects\\c6",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "c416d369544a7ae3f8b3c0171d8a55cacd67ee",
+                  "path": "c6\\c416d369544a7ae3f8b3c0171d8a55cacd67ee",
+                  "size": 56
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "c7",
+              "path": "objects\\c7",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "38c3d719f545b69b9c4210a6f18e5ed3618110",
+                  "path": "c7\\38c3d719f545b69b9c4210a6f18e5ed3618110",
+                  "size": 3239
+                },
+                {
+                  "type": "file",
+                  "name": "a957a79906b2d0180a9bcc419f9264e10da7f5",
+                  "path": "c7\\a957a79906b2d0180a9bcc419f9264e10da7f5",
+                  "size": 416
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "d3",
+              "path": "objects\\d3",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "124b355ecd28f7b0d7116e1f44969e628911e3",
+                  "path": "d3\\124b355ecd28f7b0d7116e1f44969e628911e3",
+                  "size": 337
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "dc",
+              "path": "objects\\dc",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "32ad90a19ac40eb96725a502e8f8f3677535c9",
+                  "path": "dc\\32ad90a19ac40eb96725a502e8f8f3677535c9",
+                  "size": 1293
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "dd",
+              "path": "objects\\dd",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "876fa3cedaa0fc4a78dc22a608c4cabc9d2105",
+                  "path": "dd\\876fa3cedaa0fc4a78dc22a608c4cabc9d2105",
+                  "size": 148
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "f9",
+              "path": "objects\\f9",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "120e7ed7884b20260b80cd42a3edd51c6356d0",
+                  "path": "f9\\120e7ed7884b20260b80cd42a3edd51c6356d0",
+                  "size": 148
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "info",
+              "path": "objects\\info",
+              "children": []
+            },
+            {
+              "type": "directory",
+              "name": "pack",
+              "path": "objects\\pack",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "pack-6a4d0e4c2b259163132a6f7bd0793990a968e23b.idx",
+                  "path": "pack\\pack-6a4d0e4c2b259163132a6f7bd0793990a968e23b.idx",
+                  "size": 16528
+                },
+                {
+                  "type": "file",
+                  "name": "pack-6a4d0e4c2b259163132a6f7bd0793990a968e23b.pack",
+                  "path": "pack\\pack-6a4d0e4c2b259163132a6f7bd0793990a968e23b.pack",
+                  "size": 813949
+                },
+                {
+                  "type": "file",
+                  "name": "pack-6a4d0e4c2b259163132a6f7bd0793990a968e23b.rev",
+                  "path": "pack\\pack-6a4d0e4c2b259163132a6f7bd0793990a968e23b.rev",
+                  "size": 2260
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "file",
+          "name": "packed-refs",
+          "path": ".git\\packed-refs",
+          "size": 509
+        },
+        {
+          "type": "directory",
+          "name": "refs",
+          "path": ".git\\refs",
+          "children": [
+            {
+              "type": "directory",
+              "name": "heads",
+              "path": "refs\\heads",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "main",
+                  "path": "heads\\main",
+                  "size": 41
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "remotes",
+              "path": "refs\\remotes",
+              "children": [
+                {
+                  "type": "directory",
+                  "name": "origin",
+                  "path": "remotes\\origin",
+                  "note": "max depth reached"
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "tags",
+              "path": "refs\\tags",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "directory",
+      "name": "ai_integration",
+      "path": "Scalpstorm\\ai_integration",
+      "children": [
+        {
+          "type": "file",
+          "name": "__init__.py",
+          "path": "ai_integration\\__init__.py",
+          "size": 0
+        },
+        {
+          "type": "file",
+          "name": "shenron_reporter.py",
+          "path": "ai_integration\\shenron_reporter.py",
+          "size": 4382
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "config.py",
+      "path": "Scalpstorm\\config.py",
+      "size": 3881
+    },
+    {
+      "type": "directory",
+      "name": "deployment",
+      "path": "Scalpstorm\\deployment",
+      "children": [
+        {
+          "type": "file",
+          "name": "__init__.py",
+          "path": "deployment\\__init__.py",
+          "size": 0
+        },
+        {
+          "type": "file",
+          "name": "Dockerfile",
+          "path": "deployment\\Dockerfile",
+          "size": 224
+        }
+      ]
+    },
+    {
+      "type": "directory",
+      "name": "docs",
+      "path": "Scalpstorm\\docs",
+      "children": [
+        {
+          "type": "directory",
+          "name": "technical-docs",
+          "path": "docs\\technical-docs",
+          "children": [
+            {
+              "type": "file",
+              "name": "workflow.md",
+              "path": "technical-docs\\workflow.md",
+              "size": 9639
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "directory",
+      "name": "engine",
+      "path": "Scalpstorm\\engine",
+      "children": [
+        {
+          "type": "file",
+          "name": "__init__.py",
+          "path": "engine\\__init__.py",
+          "size": 0
+        }
+      ]
+    },
+    {
+      "type": "directory",
+      "name": "exchange_apis",
+      "path": "Scalpstorm\\exchange_apis",
+      "children": [
+        {
+          "type": "file",
+          "name": "__init__.py",
+          "path": "exchange_apis\\__init__.py",
+          "size": 0
+        }
+      ]
+    },
+    {
+      "type": "directory",
+      "name": "monitoring",
+      "path": "Scalpstorm\\monitoring",
+      "children": [
+        {
+          "type": "file",
+          "name": "__init__.py",
+          "path": "monitoring\\__init__.py",
+          "size": 0
+        }
+      ]
+    },
+    {
+      "type": "file",
+      "name": "QA_REVIEW_COMPREHENSIVE_V1.0.0.md",
+      "path": "Scalpstorm\\QA_REVIEW_COMPREHENSIVE_V1.0.0.md",
+      "size": 18207
+    },
+    {
+      "type": "file",
+      "name": "requirements.txt",
+      "path": "Scalpstorm\\requirements.txt",
+      "size": 533
+    },
+    {
+      "type": "directory",
+      "name": "risk_management",
+      "path": "Scalpstorm\\risk_management",
+      "children": [
+        {
+          "type": "file",
+          "name": "__init__.py",
+          "path": "risk_management\\__init__.py",
+          "size": 0
+        },
+        {
+          "type": "file",
+          "name": "circuit_breaker.py",
+          "path": "risk_management\\circuit_breaker.py",
+          "size": 4780
+        },
+        {
+          "type": "file",
+          "name": "risk_manager.py",
+          "path": "risk_management\\risk_manager.py",
+          "size": 1680
+        }
+      ]
+    },
+    {
+      "type": "directory",
+      "name": "V1_EOL",
+      "path": "Scalpstorm\\V1_EOL",
+      "children": [
+        {
+          "type": "file",
+          "name": "API_CREDENTIAL_SECURITY_ANALYSIS.md",
+          "path": "V1_EOL\\API_CREDENTIAL_SECURITY_ANALYSIS.md",
+          "size": 12471
+        },
+        {
+          "type": "file",
+          "name": "automate-all.ps1",
+          "path": "V1_EOL\\automate-all.ps1",
+          "size": 11226
+        },
+        {
+          "type": "file",
+          "name": "AUTOMATION_GUIDE.md",
+          "path": "V1_EOL\\AUTOMATION_GUIDE.md",
+          "size": 10777
+        },
+        {
+          "type": "directory",
+          "name": "backend",
+          "path": "V1_EOL\\backend",
+          "children": [
+            {
+              "type": "file",
+              "name": "Dockerfile",
+              "path": "backend\\Dockerfile",
+              "size": 910
+            },
+            {
+              "type": "file",
+              "name": "pytest.ini",
+              "path": "backend\\pytest.ini",
+              "size": 567
+            },
+            {
+              "type": "file",
+              "name": "requirements-dev.txt",
+              "path": "backend\\requirements-dev.txt",
+              "size": 524
+            },
+            {
+              "type": "file",
+              "name": "requirements.txt",
+              "path": "backend\\requirements.txt",
+              "size": 1285
+            },
+            {
+              "type": "file",
+              "name": "secure_logging.py",
+              "path": "backend\\secure_logging.py",
+              "size": 4320
+            },
+            {
+              "type": "file",
+              "name": "server.py",
+              "path": "backend\\server.py",
+              "size": 146253
+            },
+            {
+              "type": "directory",
+              "name": "tests",
+              "path": "backend\\tests",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "__init__.py",
+                  "path": "tests\\__init__.py",
+                  "size": 42
+                },
+                {
+                  "type": "file",
+                  "name": "test_server.py",
+                  "path": "tests\\test_server.py",
+                  "size": 7907
+                },
+                {
+                  "type": "file",
+                  "name": "test_trading_service.py",
+                  "path": "tests\\test_trading_service.py",
+                  "size": 9391
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "file",
+          "name": "CHANGELOG.md",
+          "path": "V1_EOL\\CHANGELOG.md",
+          "size": 4740
+        },
+        {
+          "type": "file",
+          "name": "CHANGES_AND_REQUIREMENTS.md",
+          "path": "V1_EOL\\CHANGES_AND_REQUIREMENTS.md",
+          "size": 11088
+        },
+        {
+          "type": "file",
+          "name": "CODEBASE_ANALYSIS_SUMMARY.md",
+          "path": "V1_EOL\\CODEBASE_ANALYSIS_SUMMARY.md",
+          "size": 10173
+        },
+        {
+          "type": "file",
+          "name": "COMPLETE_SECURITY_SUMMARY.md",
+          "path": "V1_EOL\\COMPLETE_SECURITY_SUMMARY.md",
+          "size": 12069
+        },
+        {
+          "type": "file",
+          "name": "CONTRIBUTING.md",
+          "path": "V1_EOL\\CONTRIBUTING.md",
+          "size": 8160
+        },
+        {
+          "type": "file",
+          "name": "DEEP_CODEBASE_ANALYSIS_REPORT.md",
+          "path": "V1_EOL\\DEEP_CODEBASE_ANALYSIS_REPORT.md",
+          "size": 12937
+        },
+        {
+          "type": "file",
+          "name": "docker-compose.yml",
+          "path": "V1_EOL\\docker-compose.yml",
+          "size": 3021
+        },
+        {
+          "type": "file",
+          "name": "docker.env",
+          "path": "V1_EOL\\docker.env",
+          "size": 711
+        },
+        {
+          "type": "directory",
+          "name": "docs",
+          "path": "V1_EOL\\docs",
+          "children": [
+            {
+              "type": "directory",
+              "name": "advanced",
+              "path": "docs\\advanced",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "deployment.md",
+                  "path": "advanced\\deployment.md",
+                  "size": 22545
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "api",
+              "path": "docs\\api",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "overview.md",
+                  "path": "api\\overview.md",
+                  "size": 13662
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "architecture",
+              "path": "docs\\architecture",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "overview.md",
+                  "path": "architecture\\overview.md",
+                  "size": 10441
+                }
+              ]
+            },
+            {
+              "type": "file",
+              "name": "installation.md",
+              "path": "docs\\installation.md",
+              "size": 8603
+            },
+            {
+              "type": "file",
+              "name": "quick-start.md",
+              "path": "docs\\quick-start.md",
+              "size": 8798
+            },
+            {
+              "type": "file",
+              "name": "README.md",
+              "path": "docs\\README.md",
+              "size": 5261
+            },
+            {
+              "type": "directory",
+              "name": "support",
+              "path": "docs\\support",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "faq.md",
+                  "path": "support\\faq.md",
+                  "size": 13971
+                },
+                {
+                  "type": "file",
+                  "name": "troubleshooting.md",
+                  "path": "support\\troubleshooting.md",
+                  "size": 13802
+                }
+              ]
+            },
+            {
+              "type": "directory",
+              "name": "user-guides",
+              "path": "docs\\user-guides",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "trading.md",
+                  "path": "user-guides\\trading.md",
+                  "size": 12634
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "file",
+          "name": "env.example",
+          "path": "V1_EOL\\env.example",
+          "size": 1466
+        },
+        {
+          "type": "directory",
+          "name": "frontend",
+          "path": "V1_EOL\\frontend",
+          "children": [
+            {
+              "type": "file",
+              "name": "Dockerfile.simple",
+              "path": "frontend\\Dockerfile.simple",
+              "size": 501
+            },
+            {
+              "type": "file",
+              "name": "frontend_simple.html",
+              "path": "frontend\\frontend_simple.html",
+              "size": 214826
+            }
+          ]
+        },
+        {
+          "type": "file",
+          "name": "LICENSE",
+          "path": "V1_EOL\\LICENSE",
+          "size": 11397
+        },
+        {
+          "type": "file",
+          "name": "LINTER_ISSUES_RECORD.md",
+          "path": "V1_EOL\\LINTER_ISSUES_RECORD.md",
+          "size": 7145
+        },
+        {
+          "type": "file",
+          "name": "MASTER_PROJECT_TRACKER.md",
+          "path": "V1_EOL\\MASTER_PROJECT_TRACKER.md",
+          "size": 10235
+        },
+        {
+          "type": "file",
+          "name": "mongo-init.js",
+          "path": "V1_EOL\\mongo-init.js",
+          "size": 15277
+        },
+        {
+          "type": "file",
+          "name": "mongo-init.js.bak",
+          "path": "V1_EOL\\mongo-init.js.bak",
+          "size": 16830
+        },
+        {
+          "type": "file",
+          "name": "NEWS_SCANNER_FEATURE_SUMMARY.md",
+          "path": "V1_EOL\\NEWS_SCANNER_FEATURE_SUMMARY.md",
+          "size": 12625
+        },
+        {
+          "type": "file",
+          "name": "PROJECT.md",
+          "path": "V1_EOL\\PROJECT.md",
+          "size": 5616
+        },
+        {
+          "type": "file",
+          "name": "PROJECT_STATUS_REPORT.md",
+          "path": "V1_EOL\\PROJECT_STATUS_REPORT.md",
+          "size": 7859
+        },
+        {
+          "type": "file",
+          "name": "README.md",
+          "path": "V1_EOL\\README.md",
+          "size": 22681
+        },
+        {
+          "type": "file",
+          "name": "RELEASE_NOTES_v0.1.1.md",
+          "path": "V1_EOL\\RELEASE_NOTES_v0.1.1.md",
+          "size": 8043
+        },
+        {
+          "type": "file",
+          "name": "SAVE_CONFIRMATION_REPORT.md",
+          "path": "V1_EOL\\SAVE_CONFIRMATION_REPORT.md",
+          "size": 8572
+        },
+        {
+          "type": "file",
+          "name": "SECURITY_ANALYSIS_REPORT.md",
+          "path": "V1_EOL\\SECURITY_ANALYSIS_REPORT.md",
+          "size": 12704
+        },
+        {
+          "type": "file",
+          "name": "SECURITY_COMPLETION_REPORT.md",
+          "path": "V1_EOL\\SECURITY_COMPLETION_REPORT.md",
+          "size": 10955
+        },
+        {
+          "type": "file",
+          "name": "SECURITY_IMPLEMENTATION_STATUS.md",
+          "path": "V1_EOL\\SECURITY_IMPLEMENTATION_STATUS.md",
+          "size": 9027
+        },
+        {
+          "type": "file",
+          "name": "SECURITY_IMPLEMENTATION_SUMMARY.md",
+          "path": "V1_EOL\\SECURITY_IMPLEMENTATION_SUMMARY.md",
+          "size": 9279
+        },
+        {
+          "type": "file",
+          "name": "SECURITY_POLICY.md",
+          "path": "V1_EOL\\SECURITY_POLICY.md",
+          "size": 8027
+        },
+        {
+          "type": "file",
+          "name": "SECURITY_ROADMAP.md",
+          "path": "V1_EOL\\SECURITY_ROADMAP.md",
+          "size": 9277
+        },
+        {
+          "type": "file",
+          "name": "start_scalpstorm.bat",
+          "path": "V1_EOL\\start_scalpstorm.bat",
+          "size": 1212
+        },
+        {
+          "type": "file",
+          "name": "start_scalpstorm.sh",
+          "path": "V1_EOL\\start_scalpstorm.sh",
+          "size": 1216
+        },
+        {
+          "type": "file",
+          "name": "VERSION",
+          "path": "V1_EOL\\VERSION",
+          "size": 6
+        },
+        {
+          "type": "file",
+          "name": "VERSIONING.md",
+          "path": "V1_EOL\\VERSIONING.md",
+          "size": 7277
+        }
+      ]
+    }
+  ],
+  "files_analyzed": 20
+}

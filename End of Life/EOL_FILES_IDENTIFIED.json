@@ -1,0 +1,911 @@
+{
+  "date": "2025-11-26T02:53:50.367808",
+  "files_to_move": 226,
+  "files_to_keep": 405,
+  "files_list": [
+    {
+      "file": "AGENT_CAPABILITIES_SUMMARY.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "ANALYSIS_SUMMARY_PROBLEMS_TO_FIX.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "apply_batch_consensus.py",
+      "reason": "Old utility script"
+    },
+    {
+      "file": "AUDIT_COMPLETION_STATUS.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "AZURE-VM101-REVIEW-SETUP.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "azure_bitphoenix_code_agent.py",
+      "reason": "Old BitPhoenix-specific script"
+    },
+    {
+      "file": "azure_bitphoenix_consensus.py",
+      "reason": "Old BitPhoenix-specific script"
+    },
+    {
+      "file": "azure_bitphoenix_review_agent.py",
+      "reason": "Old BitPhoenix-specific script"
+    },
+    {
+      "file": "azure_fix_and_learn_from_mistakes.py",
+      "reason": "Old review script"
+    },
+    {
+      "file": "azure_generate_100_percent_improvement_script.py",
+      "reason": "Old review script"
+    },
+    {
+      "file": "azure_repo_code_agent.py",
+      "reason": "Old generic repo script"
+    },
+    {
+      "file": "azure_repo_consensus.py",
+      "reason": "Old generic repo script"
+    },
+    {
+      "file": "azure_repo_review_agent.py",
+      "reason": "Old generic repo script"
+    },
+    {
+      "file": "azure_review_code_agent_execution.py",
+      "reason": "Old review script"
+    },
+    {
+      "file": "azure_review_complete_github_project.py",
+      "reason": "Old review script"
+    },
+    {
+      "file": "AZURE_REVIEW_COMPLETION_SUMMARY.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "AZURE_REVIEW_NEXT_STEPS.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "AZURE_REVIEW_PROCESS.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "AZURE_REVIEW_SUMMARY.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "azure_review_zencoder_audit.py",
+      "reason": "Old review script"
+    },
+    {
+      "file": "azure_review_zencoder_findings.py",
+      "reason": "Old review script"
+    },
+    {
+      "file": "AZURE_VALIDATION_SUMMARY.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "azure_vm101_final_consensus.py",
+      "reason": "Old VM101 script"
+    },
+    {
+      "file": "azure_vm101_three_agent_consensus.py",
+      "reason": "Old VM101 script"
+    },
+    {
+      "file": "azure_vm101_v1_deployment_review.py",
+      "reason": "Old VM101 script"
+    },
+    {
+      "file": "azure_vm101_zencoder_gpt41_review.py",
+      "reason": "Old VM101 script"
+    },
+    {
+      "file": "BATCH-ZENCODER-IMPLEMENTATION-SUMMARY.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "batch_azure_review_all_repos.py",
+      "reason": "Old batch processing script"
+    },
+    {
+      "file": "BitPhoenix-3-AGENT-RESULTS-SUMMARY.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "BitPhoenix-AZURE-CONSENSUS.json",
+      "reason": "Old Azure review JSON"
+    },
+    {
+      "file": "BitPhoenix-AZURE-CONSENSUS.md",
+      "reason": "Old BitPhoenix file"
+    },
+    {
+      "file": "BitPhoenix-AZURE-REVIEW.json",
+      "reason": "Old Azure review JSON"
+    },
+    {
+      "file": "BitPhoenix-AZURE-REVIEW.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "BitPhoenix-CODE-AGENT-ANALYSIS.json",
+      "reason": "Old agent output JSON"
+    },
+    {
+      "file": "BitPhoenix-CODE-AGENT-ANALYSIS.md",
+      "reason": "Old BitPhoenix file"
+    },
+    {
+      "file": "BitPhoenix-COMPILED-CHANGES.md",
+      "reason": "Old BitPhoenix file"
+    },
+    {
+      "file": "BitPhoenix-FINAL-CONSENSUS.md",
+      "reason": "Old BitPhoenix file"
+    },
+    {
+      "file": "BitPhoenix-REVIEW-AGENT-VALIDATION.json",
+      "reason": "Old agent output JSON"
+    },
+    {
+      "file": "BitPhoenix-REVIEW-AGENT-VALIDATION.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "BitPhoenix-ZENCODER-IMPLEMENTATION.json",
+      "reason": "Old Zencoder implementation JSON"
+    },
+    {
+      "file": "BRANCH_ACTUAL_STATUS.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "BRANCH_CLEANUP_SUMMARY.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "cleanup_bitphoenix_files.py",
+      "reason": "Old utility script"
+    },
+    {
+      "file": "CODE_AGENT_EXECUTION_SUMMARY.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "CODE_REVIEW_ANALYSIS.py",
+      "reason": "Old utility script"
+    },
+    {
+      "file": "CODE_REVIEW_REPORT.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "COMMIT_AND_PUBLISH_SUMMARY.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "compile_changes_from_consensus.py",
+      "reason": "Old orchestration script"
+    },
+    {
+      "file": "COMPLETE_FIX_SUMMARY.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "COMPLETE_RESULTS_SUMMARY.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "COMPREHENSIVE-INFRASTRUCTURE-SUMMARY.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "COMPREHENSIVE_STATUS_REPORT.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "CURRENT-STATUS-AND-NEXT-ACTIONS.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "Dell-Server-Roadmap-AZURE-CONSENSUS.json",
+      "reason": "Old Azure review JSON"
+    },
+    {
+      "file": "Dell-Server-Roadmap-AZURE-CONSENSUS.md",
+      "reason": "Old Azure review file"
+    },
+    {
+      "file": "Dell-Server-Roadmap-AZURE-REVIEW.json",
+      "reason": "Old Azure review JSON"
+    },
+    {
+      "file": "Dell-Server-Roadmap-AZURE-REVIEW.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "Dell-Server-Roadmap-CODE-AGENT-ANALYSIS.json",
+      "reason": "Old agent output JSON"
+    },
+    {
+      "file": "Dell-Server-Roadmap-CODE-AGENT-ANALYSIS.md",
+      "reason": "Old agent output file"
+    },
+    {
+      "file": "Dell-Server-Roadmap-FINAL-CONSENSUS.md",
+      "reason": "Old consensus file"
+    },
+    {
+      "file": "Dell-Server-Roadmap-ITERATION-1-COMPILED-CHANGES.md",
+      "reason": "Old consensus file"
+    },
+    {
+      "file": "Dell-Server-Roadmap-ITERATION-1-FINAL-CONSENSUS.md",
+      "reason": "Old consensus file"
+    },
+    {
+      "file": "Dell-Server-Roadmap-ITERATION-2-COMPILED-CHANGES.md",
+      "reason": "Old consensus file"
+    },
+    {
+      "file": "Dell-Server-Roadmap-ITERATION-2-FINAL-CONSENSUS.md",
+      "reason": "Old consensus file"
+    },
+    {
+      "file": "Dell-Server-Roadmap-ITERATION-3-COMPILED-CHANGES.md",
+      "reason": "Old consensus file"
+    },
+    {
+      "file": "Dell-Server-Roadmap-ITERATION-3-FINAL-CONSENSUS.md",
+      "reason": "Old consensus file"
+    },
+    {
+      "file": "Dell-Server-Roadmap-ITERATION-4-COMPILED-CHANGES.md",
+      "reason": "Old consensus file"
+    },
+    {
+      "file": "Dell-Server-Roadmap-ITERATION-4-FINAL-CONSENSUS.md",
+      "reason": "Old consensus file"
+    },
+    {
+      "file": "Dell-Server-Roadmap-ITERATION-5-COMPILED-CHANGES.md",
+      "reason": "Old consensus file"
+    },
+    {
+      "file": "Dell-Server-Roadmap-REVIEW-AGENT-VALIDATION.json",
+      "reason": "Old agent output JSON"
+    },
+    {
+      "file": "Dell-Server-Roadmap-REVIEW-AGENT-VALIDATION.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "Dell-Server-Roadmap-ZENCODER-IMPLEMENTATION.json",
+      "reason": "Old Zencoder implementation JSON"
+    },
+    {
+      "file": "DEPLOYMENT_STATUS_CHECK.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "Dino-Cloud-AZURE-CONSENSUS.json",
+      "reason": "Old Azure review JSON"
+    },
+    {
+      "file": "Dino-Cloud-AZURE-CONSENSUS.md",
+      "reason": "Old Azure review file"
+    },
+    {
+      "file": "Dino-Cloud-AZURE-REVIEW.json",
+      "reason": "Old Azure review JSON"
+    },
+    {
+      "file": "Dino-Cloud-AZURE-REVIEW.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "Dino-Cloud-CODE-AGENT-ANALYSIS.json",
+      "reason": "Old agent output JSON"
+    },
+    {
+      "file": "Dino-Cloud-CODE-AGENT-ANALYSIS.md",
+      "reason": "Old agent output file"
+    },
+    {
+      "file": "Dino-Cloud-FINAL-CONSENSUS.md",
+      "reason": "Old consensus file"
+    },
+    {
+      "file": "Dino-Cloud-ITERATION-1-COMPILED-CHANGES.md",
+      "reason": "Old consensus file"
+    },
+    {
+      "file": "Dino-Cloud-ITERATION-1-FINAL-CONSENSUS.md",
+      "reason": "Old consensus file"
+    },
+    {
+      "file": "Dino-Cloud-REVIEW-AGENT-VALIDATION.json",
+      "reason": "Old agent output JSON"
+    },
+    {
+      "file": "Dino-Cloud-REVIEW-AGENT-VALIDATION.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "Dino-Cloud-ZENCODER-IMPLEMENTATION.json",
+      "reason": "Old Zencoder implementation JSON"
+    },
+    {
+      "file": "DinoCloud-AZURE-CONSENSUS.json",
+      "reason": "Old Azure review JSON"
+    },
+    {
+      "file": "DinoCloud-AZURE-CONSENSUS.md",
+      "reason": "Old Azure review file"
+    },
+    {
+      "file": "DinoCloud-AZURE-REVIEW.json",
+      "reason": "Old Azure review JSON"
+    },
+    {
+      "file": "DinoCloud-AZURE-REVIEW.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "DinoCloud-CODE-AGENT-ANALYSIS.json",
+      "reason": "Old agent output JSON"
+    },
+    {
+      "file": "DinoCloud-CODE-AGENT-ANALYSIS.md",
+      "reason": "Old agent output file"
+    },
+    {
+      "file": "DinoCloud-FINAL-CONSENSUS.md",
+      "reason": "Old consensus file"
+    },
+    {
+      "file": "DinoCloud-ITERATION-1-COMPILED-CHANGES.md",
+      "reason": "Old consensus file"
+    },
+    {
+      "file": "DinoCloud-ITERATION-1-FINAL-CONSENSUS.md",
+      "reason": "Old consensus file"
+    },
+    {
+      "file": "DinoCloud-REVIEW-AGENT-VALIDATION.json",
+      "reason": "Old agent output JSON"
+    },
+    {
+      "file": "DinoCloud-REVIEW-AGENT-VALIDATION.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "DinoCloud-ZENCODER-IMPLEMENTATION.json",
+      "reason": "Old Zencoder implementation JSON"
+    },
+    {
+      "file": "FamilyFork-AZURE-CONSENSUS.json",
+      "reason": "Old Azure review JSON"
+    },
+    {
+      "file": "FamilyFork-AZURE-CONSENSUS.md",
+      "reason": "Old Azure review file"
+    },
+    {
+      "file": "FamilyFork-AZURE-REVIEW.json",
+      "reason": "Old Azure review JSON"
+    },
+    {
+      "file": "FamilyFork-AZURE-REVIEW.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "FamilyFork-CODE-AGENT-ANALYSIS.json",
+      "reason": "Old agent output JSON"
+    },
+    {
+      "file": "FamilyFork-CODE-AGENT-ANALYSIS.md",
+      "reason": "Old agent output file"
+    },
+    {
+      "file": "FamilyFork-FINAL-CONSENSUS.md",
+      "reason": "Old consensus file"
+    },
+    {
+      "file": "FamilyFork-ITERATION-1-COMPILED-CHANGES.md",
+      "reason": "Old consensus file"
+    },
+    {
+      "file": "FamilyFork-ITERATION-1-FINAL-CONSENSUS.md",
+      "reason": "Old consensus file"
+    },
+    {
+      "file": "FamilyFork-REVIEW-AGENT-VALIDATION.json",
+      "reason": "Old agent output JSON"
+    },
+    {
+      "file": "FamilyFork-REVIEW-AGENT-VALIDATION.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "FamilyFork-ZENCODER-IMPLEMENTATION.json",
+      "reason": "Old Zencoder implementation JSON"
+    },
+    {
+      "file": "FINAL_RECOMMENDATION_SUMMARY.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "FINAL_STATUS_SUMMARY.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "find_all_goku_files.py",
+      "reason": "Old utility script"
+    },
+    {
+      "file": "fix_bitphoenix_markdown.py",
+      "reason": "Old utility script"
+    },
+    {
+      "file": "fix_bitphoenix_merge_conflicts.py",
+      "reason": "Old utility script"
+    },
+    {
+      "file": "FRESH-3-AGENT-OUTPUTS-STATUS.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "generate_all_zencoder_prompts.py",
+      "reason": "Old batch processing script"
+    },
+    {
+      "file": "generate_master_batch_summary.py",
+      "reason": "Old batch processing script"
+    },
+    {
+      "file": "GITHUB_DIRECTORY_REORGANIZATION_SUMMARY.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "Goku.AI-AZURE-CONSENSUS.json",
+      "reason": "Old Azure review JSON"
+    },
+    {
+      "file": "Goku.AI-AZURE-CONSENSUS.md",
+      "reason": "Old Azure review file"
+    },
+    {
+      "file": "Goku.AI-AZURE-REVIEW.json",
+      "reason": "Old Azure review JSON"
+    },
+    {
+      "file": "Goku.AI-AZURE-REVIEW.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "Goku.AI-CODE-AGENT-ANALYSIS.json",
+      "reason": "Old agent output JSON"
+    },
+    {
+      "file": "Goku.AI-CODE-AGENT-ANALYSIS.md",
+      "reason": "Old agent output file"
+    },
+    {
+      "file": "Goku.AI-FINAL-CONSENSUS.md",
+      "reason": "Old consensus file"
+    },
+    {
+      "file": "Goku.AI-ITERATION-1-COMPILED-CHANGES.md",
+      "reason": "Old consensus file"
+    },
+    {
+      "file": "Goku.AI-ITERATION-1-FINAL-CONSENSUS.md",
+      "reason": "Old consensus file"
+    },
+    {
+      "file": "Goku.AI-REVIEW-AGENT-VALIDATION.json",
+      "reason": "Old agent output JSON"
+    },
+    {
+      "file": "Goku.AI-REVIEW-AGENT-VALIDATION.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "Goku.AI-ZENCODER-IMPLEMENTATION.json",
+      "reason": "Old Zencoder implementation JSON"
+    },
+    {
+      "file": "GSMG.IO-AZURE-CONSENSUS.json",
+      "reason": "Old Azure review JSON"
+    },
+    {
+      "file": "GSMG.IO-AZURE-CONSENSUS.md",
+      "reason": "Old Azure review file"
+    },
+    {
+      "file": "GSMG.IO-AZURE-REVIEW.json",
+      "reason": "Old Azure review JSON"
+    },
+    {
+      "file": "GSMG.IO-AZURE-REVIEW.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "GSMG.IO-CODE-AGENT-ANALYSIS.json",
+      "reason": "Old agent output JSON"
+    },
+    {
+      "file": "GSMG.IO-CODE-AGENT-ANALYSIS.md",
+      "reason": "Old agent output file"
+    },
+    {
+      "file": "GSMG.IO-FINAL-CONSENSUS.md",
+      "reason": "Old consensus file"
+    },
+    {
+      "file": "GSMG.IO-ITERATION-1-COMPILED-CHANGES.md",
+      "reason": "Old consensus file"
+    },
+    {
+      "file": "GSMG.IO-ITERATION-1-FINAL-CONSENSUS.md",
+      "reason": "Old consensus file"
+    },
+    {
+      "file": "GSMG.IO-REVIEW-AGENT-VALIDATION.json",
+      "reason": "Old agent output JSON"
+    },
+    {
+      "file": "GSMG.IO-REVIEW-AGENT-VALIDATION.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "GSMG.IO-ZENCODER-IMPLEMENTATION.json",
+      "reason": "Old Zencoder implementation JSON"
+    },
+    {
+      "file": "IMPROVEMENT_SUMMARY.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "init_missing_repos.py",
+      "reason": "Old utility script"
+    },
+    {
+      "file": "iterative_repo_improvement_cycle.py",
+      "reason": "Old orchestration script"
+    },
+    {
+      "file": "Keyhound-AZURE-CONSENSUS.json",
+      "reason": "Old Azure review JSON"
+    },
+    {
+      "file": "Keyhound-AZURE-CONSENSUS.md",
+      "reason": "Old Azure review file"
+    },
+    {
+      "file": "Keyhound-AZURE-REVIEW.json",
+      "reason": "Old Azure review JSON"
+    },
+    {
+      "file": "Keyhound-AZURE-REVIEW.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "Keyhound-CODE-AGENT-ANALYSIS.json",
+      "reason": "Old agent output JSON"
+    },
+    {
+      "file": "Keyhound-CODE-AGENT-ANALYSIS.md",
+      "reason": "Old agent output file"
+    },
+    {
+      "file": "Keyhound-FINAL-CONSENSUS.md",
+      "reason": "Old consensus file"
+    },
+    {
+      "file": "Keyhound-ITERATION-1-COMPILED-CHANGES.md",
+      "reason": "Old consensus file"
+    },
+    {
+      "file": "Keyhound-ITERATION-1-FINAL-CONSENSUS.md",
+      "reason": "Old consensus file"
+    },
+    {
+      "file": "Keyhound-REVIEW-AGENT-VALIDATION.json",
+      "reason": "Old agent output JSON"
+    },
+    {
+      "file": "Keyhound-REVIEW-AGENT-VALIDATION.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "Keyhound-ZENCODER-IMPLEMENTATION.json",
+      "reason": "Old Zencoder implementation JSON"
+    },
+    {
+      "file": "master_repo_improvement_orchestrator.py",
+      "reason": "Old orchestration script"
+    },
+    {
+      "file": "MULTI_AGENT_SYSTEM_SUMMARY.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "PASTE-THIS-INTO-ZENCODER-REVIEW-AGENT.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "phase1_fast_validate.py",
+      "reason": "Old phase script"
+    },
+    {
+      "file": "phase2_execute_batch.py",
+      "reason": "Old phase script"
+    },
+    {
+      "file": "phase3_testing.py",
+      "reason": "Old phase script"
+    },
+    {
+      "file": "phase4_consolidation.py",
+      "reason": "Old phase script"
+    },
+    {
+      "file": "QA_REVIEW_MASTER_SUMMARY.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "QC_INTEGRATION_SUMMARY.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "REPO-ANALYSIS-RESULTS-SUMMARY.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "REVIEW-AGENT-PROMPT-IMPROVEMENTS.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "REVIEW_IMPROVEMENTS.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "ROLLBACK_BATCH.py",
+      "reason": "Old utility script"
+    },
+    {
+      "file": "run_all_repos_3_agent_process.py",
+      "reason": "Old orchestration script"
+    },
+    {
+      "file": "run_single_repo_3_agent.py",
+      "reason": "Old orchestration script"
+    },
+    {
+      "file": "Scalpstorm-AZURE-CONSENSUS.json",
+      "reason": "Old Azure review JSON"
+    },
+    {
+      "file": "Scalpstorm-AZURE-CONSENSUS.md",
+      "reason": "Old Azure review file"
+    },
+    {
+      "file": "Scalpstorm-AZURE-REVIEW.json",
+      "reason": "Old Azure review JSON"
+    },
+    {
+      "file": "Scalpstorm-AZURE-REVIEW.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "Scalpstorm-CODE-AGENT-ANALYSIS.json",
+      "reason": "Old agent output JSON"
+    },
+    {
+      "file": "Scalpstorm-CODE-AGENT-ANALYSIS.md",
+      "reason": "Old agent output file"
+    },
+    {
+      "file": "Scalpstorm-FINAL-CONSENSUS.md",
+      "reason": "Old consensus file"
+    },
+    {
+      "file": "Scalpstorm-ITERATION-1-COMPILED-CHANGES.md",
+      "reason": "Old consensus file"
+    },
+    {
+      "file": "Scalpstorm-ITERATION-1-FINAL-CONSENSUS.md",
+      "reason": "Old consensus file"
+    },
+    {
+      "file": "Scalpstorm-REVIEW-AGENT-VALIDATION.json",
+      "reason": "Old agent output JSON"
+    },
+    {
+      "file": "Scalpstorm-REVIEW-AGENT-VALIDATION.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "Scalpstorm-ZENCODER-IMPLEMENTATION.json",
+      "reason": "Old Zencoder implementation JSON"
+    },
+    {
+      "file": "Server-Roadmap-AZURE-CONSENSUS.json",
+      "reason": "Old Azure review JSON"
+    },
+    {
+      "file": "Server-Roadmap-AZURE-CONSENSUS.md",
+      "reason": "Old Azure review file"
+    },
+    {
+      "file": "Server-Roadmap-AZURE-REVIEW.json",
+      "reason": "Old Azure review JSON"
+    },
+    {
+      "file": "Server-Roadmap-AZURE-REVIEW.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "Server-Roadmap-CODE-AGENT-ANALYSIS.json",
+      "reason": "Old agent output JSON"
+    },
+    {
+      "file": "Server-Roadmap-CODE-AGENT-ANALYSIS.md",
+      "reason": "Old agent output file"
+    },
+    {
+      "file": "Server-Roadmap-FINAL-CONSENSUS.md",
+      "reason": "Old consensus file"
+    },
+    {
+      "file": "Server-Roadmap-ITERATION-1-COMPILED-CHANGES.md",
+      "reason": "Old consensus file"
+    },
+    {
+      "file": "Server-Roadmap-ITERATION-1-FINAL-CONSENSUS.md",
+      "reason": "Old consensus file"
+    },
+    {
+      "file": "Server-Roadmap-REVIEW-AGENT-VALIDATION.json",
+      "reason": "Old agent output JSON"
+    },
+    {
+      "file": "Server-Roadmap-REVIEW-AGENT-VALIDATION.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "Server-Roadmap-ZENCODER-IMPLEMENTATION.json",
+      "reason": "Old Zencoder implementation JSON"
+    },
+    {
+      "file": "StreamForge-AZURE-CONSENSUS.json",
+      "reason": "Old Azure review JSON"
+    },
+    {
+      "file": "StreamForge-AZURE-CONSENSUS.md",
+      "reason": "Old Azure review file"
+    },
+    {
+      "file": "StreamForge-AZURE-REVIEW.json",
+      "reason": "Old Azure review JSON"
+    },
+    {
+      "file": "StreamForge-AZURE-REVIEW.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "StreamForge-CODE-AGENT-ANALYSIS.json",
+      "reason": "Old agent output JSON"
+    },
+    {
+      "file": "StreamForge-CODE-AGENT-ANALYSIS.md",
+      "reason": "Old agent output file"
+    },
+    {
+      "file": "StreamForge-FINAL-CONSENSUS.md",
+      "reason": "Old consensus file"
+    },
+    {
+      "file": "StreamForge-ITERATION-1-COMPILED-CHANGES.md",
+      "reason": "Old consensus file"
+    },
+    {
+      "file": "StreamForge-ITERATION-1-FINAL-CONSENSUS.md",
+      "reason": "Old consensus file"
+    },
+    {
+      "file": "StreamForge-REVIEW-AGENT-VALIDATION.json",
+      "reason": "Old agent output JSON"
+    },
+    {
+      "file": "StreamForge-REVIEW-AGENT-VALIDATION.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "StreamForge-ZENCODER-IMPLEMENTATION.json",
+      "reason": "Old Zencoder implementation JSON"
+    },
+    {
+      "file": "UNINSTALL_INSTRUCTIONS_SUMMARY.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "V1.0.0_RELEASE_RUN_SUMMARY.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "VALIDATION_COMPLETE_SUMMARY.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "VALIDATION_STATUS_SUMMARY.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "VM101-GIT-LOCAL-CHANGES-REVIEW.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "VM101-MIGRATION-SUMMARY.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "VM101-v1.0.0-COMPLETE-WORK-SUMMARY.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "VM101-v1.0.0-STATUS-SUMMARY.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "YOUR_SETUP_STATUS.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "ZENCODER-PROMPTS-ENHANCEMENT-SUMMARY.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "ZENCODER-REVIEW-AGENT-PROMPT.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "ZENCODER-REVIEW-AGENT-RESPONSE.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "ZENCODER-REVIEW-AGENT-VALIDATION-REPORT.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "ZENCODER-REVIEW-AGENT-VALIDATION-REQUEST.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "ZENCODER-VM101-MIGRATION-REVIEW-REQUEST.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "ZENCODER-VM101-SECURITY-REVIEW-REPORT.md",
+      "reason": "Old status/review file"
+    },
+    {
+      "file": "zencoder_auto_fix_with_azure_review.py",
+      "reason": "Old batch processing script"
+    },
+    {
+      "file": "zencoder_manual_with_azure_review.py",
+      "reason": "Old batch processing script"
+    }
+  ]
+}
