@@ -14,7 +14,14 @@ from flask_cors import CORS
 import requests
 import json
 from datetime import datetime
-from mcp_tools import MCPTools, ToolPermissions
+# Import MCP tools - adjust path based on your structure
+try:
+    from src.utils.mcp_tools import MCPTools, ToolPermissions
+except ImportError:
+    try:
+        from src.mcp_tools import MCPTools, ToolPermissions
+    except ImportError:
+        from mcp_tools import MCPTools, ToolPermissions
 
 app = Flask(__name__)
 CORS(app)

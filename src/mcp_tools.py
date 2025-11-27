@@ -1,8 +1,7 @@
-<!--
+"""
 NOTE: This file has been sanitized for public GitHub.
 Real values are stored in credentials.json (gitignored).
 For local use, restore from credentials.json or use the original file.
--->
 """
 SHENRON MCP TOOLS - Phase 1: File & Terminal Operations
 Ultra Instinct Foundation
