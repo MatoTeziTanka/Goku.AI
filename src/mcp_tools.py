@@ -2,7 +2,7 @@
 NOTE: This file has been sanitized for public GitHub.
 Real values are stored in credentials.json (gitignored).
 For local use, restore from credentials.json or use the original file.
-"""
+
 SHENRON MCP TOOLS - Phase 1: File & Terminal Operations
 Ultra Instinct Foundation
 
@@ -25,7 +25,7 @@ class MCPTools:
         # VM credentials (use SSH keys in production)
         self.vm_credentials = {
             '<VM100_IP>': {'username': 'Administrator', 'key': None},  # Windows
-            '<VM150_IP>': {'username': 'wp1', 'password': 'Norelec7!'},
+            '<VM150_IP>': {'username': 'wp1', 'password': None},  # Use SSH keys or credentials.json
             '<VM101_IP>': {'username': 'admin', 'password': None},
             '192.168.12.210': {'username': 'admin', 'password': None}
         }
