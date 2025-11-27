@@ -1,15 +1,14 @@
-<!--
+"""
+SHENRON API v5.0 - ULTRA INSTINCT
 NOTE: This file has been sanitized for public GitHub.
 Real values are stored in credentials.json (gitignored).
 For local use, restore from credentials.json or use the original file.
--->
-"""
-SHENRON API v5.0 - ULTRA INSTINCT
 With MCP Tools Integration
 
 Extends SHENRON with file operations, terminal access, and autonomous capabilities.
 """
 
+import os
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import requests
@@ -24,17 +23,63 @@ CORS(app)
 mcp = MCPTools()
 
 # LM Studio API endpoint
-LM_STUDIO_API = "http://localhost:1234/v1/chat/completions"
+# [CONFIG] Update VM100_IP in environment or credentials.json
+VM100_IP = os.getenv('VM100_IP', '192.168.12.100')
+LM_STUDIO_API = f"http://{VM100_IP}:1234/v1/chat/completions"
 
 # Warrior configurations
+# [NOTE] Model names match LM Studio display names (with -instruct@q8_0 suffix)
+# LM Studio will match partial names, but using full names is more reliable
 WARRIORS = {
-    "goku": {"model": "deepseek-coder-v2-lite", "emoji": "🥋", "temp": 0.7},
-    "vegeta": {"model": "llama-3.2-3b", "emoji": "👑", "temp": 0.3},
-    "piccolo": {"model": "qwen2.5-coder-7b", "emoji": "🧠", "temp": 0.5},
-    "gohan": {"model": "mistral-7b", "emoji": "⚠️", "temp": 0.4},
-    "krillin": {"model": "phi-3-mini-128k", "emoji": "🔧", "temp": 0.6},
-    "frieza": {"model": "phi-3-mini-128k:2", "emoji": "😈", "temp": 0.9}
+    "goku": {
+        "model": "Goku-deepseek-coder-v2-lite-instruct@q8_0",  # Full name from LM Studio
+        "model_short": "deepseek-coder-v2-lite",  # Fallback short name
+        "emoji": "🥋", 
+        "temp": 0.7
+    },
+    "vegeta": {
+        "model": "Vegeta-llama-3.2-3b-instruct@q8_0",
+        "model_short": "llama-3.2-3b",
+        "emoji": "👑", 
+        "temp": 0.3
+    },
+    "piccolo": {
+        "model": "Piccolo-qwen2.5-coder-7b-instruct@q8_0",
+        "model_short": "qwen2.5-coder-7b",
+        "emoji": "🧠", 
+        "temp": 0.5
+    },
+    "gohan": {
+        "model": "Gohan-mistral-7b-instruct-v0.3@q8_0",
+        "model_short": "mistral-7b",
+        "emoji": "⚠️", 
+        "temp": 0.4
+    },
+    "krillin": {
+        "model": "Krillin-phi-3-mini-128k-instruct@q8_0",
+        "model_short": "phi-3-mini-128k",
+        "emoji": "🔧", 
+        "temp": 0.6
+    },
+    "frieza": {
+        "model": "Frieza-phi-3-mini-128k-instruct@q8_0",  # Same model as Krillin, different instance
+        "model_short": "phi-3-mini-128k",
+        "emoji": "😈", 
+        "temp": 0.9
+    }
 }
+
+def get_model_name(warrior: str) -> str:
+    """
+    Get the model name for a warrior.
+    Tries full name first, falls back to short name if LM Studio doesn't match.
+    """
+    config = WARRIORS.get(warrior.lower())
+    if not config:
+        return "deepseek-coder-v2-lite"  # Default fallback
+    
+    # Try full name first (more reliable)
+    return config.get("model", config.get("model_short", "deepseek-coder-v2-lite"))
 
 
 # ============================================================================
