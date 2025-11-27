@@ -18,9 +18,16 @@ from typing import Dict, List, Optional, Tuple
 class MCPTools:
     """MCP Tool Executor for SHENRON"""
     
-    def __init__(self, log_file='C:\\GOKU-AI\\shenron\\logs\\mcp_audit.log'):
+    def __init__(self, log_file=None):
         self.ssh_connections = {}
-        self.log_file = log_file
+        # Default log file path (OS-agnostic)
+        if log_file is None:
+            if os.name == 'nt':  # Windows
+                self.log_file = r'C:\GOKU-AI\shenron\logs\mcp_audit.log'
+            else:  # Linux/Unix
+                self.log_file = os.path.expanduser('~/Goku.AI/logs/mcp_audit.log')
+        else:
+            self.log_file = log_file
         
         # VM credentials (use SSH keys in production)
         self.vm_credentials = {
@@ -35,8 +42,8 @@ class MCPTools:
     def _ensure_log_directory(self):
         """Create log directory if it doesn't exist"""
         log_dir = os.path.dirname(self.log_file)
-        if not os.path.exists(log_dir):
-            os.makedirs(log_dir)
+        if log_dir and not os.path.exists(log_dir):
+            os.makedirs(log_dir, exist_ok=True)
     
     def _log_action(self, tool: str, vm_ip: str, action: str, result: str, success: bool):
         """Audit log all MCP tool usage"""
